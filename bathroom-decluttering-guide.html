@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Small Bathroom Decluttering Blueprint — TidyNook</title>
+<meta name="description" content="A renter-friendly blueprint for decluttering a small bathroom — zero-drill storage, under-sink organization, and space-expanding visual tricks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- Article-specific additions on top of the shared site stylesheet ---- */
+
+  .article-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .article-hero .hero-tag {
+    color: var(--sage);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .article-hero h1 { max-width: 780px; }
+  .article-hero p.lede { max-width: 62ch; margin-top: 8px; }
+
+  .shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 0;
+    max-width: 220px;
+  }
+  .shelves span {
+    height: 3px;
+    background: var(--rust);
+    border-radius: 2px;
+  }
+  .shelves span:nth-child(1) { width: 100%; opacity: 1; }
+  .shelves span:nth-child(2) { width: 72%; opacity: 0.7; }
+  .shelves span:nth-child(3) { width: 45%; opacity: 0.45; }
+
+  .article-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+  .article-index a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    transition: border-color 0.15s ease;
+  }
+  .article-index a:hover { border-color: var(--rust); color: var(--ink); }
+  .article-index .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--rust);
+    margin-bottom: 4px;
+  }
+
+  section.phase {
+    margin-bottom: 56px;
+    scroll-margin-top: 90px;
+  }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rust);
+    padding-left: 16px;
+  }
+  .phase-head h2 { margin: 0; }
+  .phase-sub {
+    padding-left: 19px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 58ch;
+    margin: 0 0 26px;
+  }
+
+  .article-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .article-item h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .article-item p { margin: 0; }
+
+  .checklist {
+    background: var(--tan);
+    border-radius: 8px;
+    padding: 32px 28px;
+    margin-top: 44px;
+  }
+  .checklist h2 { font-size: 22px; margin: 0 0 18px; }
+  .checklist ul { list-style: none; margin: 0; padding: 0; }
+  .checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+  .checklist strong { color: var(--sage-deep); }
+
+  @media (max-width: 760px) {
+    .article-index { grid-template-columns: repeat(2, 1fr); }
+    .phase-head { flex-direction: column; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Tidy<span>Nook</span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+  <div class="article-hero">
+    <p class="hero-tag">Small Bathroom Blueprint</p>
+    <h1>A tiny bathroom, decluttered for good.</h1>
+    <p class="lede">Living in a compact rental apartment often means wrestling with a bathroom that feels more like a narrow hallway than a sanctuary. When counter space is a few square inches and storage is one shallow medicine cabinet, clutter accumulates fast.</p>
+    <div class="shelves"><span></span><span></span><span></span></div>
+  </div>
+
+  <p style="max-width: 62ch; color: var(--ink-soft); margin-bottom: 48px;">For renters, the challenge is twofold: eliminate visual and physical clutter without permanent modifications or drilling into tiled walls. A clean, hyper-organized bathroom makes a tiny footprint feel twice as large.</p>
+
+  <div class="article-index">
+    <a href="#phase1"><span class="num">01</span>The total purge</a>
+    <a href="#phase2"><span class="num">02</span>Zero-drill vertical space</a>
+    <a href="#phase3"><span class="num">03</span>Under-sink &amp; cabinets</a>
+    <a href="#phase4"><span class="num">04</span>Visual tricks</a>
+  </div>
+
+  <section class="phase" id="phase1">
+    <div class="phase-head"><h2>The total purge and audit</h2></div>
+    <p class="phase-sub">Before you can organize, you must ruthlessly scale down your inventory. Bathrooms breed expired products, half-used samples, and forgotten duplicates.</p>
+
+    <div class="article-item">
+      <h3>The expiration date sweep</h3>
+      <p>Gather every cosmetic, sunscreen, shampoo, and skincare item in one place. Check expiration symbols — usually a tiny open jar icon marked "12M" or "24M" — and toss anything past its prime, since degraded ingredients can irritate skin.</p>
+    </div>
+    <div class="article-item">
+      <h3>The "one-in, one-out" rule for toiletries</h3>
+      <p>Stop stockpiling backup body wash and toothpaste if you lack under-sink clearance. Keep only one active product and one immediate backup.</p>
+    </div>
+    <div class="article-item">
+      <h3>Relocate non-bathroom items</h3>
+      <p>If first-aid kits, bulk cleaning supplies, or extra styling tools are taking up bathroom real estate, move them to a hall closet or a rolling cart in the bedroom.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase2">
+    <div class="phase-head"><h2>Mastering zero-drill vertical space</h2></div>
+    <p class="phase-sub">When floor and counter space are exhausted, your walls and doors are the greatest untapped asset.</p>
+
+    <div class="article-item">
+      <h3>Over-the-door pocket grids and hooks</h3>
+      <p>The back of the bathroom door is prime storage territory. A padded over-the-door organizer or damage-free adhesive hooks can hold robes, daily towels, or a pouch for hair tools.</p>
+    </div>
+    <div class="article-item">
+      <h3>Tension pole shower caddies</h3>
+      <p>Avoid permanent screws or rusted wire shelves that stain rental bathtubs. A spring-loaded corner tension pole caddy gives four adjustable tiers of shelving without touching the tile grout.</p>
+    </div>
+    <div class="article-item">
+      <h3>Clear acrylic wall ledges</h3>
+      <p>Lightweight picture-ledge shelves mounted with high-grade adhesive strips hold perfume bottles, daily skincare, or decor — keeping them entirely off the sink basin.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase3">
+    <div class="phase-head"><h2>Optimizing the danger zones</h2></div>
+    <p class="phase-sub">The space beneath the sink and inside the medicine cabinet are usually chaotic black holes of tangled cords and scattered bottles.</p>
+
+    <div class="article-item">
+      <h3>Modular under-sink pull-out drawers</h3>
+      <p>Standard under-sink cabinets waste vertical air around the plumbing trap. A two-tier sliding acrylic drawer system fits underneath — top drawer for daily items like toothbrushes and floss, bottom for bulk cleaning supplies.</p>
+    </div>
+    <div class="article-item">
+      <h3>Magnetic strips inside medicine cabinets</h3>
+      <p>A thin magnetic strip on the inner door holds nail clippers, tweezers, and small cosmetic scissors, instantly clearing out counter clutter.</p>
+    </div>
+    <div class="article-item">
+      <h3>Clear decanting and organizing bins</h3>
+      <p>Transfer cotton balls, Q-tips, and bath salts into clear, stackable acrylic containers with lids. Transparency prevents visual noise, making a cramped cabinet look curated.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase4">
+    <div class="phase-head"><h2>Psychological and visual space-expanding tricks</h2></div>
+    <p class="phase-sub">Clutter isn't just physical, it's visual. High-density apartments benefit from strategic styling that tricks the eye into seeing more space.</p>
+
+    <div class="article-item">
+      <h3>Monochromatic storage bins</h3>
+      <p>Keep visible baskets and bins in a uniform color family — all-white, matte black, or natural woven textures. Matching containers to the wall or tile lets them visually recede.</p>
+    </div>
+    <div class="article-item">
+      <h3>The unified towel rule</h3>
+      <p>Ditch mismatched, faded towels. A cohesive set of plush white or neutral-toned towels instantly elevates a modest bathroom into a boutique hotel feel.</p>
+    </div>
+    <div class="article-item">
+      <h3>Total counter clearance</h3>
+      <p>Aim for a "zero-item" baseline on the actual sink counter, leaving only a decorative soap dispenser. A fully clear counter makes the whole room feel twice as large.</p>
+    </div>
+  </section>
+
+  <div class="checklist">
+    <h2>Renter success action plan</h2>
+    <ul>
+      <li><strong>Protect your security deposit.</strong> Rely entirely on suction cups, high-strength adhesive strips, tension rods, and freestanding units.</li>
+      <li><strong>Audit quarterly.</strong> Run a mini-purge every three months to keep product accumulation under control.</li>
+      <li><strong>Maximize light and reflection.</strong> Keep window sills completely clear to maximize natural light and the perceived size of the room.</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copy">© 2026 TidyNook. All rights reserved.</p>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

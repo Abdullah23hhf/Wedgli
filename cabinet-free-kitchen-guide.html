@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cabinet-Free Kitchen Blueprint — TidyNook</title>
+<meta name="description" content="A studio or older rental kitchen with zero closed storage doesn't have to look chaotic — a zone-by-zone plan using tension, adhesive, and rolling storage.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- Article-specific additions on top of the shared site stylesheet ---- */
+
+  .article-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .article-hero .hero-tag {
+    color: var(--sage);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .article-hero h1 { max-width: 780px; }
+  .article-hero p.lede { max-width: 62ch; margin-top: 8px; }
+
+  .shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 0;
+    max-width: 220px;
+  }
+  .shelves span {
+    height: 3px;
+    background: var(--rust);
+    border-radius: 2px;
+  }
+  .shelves span:nth-child(1) { width: 100%; opacity: 1; }
+  .shelves span:nth-child(2) { width: 72%; opacity: 0.7; }
+  .shelves span:nth-child(3) { width: 45%; opacity: 0.45; }
+
+  /* Zone grid (Phase 1) */
+  .zone-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 56px;
+  }
+  .zone {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+  }
+  .zone p.tag {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--sage-deep);
+    letter-spacing: 0.02em;
+    margin: 0 0 8px;
+  }
+  .zone h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .zone p.desc { margin: 0; font-size: 15px; color: var(--ink); }
+
+  .article-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+  .article-index a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    transition: border-color 0.15s ease;
+  }
+  .article-index a:hover { border-color: var(--rust); color: var(--ink); }
+  .article-index .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--rust);
+    margin-bottom: 4px;
+  }
+
+  section.phase {
+    margin-bottom: 56px;
+    scroll-margin-top: 90px;
+  }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rust);
+    padding-left: 16px;
+  }
+  .phase-head h2 { margin: 0; }
+  .phase-sub {
+    padding-left: 19px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 58ch;
+    margin: 0 0 26px;
+  }
+
+  .article-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .article-item h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .article-item p { margin: 0; }
+
+  .checklist {
+    background: var(--tan);
+    border-radius: 8px;
+    padding: 32px 28px;
+    margin-top: 44px;
+  }
+  .checklist h2 { font-size: 22px; margin: 0 0 18px; }
+  .checklist ul { list-style: none; margin: 0; padding: 0; }
+  .checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+  .checklist strong { color: var(--sage-deep); }
+
+  .closing {
+    margin-top: 44px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 760px) {
+    .article-index { grid-template-columns: repeat(2, 1fr); }
+    .zone-grid { grid-template-columns: 1fr; }
+    .phase-head { flex-direction: column; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Tidy<span>Nook</span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+  <div class="article-hero">
+    <p class="hero-tag">Cabinet-Free Kitchen Blueprint</p>
+    <h1>No upper cabinets?<br>Make it a feature.</h1>
+    <p class="lede">A studio or older rental kitchen with zero closed storage doesn't have to look chaotic. With the right zones and mounting tricks, an open kitchen can feel more breathable than a cabinet-packed one — without a single hole your landlord would notice.</p>
+    <div class="shelves"><span></span><span></span><span></span></div>
+  </div>
+
+  <section class="phase">
+    <div class="phase-head"><h2>Set your work zones first</h2></div>
+    <p class="phase-sub">Without cabinets to hide things behind, everything needs a designated spot. Split the kitchen into four zones before you buy a single organizer.</p>
+    <div class="zone-grid">
+      <div class="zone">
+        <p class="tag">PREP ZONE</p>
+        <h3>Near the counter</h3>
+        <p class="desc">Knives, cutting boards, and mixing bowls stay clustered right where you prep.</p>
+      </div>
+      <div class="zone">
+        <p class="tag">COOK ZONE</p>
+        <h3>Next to the stove</h3>
+        <p class="desc">Oils, spatulas, and the pans you reach for most live within arm's length of the burner.</p>
+      </div>
+      <div class="zone">
+        <p class="tag">WASH ZONE</p>
+        <h3>Around the sink</h3>
+        <p class="desc">Dish soap, sponges, and a drying rack stay anchored to one spot instead of drifting.</p>
+      </div>
+      <div class="zone">
+        <p class="tag">PANTRY ZONE</p>
+        <h3>Open shelving or a cart</h3>
+        <p class="desc">Dry goods, snacks, and baking essentials grouped together on whatever shelving you've added.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="article-index">
+    <a href="#phase2"><span class="num">01</span>Zero-drill wall storage</a>
+    <a href="#phase3"><span class="num">02</span>Mobile furniture</a>
+    <a href="#phase4"><span class="num">03</span>Open-shelf styling</a>
+    <a href="#plan"><span class="num">04</span>Quick action plan</a>
+  </div>
+
+  <section class="phase" id="phase2">
+    <div class="phase-head"><h2>Zero-drill wall storage</h2></div>
+    <p class="phase-sub">With no cabinets, your walls carry the load. Tension and adhesive systems do the job without a single drywall anchor.</p>
+
+    <div class="article-item">
+      <h3>Tension rod &amp; S-hook rail</h3>
+      <p>Mount a tension rod or a high-strength adhesive rail under the counter overhang or along an empty stretch of backsplash. Hang pans, mugs, and utensils from S-hooks so they clear the counter entirely.</p>
+    </div>
+    <div class="article-item">
+      <h3>A pegboard accent wall</h3>
+      <p>Put up a wooden or metal pegboard with heavy-duty adhesive strips or renter-safe anchors. Shelves, baskets, and hooks can move around it as your kitchen collection changes.</p>
+    </div>
+    <div class="article-item">
+      <h3>A magnetic knife strip</h3>
+      <p>A stainless steel magnetic bar clears out the utensil drawer — it holds knives, metal scissors, measuring spoons, and small spice tins just as well.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase3">
+    <div class="phase-head"><h2>Mobile furniture &amp; freestanding storage</h2></div>
+    <p class="phase-sub">When the kitchen has no built-in storage, bring your own — on wheels, so it can move when you need the floor back.</p>
+
+    <div class="article-item">
+      <h3>A rolling cart as your island</h3>
+      <p>A 3-tier metal or wooden cart with locking wheels can double as a prep station or coffee bar on top, plates and bowls on the middle shelf, and pots or bulk items below.</p>
+    </div>
+    <div class="article-item">
+      <h3>A freestanding baker's rack</h3>
+      <p>A tall, narrow rack adds several tiers of vertical storage. Keep loose packets and snacks in matching baskets on the upper shelves, and stack everyday dinnerware neatly below.</p>
+    </div>
+    <div class="article-item">
+      <h3>A microwave cart with a cabinet base</h3>
+      <p>If you want at least one place to close a door on clutter, a compact rolling cart with a lower cabinet enclosure gives you that without any real cabinetry.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase4">
+    <div class="phase-head"><h2>Open-shelf styling</h2></div>
+    <p class="phase-sub">Open storage looks chaotic fast if it isn't styled with intention. A few rules keep it looking curated instead.</p>
+
+    <div class="article-item">
+      <h3>Keep containers uniform</h3>
+      <p>Move flour, sugar, and pasta into matching clear square containers with consistent labels. Visual repetition reads as order, even when the shelf is full.</p>
+    </div>
+    <div class="article-item">
+      <h3>Pick one dinnerware palette</h3>
+      <p>If your plates and bowls are visible, keep them in one family — all white, matte black, or earth tones. That turns everyday dishes into part of the decor rather than clutter.</p>
+    </div>
+    <div class="article-item">
+      <h3>Tuck away the ugly essentials</h3>
+      <p>Dish soap bottles, sponges, and cleaning supplies go in a small under-sink caddy or a basin on the rolling cart, out of the main sightline.</p>
+    </div>
+  </section>
+
+  <div class="checklist" id="plan">
+    <h2>Quick action plan</h2>
+    <ul>
+      <li><strong>Reclaim under-sink space.</strong> Stackable pull-out drawers make up for the cabinet storage you don't have.</li>
+      <li><strong>Use the fridge door.</strong> A magnetic organizer there can hold spices, foil, and paper towels without taking up any other surface.</li>
+      <li><strong>Purge on a "one in, two out" rule.</strong> With everything on display, only what you actually use earns a spot.</li>
+    </ul>
+  </div>
+
+  <p class="closing">Once the zones are set and the walls are doing their share of the work, an open kitchen stops feeling like a limitation — it just becomes the layout you chose.</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copy">© 2026 TidyNook. All rights reserved.</p>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

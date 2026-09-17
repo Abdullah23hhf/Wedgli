@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Renter's Storage Blueprint — TidyNook</title>
+<meta name="description" content="A room-by-room plan for making a small rental feel spacious — using tension, adhesive, and gravity instead of drills.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- Article-specific additions on top of the shared site stylesheet ---- */
+
+  .article-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .article-hero .hero-tag {
+    color: var(--sage);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .article-hero h1 {
+    max-width: 780px;
+  }
+  .article-hero p.lede {
+    max-width: 62ch;
+    margin-top: 8px;
+  }
+  .shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 0;
+    max-width: 220px;
+  }
+  .shelves span {
+    height: 3px;
+    background: var(--rust);
+    border-radius: 2px;
+  }
+  .shelves span:nth-child(1) { width: 100%; opacity: 1; }
+  .shelves span:nth-child(2) { width: 72%; opacity: 0.7; }
+  .shelves span:nth-child(3) { width: 45%; opacity: 0.45; }
+
+  .article-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+  .article-index a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    transition: border-color 0.15s ease;
+  }
+  .article-index a:hover { border-color: var(--rust); color: var(--ink); }
+  .article-index .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--rust);
+    margin-bottom: 4px;
+  }
+
+  section.phase {
+    margin-bottom: 56px;
+    scroll-margin-top: 90px;
+  }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rust);
+    padding-left: 16px;
+  }
+  .phase-head h2 { margin: 0; }
+  .phase-sub {
+    padding-left: 19px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 58ch;
+    margin: 0 0 26px;
+  }
+
+  .article-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .article-item h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .article-item p { margin: 0; }
+
+  .room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  .room-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--sage-deep);
+    letter-spacing: 0.03em;
+    margin: 0 0 10px;
+  }
+
+  .checklist {
+    background: var(--tan);
+    border-radius: 8px;
+    padding: 32px 28px;
+    margin-top: 44px;
+  }
+  .checklist h2 { font-size: 22px; margin: 0 0 18px; }
+  .checklist ul { list-style: none; margin: 0; padding: 0; }
+  .checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+  .checklist strong { color: var(--sage-deep); }
+
+  .closing {
+    margin-top: 44px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 760px) {
+    .article-index { grid-template-columns: repeat(2, 1fr); }
+    .phase-head { flex-direction: column; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Tidy<span>Nook</span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+  <div class="article-hero">
+    <p class="hero-tag">Renter's Storage Blueprint</p>
+    <h1>Maximize every inch,<br>keep your deposit.</h1>
+    <p class="lede">A room-by-room plan for making a small rental feel spacious — using tension, adhesive, and gravity instead of drills, so nothing here costs you a security deposit.</p>
+    <div class="shelves"><span></span><span></span><span></span></div>
+  </div>
+
+  <div class="article-index">
+    <a href="#phase1"><span class="num">01</span>Vertical &amp; dead space</a>
+    <a href="#phase2"><span class="num">02</span>Double-duty furniture</a>
+    <a href="#phase3"><span class="num">03</span>Room-by-room plan</a>
+    <a href="#phase4"><span class="num">04</span>Visual illusions</a>
+  </div>
+
+  <section class="phase" id="phase1">
+    <div class="phase-head"><h2>Vertical &amp; dead space</h2></div>
+    <p class="phase-sub">When floor space runs out, the ceiling and the backs of doors become your best real estate. Most renters never touch either.</p>
+
+    <div class="article-item">
+      <h3>Over-the-door anchor stations</h3>
+      <p>Standard over-the-door racks tend to rattle and mark up the frame. Use felt-backed hooks or an adjustable canvas organizer, and stabilize it with a strip of command-style adhesive so it doesn't swing. Good for pantry overflow in the kitchen, hair tools in the bathroom, or accessories in the bedroom.</p>
+    </div>
+    <div class="article-item">
+      <h3>Tension rod multipliers</h3>
+      <p>Wedge a spring tension rod vertically inside a deep closet to divide it into slots for purses, trays, or cutting boards. Placed horizontally under the sink, a rod lets you hang spray bottles by their triggers — instantly freeing the floor of the cabinet below.</p>
+    </div>
+    <div class="article-item">
+      <h3>Floating ledges, no drywall anchors</h3>
+      <p>Heavy shelving needs real anchors, but a lightweight picture ledge mounted with a high-strength hook-and-loop strip or a damage-free adhesive system can still hold books, a small plant, or whatever you reach for daily.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase2">
+    <div class="phase-head"><h2>Double-duty furniture</h2></div>
+    <p class="phase-sub">In a small apartment, a piece of furniture that only does one job is wasting square footage. Everything should earn its keep twice over.</p>
+
+    <div class="article-item">
+      <h3>Storage ottomans as multipurpose hubs</h3>
+      <p>A long storage bench at the foot of the bed, or two cube ottomans doubling as a coffee table, give you seating, a surface for trays, and enough hidden capacity for off-season clothing, spare bedding, or board games.</p>
+    </div>
+    <div class="article-item">
+      <h3>Bed risers to unlock the space underneath</h3>
+      <p>Most bed frames sit lower than they need to. Risers can lift the frame 6–8 inches, opening up real under-bed clearance — enough for low, wheeled storage drawers that roll smoothly over carpet or hardwood, instead of bins you have to drag out.</p>
+    </div>
+    <div class="article-item">
+      <h3>C-tables and nesting surfaces</h3>
+      <p>A bulky coffee table overwhelms a tight living room. A metal or acrylic C-table slides over the arm of the sofa for laptop or drink space without taking any floor, and nesting side tables tuck inside one another when you need the room back.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase3">
+    <div class="phase-head"><h2>Room-by-room plan</h2></div>
+    <p class="phase-sub">The same principles applied to the three rooms where clutter piles up fastest.</p>
+
+    <div class="room-grid">
+      <div>
+        <p class="room-label">KITCHEN &amp; PANTRY</p>
+        <div class="article-item">
+          <h3>Cabinet door grid panels</h3>
+          <p>Mount a wire grid on the inside of a cabinet door with over-the-bracket hooks, and hang measuring cups, spice racks, or pot lids there instead of on the shelf itself.</p>
+        </div>
+        <div class="article-item">
+          <h3>Clear, uniform containers</h3>
+          <p>Move dry goods into matching square acrylic containers. Square edges sit flush against each other on a shelf, so you lose less space to gaps than you would with round jars.</p>
+        </div>
+      </div>
+
+      <div>
+        <p class="room-label">BATHROOM</p>
+        <div class="article-item">
+          <h3>Tension-pole shower caddy</h3>
+          <p>Skip anything that needs screws. A floor-to-ceiling tension pole caddy wedges into a corner of the shower and holds securely on its own.</p>
+        </div>
+        <div class="article-item">
+          <h3>A slim rolling cart</h3>
+          <p>If the vanity has no drawers, a narrow 3-tier rolling cart fits into the gap beside the toilet and holds toiletries, spare toilet paper, and cleaning supplies.</p>
+        </div>
+      </div>
+
+      <div>
+        <p class="room-label">WARDROBE &amp; ENTRYWAY</p>
+        <div class="article-item">
+          <h3>Cascading hangers</h3>
+          <p>Hook cascade hangers vertically down the closet rod to multiply how many garments fit in the same width of rail.</p>
+        </div>
+        <div class="article-item">
+          <h3>A magnetic strip by the door</h3>
+          <p>A heavy-duty magnetic bar mounted near the entry catches keys and sunglasses on the way in, before they end up on a counter.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="phase" id="phase4">
+    <div class="phase-head"><h2>Visual illusions that matter</h2></div>
+    <p class="phase-sub">Storage isn't only physical. A cluttered-looking room feels smaller than it is, even when the clutter is organized.</p>
+
+    <div class="article-item">
+      <h3>Match your bins to the background</h3>
+      <p>Keep visible bins and baskets close to the color of your walls or furniture. When storage doesn't contrast with its surroundings, it tends to fade out of view instead of announcing itself.</p>
+    </div>
+    <div class="article-item">
+      <h3>Let light pass through</h3>
+      <p>Clear acrylic organizers for makeup or desk supplies carry almost no visual weight, since light passes straight through them — which keeps a small room feeling open rather than boxed in.</p>
+    </div>
+  </section>
+
+  <div class="checklist">
+    <h2>Before you buy anything</h2>
+    <ul>
+      <li><strong>Reversible over permanent.</strong> Tension, adhesive, or gravity — never drywall anchors or screws you can't patch invisibly.</li>
+      <li><strong>One in, two out.</strong> Audit clothes and kitchen gadgets regularly so what you own stays matched to what fits.</li>
+      <li><strong>Go up before you go out.</strong> Walls and doors are usually the only untapped square footage left in the room.</li>
+    </ul>
+  </div>
+
+  <p class="closing">None of this requires a renovation budget or your landlord's permission. Applied a room at a time, it's enough to make a small rental feel considered rather than cramped.</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copy">© 2026 TidyNook. All rights reserved.</p>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
