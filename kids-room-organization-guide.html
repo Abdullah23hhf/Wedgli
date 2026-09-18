@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Small Kids' Room Organization Blueprint — TidyNook</title>
+<meta name="description" content="Smart storage solutions for organizing a kids' room with limited space — vertical wall storage, double-duty furniture, and toy rotation systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- Article-specific additions on top of the shared site stylesheet ---- */
+
+  .article-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .article-hero .hero-tag {
+    color: var(--sage);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .article-hero h1 { max-width: 780px; }
+  .article-hero p.lede { max-width: 62ch; margin-top: 8px; }
+
+  .shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 0;
+    max-width: 220px;
+  }
+  .shelves span {
+    height: 3px;
+    background: var(--rust);
+    border-radius: 2px;
+  }
+  .shelves span:nth-child(1) { width: 100%; opacity: 1; }
+  .shelves span:nth-child(2) { width: 72%; opacity: 0.7; }
+  .shelves span:nth-child(3) { width: 45%; opacity: 0.45; }
+
+  .article-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+  .article-index a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    transition: border-color 0.15s ease;
+  }
+  .article-index a:hover { border-color: var(--rust); color: var(--ink); }
+  .article-index .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--rust);
+    margin-bottom: 4px;
+  }
+
+  section.phase {
+    margin-bottom: 56px;
+    scroll-margin-top: 90px;
+  }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rust);
+    padding-left: 16px;
+  }
+  .phase-head h2 { margin: 0; }
+  .phase-sub {
+    padding-left: 19px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 58ch;
+    margin: 0 0 26px;
+  }
+
+  .article-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .article-item h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .article-item p { margin: 0; }
+
+  .checklist {
+    background: var(--tan);
+    border-radius: 8px;
+    padding: 32px 28px;
+    margin-top: 44px;
+  }
+  .checklist h2 { font-size: 22px; margin: 0 0 18px; }
+  .checklist ul { list-style: none; margin: 0; padding: 0; }
+  .checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+  .checklist strong { color: var(--sage-deep); }
+
+  @media (max-width: 760px) {
+    .article-index { grid-template-columns: repeat(2, 1fr); }
+    .phase-head { flex-direction: column; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Tidy<span>Nook</span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+  <div class="article-hero">
+    <p class="hero-tag">Kids' Room Organization</p>
+    <h1>A small room,<br>a kid's whole world.</h1>
+    <p class="lede">Organizing a children's bedroom on limited square footage can feel like a constant battle against plastic toys, overflowing bins, and rapidly expanding wardrobes. Kids accumulate an immense amount of gear in a very small footprint.</p>
+    <div class="shelves"><span></span><span></span><span></span></div>
+  </div>
+
+  <p style="max-width: 62ch; color: var(--ink-soft); margin-bottom: 48px;">For parents and renters alike, the goal is a functional, durable, and playful space that maximizes storage without permanent built-ins or structural renovations.</p>
+
+  <div class="article-index">
+    <a href="#phase1"><span class="num">01</span>Vertical &amp; wall real estate</a>
+    <a href="#phase2"><span class="num">02</span>Double-duty furniture</a>
+    <a href="#phase3"><span class="num">03</span>Toy &amp; clothing management</a>
+    <a href="#phase4"><span class="num">04</span>Habits that stick</a>
+  </div>
+
+  <section class="phase" id="phase1">
+    <div class="phase-head"><h2>Maximizing vertical space and wall real estate</h2></div>
+    <p class="phase-sub">When floor space is claimed by beds, desks, and play areas, walls become the most powerful storage tool left. Taking storage vertical lifts clutter off the floor and keeps rooms safer to navigate.</p>
+
+    <div class="article-item">
+      <h3>Floating wall bookshelves vs. bulky bookcases</h3>
+      <p>Traditional freestanding bookcases eat up floor depth. Shallow wooden picture ledges or floating book rails mounted at a child's height save space, and displaying covers outward encourages kids to read more often.</p>
+    </div>
+    <div class="article-item">
+      <h3>Hanging toy hammocks and wall nets</h3>
+      <p>Stuffed animals are notoriously hard to contain in a toy chest. A stretchy mesh hammock in an upper corner, or a vertical canvas multi-pocket organizer on the wall, swallows plush toys and dolls effortlessly.</p>
+    </div>
+    <div class="article-item">
+      <h3>Heavy-duty pegboard activity stations</h3>
+      <p>A wooden or metal pegboard mounted with renter-safe anchors, fitted with small baskets, hooks, and shelves, holds dress-up clothes, art supplies, backpacks, and jump ropes — a customizable wall that grows with your child.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase2">
+    <div class="phase-head"><h2>Double-duty furniture and smart sleeping layouts</h2></div>
+    <p class="phase-sub">In a small children's room, every piece of furniture needs to earn its keep through hidden compartments or multi-functional use.</p>
+
+    <div class="article-item">
+      <h3>Loft beds and built-in under-bed storage</h3>
+      <p>If ceiling height allows, a loft bed frees up the whole footprint underneath for a reading nook, desk, or play tent. If a low bed is necessary, a platform bed with built-in pull-out drawers or rolling bins does similar work.</p>
+    </div>
+    <div class="article-item">
+      <h3>Storage benches as seating and toy chests</h3>
+      <p>A sturdy upholstered storage bench at the foot of the bed or beneath a window gives kids a place to sit while putting on shoes, and a hiding spot for board games, pillows, and extra blankets.</p>
+    </div>
+    <div class="article-item">
+      <h3>Nesting desks and fold-down tables</h3>
+      <p>For school-aged kids, a fold-down wall desk or a small writing desk with built-in cubbies keeps a study area contained. Once homework's done, push the chair flush underneath to keep walking paths open.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase3">
+    <div class="phase-head"><h2>Categorized toy and clothing management</h2></div>
+    <p class="phase-sub">Toy clutter multiplies rapidly without an intuitive categorization system. The secret to a lasting-tidy kids' room is making clean-up as easy as playing.</p>
+
+    <div class="article-item">
+      <h3>Picture and word label bins</h3>
+      <p>Kids often struggle to remember where things go. Bins labeled with both clear text and picture icons — Lego bricks, action figures, craft supplies — let children sort and clean up independently.</p>
+    </div>
+    <div class="article-item">
+      <h3>The "rotation" toy system</h3>
+      <p>Leaving every toy out at once leads to overwhelm. Split toys into three totes: keep one out in the bedroom, stash the other two in a hallway closet or garage, and rotate every few weeks to keep kids engaged and clutter down.</p>
+    </div>
+    <div class="article-item">
+      <h3>Vertical closet cascades for kids' clothes</h3>
+      <p>Kids' closets often have a single high rod that wastes the space underneath. A secondary lower tension rod or cascade hooks double the hanging capacity, keeping small clothes at a level kids can reach themselves.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase4">
+    <div class="phase-head"><h2>Space-expanding habits that stick</h2></div>
+    <p class="phase-sub">Keeping a kids' room organized comes down to simple, repeatable habits that turn tidying into routine rather than a chore.</p>
+
+    <div class="article-item">
+      <h3>The 5-minute evening reset</h3>
+      <p>A quick, fun 5-minute cleanup routine built into bedtime — all toys back into their bins before lights out — keeps the room from resetting to chaos overnight.</p>
+    </div>
+    <div class="article-item">
+      <h3>Lightweight, washable storage materials</h3>
+      <p>Avoid heavy, rigid wooden toy boxes that can pinch little fingers. Lightweight canvas bins with flexible handles let kids drag, pull out, and toss toys back in without help.</p>
+    </div>
+    <div class="article-item">
+      <h3>The "one-in, one-out" birthday rule</h3>
+      <p>Before birthdays and holidays bring new toys, sort through older games, puzzles, and clothes with your child to donate what they've outgrown, keeping the room's inventory balanced.</p>
+    </div>
+  </section>
+
+  <div class="checklist">
+    <h2>Quick action plan</h2>
+    <ul>
+      <li><strong>Go vertical first.</strong> Wall storage clears the floor before a single new bin comes in.</li>
+      <li><strong>Label for the child, not just the parent.</strong> Picture labels let kids clean up on their own.</li>
+      <li><strong>Build the habit, not just the system.</strong> A 5-minute nightly reset does more than any bin ever will.</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copy">© 2026 TidyNook. All rights reserved.</p>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

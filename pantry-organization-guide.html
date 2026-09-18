@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Small Kitchen Pantry Organization Blueprint — TidyNook</title>
+<meta name="description" content="Pantry organization ideas for small kitchens — shelf risers, decanting for spatial efficiency, and using door backs and vertical gaps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- Article-specific additions on top of the shared site stylesheet ---- */
+
+  .article-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .article-hero .hero-tag {
+    color: var(--sage);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .article-hero h1 { max-width: 780px; }
+  .article-hero p.lede { max-width: 62ch; margin-top: 8px; }
+
+  .shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 0;
+    max-width: 220px;
+  }
+  .shelves span {
+    height: 3px;
+    background: var(--rust);
+    border-radius: 2px;
+  }
+  .shelves span:nth-child(1) { width: 100%; opacity: 1; }
+  .shelves span:nth-child(2) { width: 72%; opacity: 0.7; }
+  .shelves span:nth-child(3) { width: 45%; opacity: 0.45; }
+
+  .article-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+  .article-index a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    transition: border-color 0.15s ease;
+  }
+  .article-index a:hover { border-color: var(--rust); color: var(--ink); }
+  .article-index .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--rust);
+    margin-bottom: 4px;
+  }
+
+  section.phase {
+    margin-bottom: 56px;
+    scroll-margin-top: 90px;
+  }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rust);
+    padding-left: 16px;
+  }
+  .phase-head h2 { margin: 0; }
+  .phase-sub {
+    padding-left: 19px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 58ch;
+    margin: 0 0 26px;
+  }
+
+  .article-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .article-item h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .article-item p { margin: 0; }
+
+  .checklist {
+    background: var(--tan);
+    border-radius: 8px;
+    padding: 32px 28px;
+    margin-top: 44px;
+  }
+  .checklist h2 { font-size: 22px; margin: 0 0 18px; }
+  .checklist ul { list-style: none; margin: 0; padding: 0; }
+  .checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+  .checklist strong { color: var(--sage-deep); }
+
+  @media (max-width: 760px) {
+    .article-index { grid-template-columns: repeat(2, 1fr); }
+    .phase-head { flex-direction: column; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Tidy<span>Nook</span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+  <div class="article-hero">
+    <p class="hero-tag">Small Kitchen Pantry Blueprint</p>
+    <h1>No walk-in pantry?<br>Every inch still counts.</h1>
+    <p class="lede">Living in a compact apartment or a home with a small kitchen often means working with a narrow floor-to-ceiling cabinet, a single deep shelf, or a few bare cupboards. When space is limited, food gets pushed to the back, forgotten, and left to expire.</p>
+    <div class="shelves"><span></span><span></span><span></span></div>
+  </div>
+
+  <p style="max-width: 62ch; color: var(--ink-soft); margin-bottom: 48px;">Turning a cramped or non-existent pantry into a high-capacity, efficient food storage station comes down to smart containerization, vertical multiplication, and a strategic layout.</p>
+
+  <div class="article-index">
+    <a href="#phase1"><span class="num">01</span>Deep shelves &amp; risers</a>
+    <a href="#phase2"><span class="num">02</span>Decanting for efficiency</a>
+    <a href="#phase3"><span class="num">03</span>Door backs &amp; vertical gaps</a>
+    <a href="#phase4"><span class="num">04</span>Inventory maintenance</a>
+  </div>
+
+  <section class="phase" id="phase1">
+    <div class="phase-head"><h2>Maximizing deep shelves with risers and lazy susans</h2></div>
+    <p class="phase-sub">If your cabinets or pantry shelves run deep, items get lost in the dark abyss at the back. Traditional stacking leads to knocked-over jars and expired cans.</p>
+
+    <div class="article-item">
+      <h3>Multi-tiered shelf risers</h3>
+      <p>Step-shelf risers let you place cans, spice jars, and small condiment bottles on ascending levels, so every item stays visible and within arm's reach — no more accidental double-buying.</p>
+    </div>
+    <div class="article-item">
+      <h3>Clear rotating lazy susans</h3>
+      <p>A 360-degree clear lazy susan in a deep corner cabinet or upper shelf lets you spin to grab oils, vinegars, sauces, or baking extracts without unpacking half the shelf.</p>
+    </div>
+    <div class="article-item">
+      <h3>Pull-out under-shelf baskets</h3>
+      <p>Wire pull-out drawers slid underneath existing shelves capture the dead air space hanging beneath each level, roughly doubling functional storage capacity.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase2">
+    <div class="phase-head"><h2>Decanting for maximum spatial efficiency</h2></div>
+    <p class="phase-sub">Round containers, bulky cereal boxes, and irregular chip bags waste valuable millimeter gaps on narrow shelves.</p>
+
+    <div class="article-item">
+      <h3>Square and rectangular acrylic canisters</h3>
+      <p>Flour, sugar, pasta, rice, and oats stored in uniform, clear square containers fit flush against one another with zero wasted gaps — noticeably more efficient than round packaging.</p>
+    </div>
+    <div class="article-item">
+      <h3>Airtight cereal and snack dispensers</h3>
+      <p>Flimsy cardboard boxes attract pantry pests and take up awkward widths. Slim, airtight plastic dispensers line up neatly side by side, keeping dry goods fresh and visible.</p>
+    </div>
+    <div class="article-item">
+      <h3>Consistent water-resistant labeling</h3>
+      <p>Label every decanted container with clear, bold fonts. Knowing exactly what's inside — and when it was opened — stops second-guessing your inventory mid meal-prep.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase3">
+    <div class="phase-head"><h2>Unleashing door backs and vertical gaps</h2></div>
+    <p class="phase-sub">When cabinet depth is maxed out, the pantry door and vertical wall clearances are the greatest untapped storage left.</p>
+
+    <div class="article-item">
+      <h3>Over-the-door wire spice racks</h3>
+      <p>A heavy-duty wire spice rack mounted to the inside of the pantry or cabinet door frees up shelf depth for larger boxes and bags, while keeping dozens of spices organized alphabetically.</p>
+    </div>
+    <div class="article-item">
+      <h3>Adhesive hooks for lightweight accessories</h3>
+      <p>Mesh produce bags, aprons, measuring cup sets, and oven mitts hang neatly on adhesive hooks mounted to the inside walls of the pantry cupboard.</p>
+    </div>
+    <div class="article-item">
+      <h3>Stackable bins for loose snacks</h3>
+      <p>Corral unruly snack bars, fruit pouches, and loose tea packets into clear, open-top bins grouped by category — clear sides let you check inventory before a grocery run.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase4">
+    <div class="phase-head"><h2>Psychological organization and inventory maintenance</h2></div>
+    <p class="phase-sub">An organized pantry falls apart without a disciplined restocking routine.</p>
+
+    <div class="article-item">
+      <h3>The "first-in, first-out" rule</h3>
+      <p>When unpacking new groceries, place older items toward the front and slide new purchases to the back. This one habit drastically cuts down on food waste.</p>
+    </div>
+    <div class="article-item">
+      <h3>Zone-based grouping</h3>
+      <p>Dedicate the prime eye-level shelf to daily essentials — grains, cooking oils, snacks. Upper shelves go to rarely used baking supplies or fine glassware, lower shelves to heavy bulk items like drinks and canned goods.</p>
+    </div>
+    <div class="article-item">
+      <h3>The quarterly expiry purge</h3>
+      <p>Every three months, pull everything out to wipe down shelves and check expiration dates on canned goods and spices, keeping food storage clean and current.</p>
+    </div>
+  </section>
+
+  <div class="checklist">
+    <h2>Quick action plan</h2>
+    <ul>
+      <li><strong>Decant before you organize.</strong> Uniform containers make every subsequent step easier.</li>
+      <li><strong>Zone by frequency.</strong> Daily essentials at eye level, rare items up top, bulk items down low.</li>
+      <li><strong>Purge on a schedule.</strong> A quarterly check keeps expired items from quietly piling up.</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copy">© 2026 TidyNook. All rights reserved.</p>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Space-Saving Studio Furniture Blueprint — TidyNook</title>
+<meta name="description" content="Smart, renter-friendly furniture layouts for studio apartments — multi-purpose beds, fold-away tables, vertical zoning, and space-expanding design tricks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- Article-specific additions on top of the shared site stylesheet ---- */
+
+  .article-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .article-hero .hero-tag {
+    color: var(--sage);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .article-hero h1 { max-width: 780px; }
+  .article-hero p.lede { max-width: 62ch; margin-top: 8px; }
+
+  .shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 0;
+    max-width: 220px;
+  }
+  .shelves span {
+    height: 3px;
+    background: var(--rust);
+    border-radius: 2px;
+  }
+  .shelves span:nth-child(1) { width: 100%; opacity: 1; }
+  .shelves span:nth-child(2) { width: 72%; opacity: 0.7; }
+  .shelves span:nth-child(3) { width: 45%; opacity: 0.45; }
+
+  .article-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+  .article-index a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    transition: border-color 0.15s ease;
+  }
+  .article-index a:hover { border-color: var(--rust); color: var(--ink); }
+  .article-index .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--rust);
+    margin-bottom: 4px;
+  }
+
+  section.phase {
+    margin-bottom: 56px;
+    scroll-margin-top: 90px;
+  }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rust);
+    padding-left: 16px;
+  }
+  .phase-head h2 { margin: 0; }
+  .phase-sub {
+    padding-left: 19px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 58ch;
+    margin: 0 0 26px;
+  }
+
+  .article-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .article-item h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .article-item p { margin: 0; }
+
+  .checklist {
+    background: var(--tan);
+    border-radius: 8px;
+    padding: 32px 28px;
+    margin-top: 44px;
+  }
+  .checklist h2 { font-size: 22px; margin: 0 0 18px; }
+  .checklist ul { list-style: none; margin: 0; padding: 0; }
+  .checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+  .checklist strong { color: var(--sage-deep); }
+
+  @media (max-width: 760px) {
+    .article-index { grid-template-columns: repeat(2, 1fr); }
+    .phase-head { flex-direction: column; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Tidy<span>Nook</span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+  <div class="article-hero">
+    <p class="hero-tag">Space-Saving Studio Furniture</p>
+    <h1>Four walls, three rooms —<br>furniture that pulls double duty.</h1>
+    <p class="lede">Living in a compact urban studio forces you to master a single harsh reality: square footage comes at a premium. When your bedroom, living room, and dining room occupy the same four walls, traditional oversized furniture simply doesn't work.</p>
+    <div class="shelves"><span></span><span></span><span></span></div>
+  </div>
+
+  <p style="max-width: 62ch; color: var(--ink-soft); margin-bottom: 48px;">For renters, the challenge is even more complex — you need high-utility pieces that multiply your functional living space without permanent installations, drilling into walls, or risking your deposit.</p>
+
+  <div class="article-index">
+    <a href="#phase1"><span class="num">01</span>Dual-purpose sleep &amp; living</a>
+    <a href="#phase2"><span class="num">02</span>Dining &amp; workspace hacks</a>
+    <a href="#phase3"><span class="num">03</span>Vertical &amp; zoning furniture</a>
+    <a href="#phase4"><span class="num">04</span>Space-expanding design</a>
+  </div>
+
+  <section class="phase" id="phase1">
+    <div class="phase-head"><h2>Dual-purpose living room &amp; sleep solutions</h2></div>
+    <p class="phase-sub">In a studio, your bed is often the single largest footprint in the room. If it only serves as a place to sleep, it's wasting valuable daytime real estate.</p>
+
+    <div class="article-item">
+      <h3>Concealed Murphy beds and cabinet beds</h3>
+      <p>Modern freestanding Murphy beds fold up completely flush against the wall into a clean cabinet structure. Unlike older models needing permanent wall anchoring, many contemporary versions use heavy-duty counter-weighted frames that require zero drilling.</p>
+    </div>
+    <div class="article-item">
+      <h3>Modular storage sectionals with lift-up chaises</h3>
+      <p>Swap a bulky sofa for a modular sectional or sleeper sofa with deep storage compartments underneath the chaise lounge — a hidden cavity for out-of-season bedding, spare pillows, and winter gear.</p>
+    </div>
+    <div class="article-item">
+      <h3>Convertible futons and daybeds with trundles</h3>
+      <p>High-end daybeds in performance fabrics double as daytime seating and full-sized sleeping quarters for overnight guests, eliminating the need for a separate guest bedroom.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase2">
+    <div class="phase-head"><h2>Multi-functional dining and workspace hacks</h2></div>
+    <p class="phase-sub">Working from home and dining in a tight footprint requires furniture that expands when needed and shrinks away to nothing when you're done.</p>
+
+    <div class="article-item">
+      <h3>Drop-leaf wall tables and floating desks</h3>
+      <p>Mount a fold-down drop-leaf table or floating desk using heavy-duty renter-safe anchors. Flip the leaf up to work or eat, then fold it flat against the wall to restore your walking path instantly.</p>
+    </div>
+    <div class="article-item">
+      <h3>Nesting coffee and accent tables</h3>
+      <p>Traditional solid wood coffee tables take up permanent floor space. A set of nesting tables slides neatly underneath one another — pull them apart for laptop or charcuterie surface area, tuck them away for yoga or workouts.</p>
+    </div>
+    <div class="article-item">
+      <h3>Extendable console-to-dining tables</h3>
+      <p>These look like a sleek narrow hallway console against your wall, but hidden leaf extensions pull out to seat six to eight guests for a dinner party.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase3">
+    <div class="phase-head"><h2>Vertical storage and zoning furniture</h2></div>
+    <p class="phase-sub">When floor space is exhausted, your furniture has to leverage vertical dimensions and help visually zone your open-plan layout.</p>
+
+    <div class="article-item">
+      <h3>Open-back bookshelf room dividers</h3>
+      <p>In an open-concept studio, creating a psychological boundary between sleeping and living zones matters. A tall, open-back cube bookcase or etagere acts as a privacy screen while offering dual-sided shelving for books and decor.</p>
+    </div>
+    <div class="article-item">
+      <h3>Storage benches at the foot of the bed</h3>
+      <p>A long, upholstered storage bench gives you a spot to sit while putting on shoes, and houses bulky blankets or seasonal clothing inside its hollow interior.</p>
+    </div>
+    <div class="article-item">
+      <h3>Rolling kitchen islands and bar carts</h3>
+      <p>If your studio lacks counter space, a mobile kitchen island on locking caster wheels gives you an active prep station or coffee bar on top, with lower tiers for small appliances and dishware.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase4">
+    <div class="phase-head"><h2>Psychological space-expanding design</h2></div>
+    <p class="phase-sub">Selecting the right space-saving furniture goes beyond physical dimensions — optical illusions play a real role in making micro-apartments feel expansive.</p>
+
+    <div class="article-item">
+      <h3>Transparent acrylic and glass elements</h3>
+      <p>Ghost chairs, acrylic accent tables, or glass-topped dining tables let light pass straight through, generating zero visual weight and keeping sightlines open.</p>
+    </div>
+    <div class="article-item">
+      <h3>Exposed leg furniture</h3>
+      <p>Avoid heavy furniture that sits flat on the floor. Sofas, media consoles, and bed frames with slender, elevated legs let light pass underneath, tricking the eye into perceiving a larger floor area.</p>
+    </div>
+    <div class="article-item">
+      <h3>Reflective mirror surfaces</h3>
+      <p>A mirrored sideboard or media console bounces natural sunlight around the room and doubles the perceived depth of the layout.</p>
+    </div>
+  </section>
+
+  <div class="checklist">
+    <h2>Renter success action plan</h2>
+    <ul>
+      <li><strong>Measure doorways and clearances first.</strong> Check building elevator dimensions and entry clearance before ordering large multi-functional furniture online.</li>
+      <li><strong>Prioritize mobility.</strong> Look for pieces with wheels, lightweight frames, or modular parts so you can rearrange your layout or move it with you between leases.</li>
+      <li><strong>Protect your deposit.</strong> Make sure wall-mounted drop tables or folding desks use lightweight, damage-free hanging systems or hardware that patches easily.</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copy">© 2026 TidyNook. All rights reserved.</p>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

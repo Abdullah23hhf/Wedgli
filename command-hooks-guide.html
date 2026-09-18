@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Zero-Damage Command Hooks Guide — TidyNook</title>
+<meta name="description" content="A renter's guide to command-style adhesive hooks — weight classes, room-by-room picks, and the golden rules for damage-free removal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- Article-specific additions on top of the shared site stylesheet ---- */
+
+  .article-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .article-hero .hero-tag {
+    color: var(--sage);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .article-hero h1 { max-width: 780px; }
+  .article-hero p.lede { max-width: 62ch; margin-top: 8px; }
+
+  .shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 0;
+    max-width: 220px;
+  }
+  .shelves span {
+    height: 3px;
+    background: var(--rust);
+    border-radius: 2px;
+  }
+  .shelves span:nth-child(1) { width: 100%; opacity: 1; }
+  .shelves span:nth-child(2) { width: 72%; opacity: 0.7; }
+  .shelves span:nth-child(3) { width: 45%; opacity: 0.45; }
+
+  .article-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+  .article-index a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    transition: border-color 0.15s ease;
+  }
+  .article-index a:hover { border-color: var(--rust); color: var(--ink); }
+  .article-index .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--rust);
+    margin-bottom: 4px;
+  }
+
+  section.phase {
+    margin-bottom: 56px;
+    scroll-margin-top: 90px;
+  }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rust);
+    padding-left: 16px;
+  }
+  .phase-head h2 { margin: 0; }
+  .phase-sub {
+    padding-left: 19px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 58ch;
+    margin: 0 0 26px;
+  }
+
+  .article-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .article-item h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .article-item p { margin: 0; }
+
+  /* Weight class cards */
+  .weight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  .weight-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px;
+  }
+  .weight-card .cap {
+    font-family: "Fraunces", serif;
+    font-size: 22px;
+    color: var(--rust);
+    margin: 0 0 4px;
+  }
+  .weight-card .label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--sage-deep);
+    letter-spacing: 0.02em;
+    margin: 0 0 10px;
+  }
+  .weight-card p.desc { margin: 0; font-size: 14.5px; color: var(--ink); }
+
+  /* Room sections */
+  .room-block { margin-bottom: 30px; }
+  .room-block h3.room-title {
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--ink);
+    margin: 0 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* Rules list */
+  .rules-list {
+    counter-reset: rule-counter;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .rules-list li {
+    counter-increment: rule-counter;
+    position: relative;
+    padding: 16px 0 16px 44px;
+    border-bottom: 1px solid var(--line);
+  }
+  .rules-list li:last-child { border-bottom: none; }
+  .rules-list li::before {
+    content: counter(rule-counter);
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 28px;
+    height: 28px;
+    background: var(--rust);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .rules-list h3 {
+    font-size: 16.5px;
+    margin: 0 0 6px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--ink);
+  }
+  .rules-list p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+
+  @media (max-width: 760px) {
+    .article-index { grid-template-columns: repeat(1, 1fr); }
+    .weight-grid { grid-template-columns: 1fr; }
+    .phase-head { flex-direction: column; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Tidy<span>Nook</span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+  <div class="article-hero">
+    <p class="hero-tag">Zero-Damage Hanging Guide</p>
+    <h1>Hang anything,<br>keep your deposit.</h1>
+    <p class="lede">For renters, hanging wall decor, mirrors, organizers, and kitchen tools is always a gamble. One misplaced nail can mean deposit deductions or a frustrating drywall patching session right before move-out.</p>
+    <div class="shelves"><span></span><span></span><span></span></div>
+  </div>
+
+  <p style="max-width: 62ch; color: var(--ink-soft); margin-bottom: 48px;">Command-style adhesive hooks eliminate that headache entirely — but not all hooks are created equal. Choosing the wrong weight capacity or strip type can lead to sudden midnight crashes and torn wallpaper. Here's the breakdown for every room, weight class, and hanging challenge.</p>
+
+  <div class="article-index">
+    <a href="#phase1"><span class="num">01</span>Weight classes &amp; strips</a>
+    <a href="#phase2"><span class="num">02</span>Room-by-room picks</a>
+    <a href="#phase3"><span class="num">03</span>Damage-free removal</a>
+  </div>
+
+  <section class="phase" id="phase1">
+    <div class="phase-head"><h2>Understanding adhesive weight classes</h2></div>
+    <p class="phase-sub">Before mounting any hook, matching the hardware to your item's exact weight is critical — overloading an adhesive strip is the number one cause of sudden failure.</p>
+
+    <div class="weight-grid">
+      <div class="weight-card">
+        <p class="cap">1–3 lbs</p>
+        <p class="label">LIGHTWEIGHT</p>
+        <p class="desc">Perfect for calendars, keys, wire kitchen utensils, and small holiday decor. Standard small strips peel off cleanly without stretching.</p>
+      </div>
+      <div class="weight-card">
+        <p class="cap">3–5 lbs</p>
+        <p class="label">MEDIUM-DUTY</p>
+        <p class="desc">Ideal for lightweight picture frames, canvas art, hand towels, and small wreaths. Medium stretch-release strips hold firm under moderate tension.</p>
+      </div>
+      <div class="weight-card">
+        <p class="cap">5–7.5+ lbs</p>
+        <p class="label">HEAVY-DUTY / JUMBO</p>
+        <p class="desc">For heavy winter coats, dense framed mirrors, backpacks, and large kitchen pots. Wide, heavy-duty tabs lock in maximum surface grip.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="phase" id="phase2">
+    <div class="phase-head"><h2>Room-by-room best hook selections</h2></div>
+    <p class="phase-sub">Different rooms bring different challenges — humidity, temperature swings, and heavy daily wear all change which hook actually holds.</p>
+
+    <div class="room-block">
+      <h3 class="room-title">The entryway &amp; hallway — heavy coats &amp; bags</h3>
+      <div class="article-item">
+        <h3>Brushed nickel metal hooks</h3>
+        <p>Metal designer hooks offer an upscale look that blends with home decor, unlike cheap white plastic. Use heavy-duty variants (up to 5 lbs) near the front door for winter coats, backpacks, and dog leashes.</p>
+      </div>
+      <div class="article-item">
+        <h3>Double utility hooks</h3>
+        <p>Two prongs on a single base double your hanging capacity for keys and umbrellas, using only one adhesive mounting zone on the wall.</p>
+      </div>
+    </div>
+
+    <div class="room-block">
+      <h3 class="room-title">The kitchen &amp; pantry — utensils &amp; towels</h3>
+      <div class="article-item">
+        <h3>Quartz designer hooks</h3>
+        <p>Sleek, water-resistant, and visually minimalist, these hold up to 3 lbs and look like a permanent fixture rather than a temporary sticky tab.</p>
+      </div>
+      <div class="article-item">
+        <h3>Wire toggle hooks</h3>
+        <p>A pivoting metal wire loop is ideal for hanging oven mitts, measuring cup sets, and small pots from the side of cabinets or a tile backsplash.</p>
+      </div>
+    </div>
+
+    <div class="room-block">
+      <h3 class="room-title">The bathroom — high humidity zones</h3>
+      <div class="article-item">
+        <h3>Bath towel hooks with water-resistant strips</h3>
+        <p>Standard adhesive strips fail in humid bathrooms because moisture breaks down the glue bond. Look for bath-specific lines with water-resistant strips built to withstand steam, showers, and wet towels up to 5 lbs.</p>
+      </div>
+      <div class="article-item">
+        <h3>Fog-free shower mirrors</h3>
+        <p>For shaving or skincare in a rented shower with no built-in mirror, waterproof adhesive systems lock onto tile or glass without rusting or slipping.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="phase" id="phase3">
+    <div class="phase-head"><h2>The golden rules for damage-free removal</h2></div>
+    <p class="phase-sub">Even the best hooks can peel paint if removed the wrong way. Follow these to get the full deposit back.</p>
+
+    <ul class="rules-list">
+      <li>
+        <h3>Never pull straight out</h3>
+        <p>Yanking a hook straight off the wall tears drywall paper and strips paint. Always grab the exposed plastic tab at the bottom of the strip.</p>
+      </li>
+      <li>
+        <h3>Stretch the strip slowly</h3>
+        <p>Pull the tab straight down slowly, keeping the strip parallel to the wall as you go. It will stretch to nearly twice its length before releasing and snapping clean.</p>
+      </li>
+      <li>
+        <h3>Clean the surface first</h3>
+        <p>Wipe painted drywall or tile with rubbing alcohol and let it dry completely before mounting. Dust, grease, or cleaner residue can cut adhesive strength by up to half.</p>
+      </li>
+      <li>
+        <h3>Wait before loading</h3>
+        <p>Once a hook is pressed to the wall, wait at least a full hour — ideally overnight for heavy-duty items — before hanging anything, so the adhesive cures properly.</p>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copy">© 2026 TidyNook. All rights reserved.</p>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
