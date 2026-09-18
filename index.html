@@ -8,6 +8,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+  .card-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 12px;
+    stroke: var(--sage);
+    fill: none;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+</style>
 </head>
 <body>
 
@@ -46,6 +58,7 @@
     <a class="tab" href="#closets">Closets</a>
     <a class="tab" href="#kitchen">Kitchen</a>
     <a class="tab" href="#bedroom">Bedroom</a>
+    <a class="tab" href="#entryway">Entryway</a>
     <a class="tab" href="#bathroom">Bathroom</a>
     <a class="tab" href="#budget">Budget picks</a>
   </nav>
@@ -54,6 +67,7 @@
     <h2>Closet organization</h2>
     <div class="card-grid">
       <div class="card">
+        <svg class="card-icon" viewBox="0 0 40 40"><path d="M8 12h24M20 12v-4M12 12l-4 22h24l-4-22M16 18v10M24 18v10"/></svg>
         <span class="tag">Closets</span>
         <h3><a href="small-closet-guide.html">A Shallow Closet, Used to Its Limit</a></h3>
         <p>Cascading hangers, a second rod, and vertical shelving tricks that make a cramped reach-in closet hold far more — with zero drilling.</p>
@@ -65,9 +79,16 @@
     <h2>Kitchen &amp; pantry</h2>
     <div class="card-grid">
       <div class="card">
+        <svg class="card-icon" viewBox="0 0 40 40"><rect x="7" y="7" width="26" height="26" rx="2"/><path d="M7 16h26M7 25h26"/></svg>
         <span class="tag">Kitchen</span>
         <h3><a href="cabinet-free-kitchen-guide.html">No Upper Cabinets? Make It a Feature</a></h3>
         <p>A zone-by-zone plan for a cabinet-free rental kitchen, using tension rods, rolling carts, and open-shelf styling instead of built-ins.</p>
+      </div>
+      <div class="card">
+        <svg class="card-icon" viewBox="0 0 40 40"><path d="M11 34V14a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v20"/><path d="M11 22h18M11 28h18"/></svg>
+        <span class="tag">Kitchen</span>
+        <h3><a href="pantry-organization-guide.html">No Walk-In Pantry? Every Inch Still Counts</a></h3>
+        <p>Shelf risers, decanting for spatial efficiency, and using door backs and vertical gaps to double a cramped pantry's real capacity.</p>
       </div>
     </div>
   </section>
@@ -76,9 +97,28 @@
     <h2>Bedroom &amp; small rooms</h2>
     <div class="card-grid">
       <div class="card">
+        <svg class="card-icon" viewBox="0 0 40 40"><path d="M6 30v-9a3 3 0 0 1 3-3h22a3 3 0 0 1 3 3v9"/><path d="M6 30h28M6 24h28M12 18v-3M28 18v-3"/></svg>
         <span class="tag">Bedroom</span>
         <h3><a href="under-bed-storage-guide.html">The Space Under Your Bed Is Prime Real Estate</a></h3>
         <p>Choosing the right container, unlocking extra height with risers, and organizing under-bed storage so it doesn't become a graveyard for forgotten items.</p>
+      </div>
+      <div class="card">
+        <svg class="card-icon" viewBox="0 0 40 40"><rect x="8" y="10" width="24" height="20" rx="2"/><path d="M8 18h24M16 10v8M24 10v8"/></svg>
+        <span class="tag">Bedroom</span>
+        <h3><a href="kids-room-organization-guide.html">A Small Kids' Room That Cleans Itself Up</a></h3>
+        <p>Low-height bins, category zones, and a rotation system that make it possible for kids to actually put their own things away.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="entryway">
+    <h2>Entryway</h2>
+    <div class="card-grid">
+      <div class="card">
+        <svg class="card-icon" viewBox="0 0 40 40"><path d="M14 8h6a3 3 0 0 1 0 6h-6"/><path d="M14 8v24"/></svg>
+        <span class="tag">Entryway</span>
+        <h3><a href="command-hooks-guide.html">Zero-Damage Command Hooks, Done Right</a></h3>
+        <p>Weight limits, wall prep, and placement tricks that make adhesive hooks actually hold — for coats, bags, and everything by the door.</p>
       </div>
     </div>
   </section>
@@ -87,6 +127,7 @@
     <h2>Bathroom</h2>
     <div class="card-grid">
       <div class="card">
+        <svg class="card-icon" viewBox="0 0 40 40"><path d="M8 20h24v6a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6v-6Z"/><path d="M12 20v-9a3 3 0 0 1 5-2"/></svg>
         <span class="tag">Bathroom</span>
         <h3><a href="bathroom-decluttering-guide.html">A Tiny Bathroom, Decluttered for Good</a></h3>
         <p>A total purge, zero-drill vertical storage, and visual tricks to make a small rental bathroom feel twice as large.</p>
@@ -98,9 +139,22 @@
     <h2>Budget picks</h2>
     <div class="card-grid">
       <div class="card">
+        <svg class="card-icon" viewBox="0 0 40 40"><path d="M20 6 6 16v18h28V16L20 6Z"/><path d="M16 34V22h8v12"/></svg>
         <span class="tag">Whole apartment</span>
         <h3><a href="small-apartment-storage-guide.html">Maximize Every Inch, Keep Your Deposit</a></h3>
         <p>A room-by-room plan for making a small rental feel spacious — using tension, adhesive, and gravity instead of drills.</p>
+      </div>
+      <div class="card">
+        <svg class="card-icon" viewBox="0 0 40 40"><path d="M5 18 20 7l15 11v15H5V18Z"/><path d="M13 33V21h14v12"/></svg>
+        <span class="tag">Budget</span>
+        <h3><a href="garage-organization-guide.html">Garage Organization That Doesn't Cost a Renovation</a></h3>
+        <p>Pegboards, stackable bins, and ceiling space put to work — a full garage system built on a real budget.</p>
+      </div>
+      <div class="card">
+        <svg class="card-icon" viewBox="0 0 40 40"><rect x="6" y="16" width="28" height="12" rx="2"/><path d="M8 28v4M32 28v4M6 16v-2a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v2"/></svg>
+        <span class="tag">Budget</span>
+        <h3><a href="studio-furniture-guide.html">Space-Saving Furniture for Studio Apartments</a></h3>
+        <p>Fold-down, stackable, and dual-purpose furniture picks that let one small room work as a bedroom, office, and living room at once.</p>
       </div>
     </div>
   </section>
