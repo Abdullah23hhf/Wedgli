@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Small Home Office Organization Blueprint — TidyNook</title>
+<meta name="description" content="Maximize productivity in a tight home office — vertical wall storage, under-desk multipliers, and paper management that keeps the desk clear.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- Article-specific additions on top of the shared site stylesheet ---- */
+
+  .article-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .article-hero .hero-tag {
+    color: var(--sage);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .article-hero h1 { max-width: 780px; }
+  .article-hero p.lede { max-width: 62ch; margin-top: 8px; }
+
+  .shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 0;
+    max-width: 220px;
+  }
+  .shelves span {
+    height: 3px;
+    background: var(--rust);
+    border-radius: 2px;
+  }
+  .shelves span:nth-child(1) { width: 100%; opacity: 1; }
+  .shelves span:nth-child(2) { width: 72%; opacity: 0.7; }
+  .shelves span:nth-child(3) { width: 45%; opacity: 0.45; }
+
+  .article-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+  .article-index a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    transition: border-color 0.15s ease;
+  }
+  .article-index a:hover { border-color: var(--rust); color: var(--ink); }
+  .article-index .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--rust);
+    margin-bottom: 4px;
+  }
+
+  section.phase {
+    margin-bottom: 56px;
+    scroll-margin-top: 90px;
+  }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rust);
+    padding-left: 16px;
+  }
+  .phase-head h2 { margin: 0; }
+  .phase-sub {
+    padding-left: 19px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 58ch;
+    margin: 0 0 26px;
+  }
+
+  .article-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .article-item h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .article-item p { margin: 0; }
+
+  .checklist {
+    background: var(--tan);
+    border-radius: 8px;
+    padding: 32px 28px;
+    margin-top: 44px;
+  }
+  .checklist h2 { font-size: 22px; margin: 0 0 18px; }
+  .checklist ul { list-style: none; margin: 0; padding: 0; }
+  .checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+  .checklist strong { color: var(--sage-deep); }
+
+  @media (max-width: 760px) {
+    .article-index { grid-template-columns: repeat(2, 1fr); }
+    .phase-head { flex-direction: column; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Tidy<span>Nook</span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+  <div class="article-hero">
+    <p class="hero-tag">Small Home Office Blueprint</p>
+    <h1>A few square feet,<br>a real command center.</h1>
+    <p class="lede">Working from a compact home office, a corner nook, or a shared bedroom space often means battling tangled cords, stray notebooks, and overflowing desktop clutter. When square footage is restricted, physical disorganization quickly becomes mental fatigue.</p>
+    <div class="shelves"><span></span><span></span><span></span></div>
+  </div>
+
+  <p style="max-width: 62ch; color: var(--ink-soft); margin-bottom: 48px;">For renters and urban professionals, the goal is a clean, functional workspace without drilling permanent holes or making structural changes — through strategic cable management, vertical zoning, and smart desktop strategies.</p>
+
+  <div class="article-index">
+    <a href="#phase1"><span class="num">01</span>Vertical desk &amp; wall space</a>
+    <a href="#phase2"><span class="num">02</span>Under-desk &amp; mobile storage</a>
+    <a href="#phase3"><span class="num">03</span>Desktop &amp; paper management</a>
+    <a href="#phase4"><span class="num">04</span>Space-expanding habits</a>
+  </div>
+
+  <section class="phase" id="phase1">
+    <div class="phase-head"><h2>Mastering vertical desk &amp; wall real estate</h2></div>
+    <p class="phase-sub">When desktop surface area is limited to a few square feet, relying on horizontal space alone causes gridlock fast. Your walls and the back of the desk are the most valuable untapped assets.</p>
+
+    <div class="article-item">
+      <h3>Desktop hutch risers and monitor stands</h3>
+      <p>Elevate a monitor onto a sleek wooden or acrylic stand. This creates a dedicated garage underneath to slide the keyboard and mouse away when you're done, instantly freeing up the primary writing surface.</p>
+    </div>
+    <div class="article-item">
+      <h3>Modular wall pegboards for office supplies</h3>
+      <p>A metal or wooden pegboard mounted above the desk with renter-safe anchors or industrial mounting tape holds wire baskets, pen cups, and clipboards — scissors, charging blocks, and notepads all off the desk surface.</p>
+    </div>
+    <div class="article-item">
+      <h3>Floating acrylic shelves</h3>
+      <p>Lightweight acrylic shelves above the desk hold reference books, binders, and plants. Because light passes straight through the material, they carry zero visual weight, keeping a small room looking open.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase2">
+    <div class="phase-head"><h2>Under-desk and mobile storage multipliers</h2></div>
+    <p class="phase-sub">When upper walls are maxed out, look downward — the space beneath and around the desk is usually overlooked.</p>
+
+    <div class="article-item">
+      <h3>Rolling under-desk file cabinets</h3>
+      <p>A compact 2-drawer metal or wooden rolling cabinet slides neatly beneath the desk to house sensitive documents, printer paper, and stationery, and rolls out whenever secondary workspace is needed.</p>
+    </div>
+    <div class="article-item">
+      <h3>Under-desk cable management trays</h3>
+      <p>Tangled cords across the floor create visual chaos and a tripping hazard. A wire mesh raceway or clamping cord clip mounted to the underside of the desk corrals power strips and chargers out of sight.</p>
+    </div>
+    <div class="article-item">
+      <h3>Slim rolling utility carts</h3>
+      <p>If the home office lacks a closet, a narrow 3-tier rolling cart slides into the gap between the desk and the wall — a home for a wireless printer, shredder, or daily project binders.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase3">
+    <div class="phase-head"><h2>Desktop minimalism and paper management</h2></div>
+    <p class="phase-sub">Paper clutter is the silent killer of small office productivity. Without strict boundaries, mail, receipts, and notes swallow the keyboard space.</p>
+
+    <div class="article-item">
+      <h3>The "one-touch" inbox tray system</h3>
+      <p>A sleek three-tier letter tray on the desk, with each tier assigned a strict function — Action Required, Filing, Reference — processed weekly, prevents paper avalanches before they start.</p>
+    </div>
+    <div class="article-item">
+      <h3>Magnetic or cork memo strips</h3>
+      <p>Instead of letting sticky notes cover the monitor bezel, a clean cork strip or magnetic memo bar along the wall pins urgent reminders, business cards, and schedules neatly in one line.</p>
+    </div>
+    <div class="article-item">
+      <h3>Concealed drawer inserts</h3>
+      <p>Shallow acrylic drawer dividers inside desk drawers separate paper clips, flash drives, stamps, and highlighters, keeping small accessories compartmentalized instead of jumbled.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase4">
+    <div class="phase-head"><h2>Psychological space-expanding habits</h2></div>
+    <p class="phase-sub">An organized home office falls apart without a daily closing ritual to reset the environment.</p>
+
+    <div class="article-item">
+      <h3>The 3-minute evening desk reset</h3>
+      <p>A non-negotiable end-of-day habit — pens back in cups, loose papers into the inbox trays, keyboard wiped down. Starting the next morning with a clean desk noticeably boosts focus.</p>
+    </div>
+    <div class="article-item">
+      <h3>Monochromatic storage bins</h3>
+      <p>Keep pen holders, file boxes, and storage bins in a cohesive color family — all-white, matte black, or natural wood tones — to minimize visual noise and keep the look professional.</p>
+    </div>
+  </section>
+
+  <div class="checklist">
+    <h2>Quick action plan</h2>
+    <ul>
+      <li><strong>Clear the desk vertically first.</strong> A monitor riser and a pegboard do more for the surface than any drawer organizer.</li>
+      <li><strong>Give paper a system, not a pile.</strong> Three trays, processed weekly, beats one growing stack.</li>
+      <li><strong>End the day the same way.</strong> A 3-minute reset each evening keeps chaos from compounding.</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copy">© 2026 TidyNook. All rights reserved.</p>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

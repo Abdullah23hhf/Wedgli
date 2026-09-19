@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Small Entryway Organization Blueprint — TidyNook</title>
+<meta name="description" content="Maximize a tiny entryway drop-zone with no mudroom or hallway closet — vertical wall storage, double-duty furniture, and daily reset habits.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- Article-specific additions on top of the shared site stylesheet ---- */
+
+  .article-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .article-hero .hero-tag {
+    color: var(--sage);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .article-hero h1 { max-width: 780px; }
+  .article-hero p.lede { max-width: 62ch; margin-top: 8px; }
+
+  .shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 0;
+    max-width: 220px;
+  }
+  .shelves span {
+    height: 3px;
+    background: var(--rust);
+    border-radius: 2px;
+  }
+  .shelves span:nth-child(1) { width: 100%; opacity: 1; }
+  .shelves span:nth-child(2) { width: 72%; opacity: 0.7; }
+  .shelves span:nth-child(3) { width: 45%; opacity: 0.45; }
+
+  .article-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+  .article-index a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    transition: border-color 0.15s ease;
+  }
+  .article-index a:hover { border-color: var(--rust); color: var(--ink); }
+  .article-index .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--rust);
+    margin-bottom: 4px;
+  }
+
+  section.phase {
+    margin-bottom: 56px;
+    scroll-margin-top: 90px;
+  }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rust);
+    padding-left: 16px;
+  }
+  .phase-head h2 { margin: 0; }
+  .phase-sub {
+    padding-left: 19px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 58ch;
+    margin: 0 0 26px;
+  }
+
+  .article-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .article-item h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .article-item p { margin: 0; }
+
+  .checklist {
+    background: var(--tan);
+    border-radius: 8px;
+    padding: 32px 28px;
+    margin-top: 44px;
+  }
+  .checklist h2 { font-size: 22px; margin: 0 0 18px; }
+  .checklist ul { list-style: none; margin: 0; padding: 0; }
+  .checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+  .checklist strong { color: var(--sage-deep); }
+
+  @media (max-width: 760px) {
+    .article-index { grid-template-columns: repeat(2, 1fr); }
+    .phase-head { flex-direction: column; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Tidy<span>Nook</span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+  <div class="article-hero">
+    <p class="hero-tag">Small Entryway Blueprint</p>
+    <h1>No mudroom?<br>Build a real drop-zone anyway.</h1>
+    <p class="lede">Walking into a small home often means stepping straight into a cramped entryway where shoes pile up, jackets drape over dining chairs, and keys vanish into thin air. Without a dedicated landing zone, clutter overflows into the living room within seconds.</p>
+    <div class="shelves"><span></span><span></span><span></span></div>
+  </div>
+
+  <p style="max-width: 62ch; color: var(--ink-soft); margin-bottom: 48px;">For renters and urban homeowners alike, the challenge is a high-capacity, functional entryway with no traditional mudroom, hallway closet, or built-in coat rack — through vertical multiplication, multi-functional furniture, and renter-safe hardware.</p>
+
+  <div class="article-index">
+    <a href="#phase1"><span class="num">01</span>Vertical wall real estate</a>
+    <a href="#phase2"><span class="num">02</span>Double-duty furniture</a>
+    <a href="#phase3"><span class="num">03</span>Quick-grab accessories</a>
+    <a href="#phase4"><span class="num">04</span>Maintenance habits</a>
+  </div>
+
+  <section class="phase" id="phase1">
+    <div class="phase-head"><h2>Capitalizing on vertical wall real estate</h2></div>
+    <p class="phase-sub">When entryway floor space is limited to a few square feet, looking upward is the only option left. Walls and the back of the front door hold massive untapped storage.</p>
+
+    <div class="article-item">
+      <h3>Heavy-duty wall-mounted coat racks with shelves</h3>
+      <p>A solid wood or metal coat rack with hanging pegs below and a flat display shelf on top handles daily jackets and dog leashes below, with small decorative baskets on the shelf above for outgoing mail and sunglasses.</p>
+    </div>
+    <div class="article-item">
+      <h3>Over-the-door multi-tier shoe racks</h3>
+      <p>Without floor space for a shoe cabinet, a sturdy over-the-door rack on the interior side of the front door — or a nearby closet door — keeps footwear entirely vertical and off the floor.</p>
+    </div>
+    <div class="article-item">
+      <h3>Modular pegboard drop-zones</h3>
+      <p>A customizable pegboard mounted next to the front door with renter-safe anchors, fitted with small shelves, wire baskets, and hooks, creates an adjustable station for keys, wallets, umbrellas, and masks.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase2">
+    <div class="phase-head"><h2>Double-duty entryway furniture</h2></div>
+    <p class="phase-sub">Every piece of furniture in a micro-entryway has to perform multiple jobs to justify its presence in the room.</p>
+
+    <div class="article-item">
+      <h3>Slim storage benches with lift-up lids</h3>
+      <p>A narrow, low-profile upholstered bench against the wall gives a place to sit while pulling on boots, and its cavernous interior swallows bulky scarves, gloves, and seasonal gear out of sight.</p>
+    </div>
+    <div class="article-item">
+      <h3>Vertical narrow shoe cabinets</h3>
+      <p>Traditional shoe shelves stick out too far into narrow hallways. A shallow, tip-out cabinet under 10 inches deep uses pull-down drawers to store multiple tiers of shoes vertically, keeping the walking path clear.</p>
+    </div>
+    <div class="article-item">
+      <h3>Wall-mounted console tables with drawers</h3>
+      <p>When floor space is exceptionally tight, a floating console shelf mounted beneath a mirror becomes a sleek drop zone for keys and mail without stealing a single square inch of floor.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase3">
+    <div class="phase-head"><h2>Quick-grab accessories and minor detail hacks</h2></div>
+    <p class="phase-sub">Small items — keys, loose change, mail — cause the most noticeable visual chaos in an entryway.</p>
+
+    <div class="article-item">
+      <h3>Magnetic key and mail strips</h3>
+      <p>A heavy-duty magnetic strip beside the front door or on the side of a metal bookshelf lets keys, scissors, and metal-clipped clipboards snap on instantly, without a bulky key bowl.</p>
+    </div>
+    <div class="article-item">
+      <h3>Wall-mounted mail sorters</h3>
+      <p>A vertical metal wire or leather file pocket mounted near the entrance keeps incoming junk mail and bills off the kitchen counter entirely.</p>
+    </div>
+    <div class="article-item">
+      <h3>Framed entryway mirrors</h3>
+      <p>A large vertical mirror opposite the front door, or above the console table, bounces natural light through a tight entryway and tricks the eye into perceiving a larger, brighter space.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase4">
+    <div class="phase-head"><h2>Maintenance habits for a clutter-free hallway</h2></div>
+    <p class="phase-sub">Even the best entryway system fails without a daily reset routine.</p>
+
+    <div class="article-item">
+      <h3>The "one-in, one-out" footwear rule</h3>
+      <p>Limit each family member to two active pairs of shoes in the entryway rack at a time. Off-season footwear goes into under-bed bins or bedroom closets instead.</p>
+    </div>
+    <div class="article-item">
+      <h3>Daily 60-second clear-out</h3>
+      <p>A quick evening habit of returning stray items left in the entryway — water bottles, gym bags, mail — back to their rightful rooms keeps the zone from resetting to clutter overnight.</p>
+    </div>
+  </section>
+
+  <div class="checklist">
+    <h2>Quick action plan</h2>
+    <ul>
+      <li><strong>Go vertical before you buy furniture.</strong> A coat rack and pegboard often solve more than a bench alone.</li>
+      <li><strong>Give small items a fixed spot.</strong> Keys and mail need one home, not a rotating counter surface.</li>
+      <li><strong>Reset daily, not weekly.</strong> A 60-second nightly sweep is what actually keeps the entryway clear.</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copy">© 2026 TidyNook. All rights reserved.</p>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
