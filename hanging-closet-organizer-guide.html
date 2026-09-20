@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hanging Closet Organizer: The No-Drill Small Space Fix — Wedgli</title>
+<meta name="description" content="Maximize your small apartment wardrobe without losing your security deposit. Discover how a hanging closet organizer adds instant, damage-free storage.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- Article-specific additions on top of the shared site stylesheet ---- */
+
+  .article-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .article-hero .hero-tag {
+    color: var(--sage);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .article-hero h1 { max-width: 780px; }
+  .article-hero p.lede { max-width: 62ch; margin-top: 8px; }
+
+  .shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 0;
+    max-width: 220px;
+  }
+  .shelves span {
+    height: 3px;
+    background: var(--rust);
+    border-radius: 2px;
+  }
+  .shelves span:nth-child(1) { width: 100%; opacity: 1; }
+  .shelves span:nth-child(2) { width: 72%; opacity: 0.7; }
+  .shelves span:nth-child(3) { width: 45%; opacity: 0.45; }
+
+  .article-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+  .article-index a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    transition: border-color 0.15s ease;
+  }
+  .article-index a:hover { border-color: var(--rust); color: var(--ink); }
+  .article-index .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--rust);
+    margin-bottom: 4px;
+  }
+
+  section.phase {
+    margin-bottom: 56px;
+    scroll-margin-top: 90px;
+  }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rust);
+    padding-left: 16px;
+  }
+  .phase-head h2 { margin: 0; }
+  .phase-sub {
+    padding-left: 19px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 58ch;
+    margin: 0 0 26px;
+  }
+
+  .article-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .article-item h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .article-item p { margin: 0; }
+
+  /* Sub-heading paragraphs (used for closet-type and shelf-level breakdowns) */
+  .sub-block { margin-bottom: 22px; }
+  .sub-block h3 {
+    font-size: 16.5px;
+    margin: 0 0 6px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--ink);
+  }
+  .sub-block p { margin: 0; color: var(--ink-soft); font-size: 15.5px; }
+
+  /* Numbered steps */
+  .steps-list {
+    counter-reset: step-counter;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .steps-list li {
+    counter-increment: step-counter;
+    position: relative;
+    padding: 16px 0 16px 44px;
+    border-bottom: 1px solid var(--line);
+  }
+  .steps-list li:last-child { border-bottom: none; }
+  .steps-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 28px;
+    height: 28px;
+    background: var(--rust);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .steps-list h3 {
+    font-size: 16.5px;
+    margin: 0 0 6px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--ink);
+  }
+  .steps-list p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+  .steps-list ul {
+    margin: 10px 0 0;
+    padding-left: 18px;
+    color: var(--ink-soft);
+    font-size: 15px;
+  }
+  .steps-list ul li {
+    counter-increment: none;
+    padding: 4px 0;
+    border-bottom: none;
+  }
+  .steps-list ul li::before { content: none; }
+
+  /* FAQ accordion-style blocks */
+  .faq-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 12px;
+  }
+  .faq-item h3 {
+    font-size: 16.5px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .faq-item p { margin: 0; color: var(--ink); font-size: 15.5px; }
+
+  .checklist {
+    background: var(--tan);
+    border-radius: 8px;
+    padding: 32px 28px;
+    margin-top: 44px;
+  }
+  .checklist h2 { font-size: 22px; margin: 0 0 18px; }
+  .checklist ul { list-style: none; margin: 0; padding: 0; }
+  .checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+  .checklist strong { color: var(--sage-deep); }
+
+  .closing {
+    margin-top: 44px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+  }
+
+  /* ---- Diagram blocks ---- */
+  .diagram-block {
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 24px 20px;
+    margin: 0 0 24px;
+  }
+  .diagram-block svg { display: block; width: 100%; height: auto; }
+  .diagram-caption {
+    text-align: center;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    margin: 12px 0 0;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+
+  /* Attachment comparison (two hooks side by side) */
+  .attachment-diagram { max-width: 480px; margin-left: auto; margin-right: auto; }
+
+  /* Closet size comparison (horizontal bars) */
+  .size-diagram { max-width: 620px; margin-left: auto; margin-right: auto; }
+
+  /* Shelf zone diagram (vertical stack) */
+  .shelf-diagram { max-width: 320px; margin-left: auto; margin-right: auto; }
+
+  @media (max-width: 760px) {
+    .article-index { grid-template-columns: repeat(2, 1fr); }
+    .phase-head { flex-direction: column; gap: 2px; }
+    .diagram-block { padding: 18px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Wed<span>gli</span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+  <div class="article-hero">
+    <p class="hero-tag">No-Drill Closet Storage</p>
+    <h1>Hanging closet organizer,<br>zero holes in the wall.</h1>
+    <p class="lede">Living in a rented apartment often comes with one major design challenge: a small closet that barely fits your seasonal wardrobe. When you can't drill holes or install custom shelving, keeping your clothes neat feels almost impossible.</p>
+    <div class="shelves"><span></span><span></span><span></span></div>
+  </div>
+
+  <p style="max-width: 62ch; color: var(--ink-soft); margin-bottom: 48px;">Fortunately, a hanging closet organizer offers an easy, tool-free way to transform vertical space into functional storage.</p>
+
+  <div class="article-index">
+    <a href="#phase1"><span class="num">01</span>Why every renter needs one</a>
+    <a href="#phase2"><span class="num">02</span>Key features to consider</a>
+    <a href="#phase3"><span class="num">03</span>Choosing the right size</a>
+    <a href="#phase4"><span class="num">04</span>Smart organizer ideas</a>
+  </div>
+
+  <section class="phase" id="phase1">
+    <div class="phase-head"><h2>Why every renter needs a hanging closet organizer</h2></div>
+    <p class="phase-sub">When rental square footage is tight, every inch counts. Standard apartment closets usually feature a single hanging rod with a massive gap of unused space below it.</p>
+
+    <div class="article-item">
+      <h3>Zero permanent modifications</h3>
+      <p>This vertical real estate is ideal for lightweight, modular storage solutions that require zero permanent modifications. A hanging organizer adds shelves, cubbies, or specialized slots directly onto your existing closet rod.</p>
+    </div>
+    <div class="article-item">
+      <h3>Suspends, doesn't attach</h3>
+      <p>Because these organizers suspend from above, you won't need a single screw, anchor, or drill bit. When it's time to move out, you simply unhook the organizer, fold it flat, and pack it away without leaving a mark on the walls.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase2">
+    <div class="phase-head"><h2>Key features to consider before you buy</h2></div>
+    <p class="phase-sub">Not all organizers are created equal. Evaluate your closet dimensions and wardrobe needs before picking one up.</p>
+
+    <div class="article-item">
+      <h3>Material and build quality</h3>
+      <p>Breathable canvas or heavy-duty fabric is lightweight, budget-friendly, and easy to fold when not in use — look for reinforced stitching around the seams. Non-woven fabrics suit lightweight items like socks or t-shirts but may sag over time with heavier garments. Some fabric organizers add wire-rimmed shelf inserts or metal top hooks for structural integrity under heavier loads.</p>
+    </div>
+    <div class="article-item">
+      <h3>Weight capacity and support</h3>
+      <p>Check the weight rating before buying. For thick winter sweaters, denim, or shoes, opt for models with rigid shelf bottoms reinforced with MDF or heavy cardboard inserts — soft, unreinforced bottoms tend to bow under weight and let items slide toward the center.</p>
+    </div>
+    <div class="article-item">
+      <h3>Attachment mechanism</h3>
+      <p>Wide, heavy-duty hook-and-loop straps wrap around the rod and are quick to install and adjust, provided the Velcro area is wide enough to hold weight. Classic dual steel hooks hang directly over the bar, offering strong support and letting the organizer slide along the rail smoothly.</p>
+
+      <div class="diagram-block">
+        <svg class="attachment-diagram" viewBox="0 0 480 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="attachTitle">
+          <title id="attachTitle">Comparison of Velcro strap and dual metal hook attachment types</title>
+
+          <!-- Closet rod shared across both examples -->
+          <line x1="20" y1="30" x2="210" y2="30" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
+          <line x1="270" y1="30" x2="460" y2="30" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
+
+          <!-- Velcro strap example -->
+          <rect x="95" y="26" width="40" height="16" rx="3" fill="var(--rust)" opacity="0.85"/>
+          <rect x="95" y="42" width="40" height="70" rx="4" fill="none" stroke="var(--ink)" stroke-width="2"/>
+          <line x1="95" y1="58" x2="135" y2="58" stroke="var(--line)" stroke-width="1.5"/>
+          <line x1="95" y1="74" x2="135" y2="74" stroke="var(--line)" stroke-width="1.5"/>
+          <line x1="95" y1="90" x2="135" y2="90" stroke="var(--line)" stroke-width="1.5"/>
+          <text x="115" y="145" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="14" font-weight="600" fill="var(--ink)">Velcro Straps</text>
+          <text x="115" y="163" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" fill="var(--ink-soft)">wraps around rod</text>
+
+          <!-- Dual metal hooks example -->
+          <path d="M 345 30 q 0 22 -18 22 q -18 0 -18 -20" fill="none" stroke="var(--sage-deep)" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 395 30 q 0 22 -18 22 q -18 0 -18 -20" fill="none" stroke="var(--sage-deep)" stroke-width="4" stroke-linecap="round"/>
+          <rect x="309" y="52" width="104" height="60" rx="4" fill="none" stroke="var(--ink)" stroke-width="2"/>
+          <line x1="309" y1="68" x2="413" y2="68" stroke="var(--line)" stroke-width="1.5"/>
+          <line x1="309" y1="84" x2="413" y2="84" stroke="var(--line)" stroke-width="1.5"/>
+          <line x1="309" y1="100" x2="413" y2="100" stroke="var(--line)" stroke-width="1.5"/>
+          <text x="361" y="145" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="14" font-weight="600" fill="var(--ink)">Dual Metal Hooks</text>
+          <text x="361" y="163" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" fill="var(--ink-soft)">hangs over the bar</text>
+        </svg>
+        <p class="diagram-caption">Velcro straps grip tighter in place; metal hooks slide freely along the rod.</p>
+      </div>
+    </div>
+    <div class="article-item">
+      <h3>Dimensions and shelf spacing</h3>
+      <p>Measure your closet height and the distance from the rod to the floor. A six-shelf unit suits long closets, while a three- or four-shelf unit works best over a dresser or shoe rack sitting below the hanging line.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase3">
+    <div class="phase-head"><h2>How to choose the right size for your closet type</h2></div>
+    <p class="phase-sub">Selecting the right dimensions depends heavily on the specific layout of your rental's closet space.</p>
+
+    <div class="diagram-block">
+      <svg class="size-diagram" viewBox="0 0 620 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sizeTitle">
+        <title id="sizeTitle">Width comparison of small reach-in, narrow, and walk-in closets</title>
+
+        <!-- Baseline -->
+        <line x1="20" y1="130" x2="600" y2="130" stroke="var(--line)" stroke-width="2"/>
+
+        <!-- Small reach-in: ~4-6 ft -->
+        <rect x="30" y="70" width="110" height="60" fill="var(--tan)" stroke="var(--rust)" stroke-width="2" rx="3"/>
+        <text x="85" y="55" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">Small Reach-In</text>
+        <text x="85" y="150" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" fill="var(--ink-soft)">4–6 ft wide</text>
+
+        <!-- Narrow/shallow: ~3-4 ft, shown shallower/depth -->
+        <rect x="220" y="85" width="80" height="45" fill="var(--tan)" stroke="var(--sage-deep)" stroke-width="2" rx="3"/>
+        <text x="260" y="70" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">Narrow / Shallow</text>
+        <text x="260" y="150" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" fill="var(--ink-soft)">8–10 in deep</text>
+
+        <!-- Walk-in: wide -->
+        <rect x="380" y="45" width="210" height="85" fill="var(--tan)" stroke="var(--ink)" stroke-width="2" rx="3"/>
+        <text x="485" y="30" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">Walk-In / Shared</text>
+        <text x="485" y="150" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" fill="var(--ink-soft)">room for two units</text>
+      </svg>
+      <p class="diagram-caption">Relative width comparison — walk-in closets can fit two hanging units side by side.</p>
+    </div>
+
+    <div class="sub-block">
+      <h3>Small reach-in closets</h3>
+      <p>Most standard apartment reach-in closets offer around 4 to 6 feet of horizontal bar space. A standard 5-shelf or 6-shelf vertical unit hanging on one end leaves plenty of room on the remaining rod for coats and dresses. Look for models around 12 inches wide to maximize vertical yield without crowding hanging items.</p>
+    </div>
+    <div class="sub-block">
+      <h3>Narrow or shallow closets</h3>
+      <p>If the closet is awkwardly slim — like a hall closet converted into personal storage — measure depth carefully. Standard organizers run 11 to 12 inches deep, but narrow closets may need slim profile units around 8 to 10 inches deep so the door shuts comfortably without pushing against your clothes.</p>
+    </div>
+    <div class="sub-block">
+      <h3>Walk-in closets or shared spaces</h3>
+      <p>With a walk-in or shared double closet, horizontal space is less restricted. Pair two narrow hanging units side by side, or choose wide 3-shelf organizers that sit higher up, leaving floor space underneath for shoe racks or rolling storage carts.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase4">
+    <div class="phase-head"><h2>Smart closet organizer ideas for small spaces</h2></div>
+    <p class="phase-sub">A hanging organizer is essentially a blank slate. How you arrange your items determines how much efficiency you gain from the setup.</p>
+
+    <div class="article-item">
+      <h3>Categorize by shelf level</h3>
+      <p>Top shelves at eye level suit daily essentials — rolled t-shirts, workwear, lightweight knits. Middle shelves work well for heavier garments like jeans, sweaters, or folded lounge pants. Bottom shelves are best reserved for heavier or bulky items like footwear, handbags, or seasonal accessory bins.</p>
+
+      <div class="diagram-block">
+        <svg class="shelf-diagram" viewBox="0 0 320 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="shelfTitle">
+          <title id="shelfTitle">Vertical diagram of a hanging organizer with top, middle, and bottom shelf zones</title>
+
+          <!-- Rod and hook -->
+          <line x1="60" y1="14" x2="260" y2="14" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 160 14 q 0 18 -14 18 q -14 0 -14 -16" fill="none" stroke="var(--sage-deep)" stroke-width="4" stroke-linecap="round"/>
+
+          <!-- Outer frame -->
+          <rect x="70" y="32" width="180" height="210" rx="4" fill="none" stroke="var(--ink)" stroke-width="2"/>
+
+          <!-- Top zone -->
+          <rect x="74" y="36" width="172" height="60" fill="var(--tan)" opacity="0.9"/>
+          <line x1="70" y1="96" x2="250" y2="96" stroke="var(--line)" stroke-width="2"/>
+          <text x="160" y="60" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">TOP</text>
+          <text x="160" y="80" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" fill="var(--ink-soft)">light, daily items</text>
+
+          <!-- Middle zone -->
+          <rect x="74" y="100" width="172" height="60" fill="var(--paper-soft)"/>
+          <line x1="70" y1="160" x2="250" y2="160" stroke="var(--line)" stroke-width="2"/>
+          <text x="160" y="124" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">MIDDLE</text>
+          <text x="160" y="144" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" fill="var(--ink-soft)">heavier garments</text>
+
+          <!-- Bottom zone -->
+          <rect x="74" y="164" width="172" height="74" fill="var(--rust)" opacity="0.12"/>
+          <text x="160" y="195" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">BOTTOM</text>
+          <text x="160" y="215" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" fill="var(--ink-soft)">bulky, heavy items</text>
+        </svg>
+        <p class="diagram-caption">Load the heaviest items low to keep the organizer balanced on the rod.</p>
+      </div>
+    </div>
+    <div class="article-item">
+      <h3>Add fabric bins for loose items</h3>
+      <p>Unstructured items like socks, underwear, and swimwear can make open shelves look cluttered. Small, removable fabric bins or storage cubes inserted into the cubbies create clean, pull-out drawers for smaller items.</p>
+    </div>
+    <div class="article-item">
+      <h3>Utilize side mesh pockets</h3>
+      <p>Many designs include exterior mesh or fabric side pockets — good for sunglasses, lint rollers, jewelry pouches, or belts.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase5">
+    <div class="phase-head"><h2>Practical steps to organize your small closet</h2></div>
+    <p class="phase-sub">Setting up a new hanging organizer takes less than an hour with a methodical approach.</p>
+
+    <ul class="steps-list">
+      <li>
+        <h3>Purge and declutter</h3>
+        <p>Before hanging anything, remove every item from the closet. Sort clothes into three piles: Keep, Donate, and Store Away, and be realistic about what you actually wear.</p>
+      </li>
+      <li>
+        <h3>Measure your vertical clearance</h3>
+        <p>Hang the unit on the closet rod and measure the clearance below it, so the bottom doesn't rest on the floor or crush items stored underneath.</p>
+      </li>
+      <li>
+        <h3>Fold, don't hang</h3>
+        <p>Reserve hanging space for delicate fabrics, dresses, button-downs, and coats. Use the shelf organizer for items that fold neatly:</p>
+        <ul>
+          <li><strong>Sweaters:</strong> hanging on standard hangers stretches the shoulders — folding preserves their shape.</li>
+          <li><strong>Denim:</strong> fold jeans into compact stacks of two or three per shelf.</li>
+          <li><strong>T-shirts:</strong> use the vertical file-folding technique to see every shirt at a glance.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Balance the weight distribution</h3>
+        <p>To keep the organizer straight and avoid unnecessary strain on the closet rod, place heavier items near the middle or lower shelves and keep lighter garments up top.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="phase" id="phase6">
+    <div class="phase-head"><h2>Renter-friendly closet storage hacks</h2></div>
+    <p class="phase-sub">When you can't modify the physical closet, a few creative hacks keep storage flexible and landlord-approved.</p>
+
+    <div class="article-item">
+      <h3>Combine with S-hooks</h3>
+      <p>S-hooks along the bottom frame or edge of the organizer hold belts, hats, or tote bags without adding bulk.</p>
+    </div>
+    <div class="article-item">
+      <h3>Use tension rods below</h3>
+      <p>If the hanging unit leaves space above the floor, a damage-free tension rod underneath holds shoes or extra hanging items.</p>
+    </div>
+    <div class="article-item">
+      <h3>Double up with modular cubes</h3>
+      <p>Pair a short hanging organizer with a stackable floor unit underneath to maximize every vertical inch.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="faq">
+    <div class="phase-head"><h2>Frequently asked questions</h2></div>
+
+    <div class="faq-item">
+      <h3>Will a hanging closet organizer bend or break my closet rod?</h3>
+      <p>Most standard closet rods made of wood or metal can easily hold 20 to 30 pounds. As long as the organizer isn't overloaded with extremely heavy items — like full stacks of winter coats — the rod stays secure.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I prevent fabric hanging shelves from sagging?</h3>
+      <p>Choose models with pre-installed rigid boards (MDF or thick plastic inserts). Custom-cut pieces of sturdy cardboard or thin plywood slid into the bottom of each compartment also add reinforcement.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I wash a fabric hanging closet organizer?</h3>
+      <p>Most fabric organizers can't be fully submerged in a washing machine because of internal structural boards. Spot clean with a damp cloth and mild soap, and let it air dry fully before reloading clothes.</p>
+    </div>
+  </section>
+
+  <div class="checklist">
+    <h2>Quick action plan</h2>
+    <ul>
+      <li><strong>Measure before you buy.</strong> Closet width, depth, and rod-to-floor clearance decide the right unit size.</li>
+      <li><strong>Fold, don't hang, on shelves.</strong> Sweaters, denim, and t-shirts all last longer folded than hung.</li>
+      <li><strong>Load heavy items low.</strong> Keeps the organizer balanced and takes strain off the closet rod.</li>
+    </ul>
+  </div>
+
+  <p class="closing">Maximizing a small closet doesn't require permanent renovations, expensive custom built-ins, or drilling holes into your rental walls. By taking advantage of vertical clearance with a versatile hanging closet organizer, you can double your functional space, keep your wardrobe neat, and keep your security deposit completely intact.</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copy">© 2026 Wedgli. All rights reserved.</p>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
