@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coat Closet Organization for Small Apartments — Wedgli</title>
+<meta name="description" content="Struggling with a cluttered entryway? These coat closet organization tips are renter-friendly, no-drill, and built for small apartments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- Article-specific additions on top of the shared site stylesheet ---- */
+
+  .article-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .article-hero .hero-tag {
+    color: var(--sage);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .article-hero h1 { max-width: 780px; }
+  .article-hero p.lede { max-width: 62ch; margin-top: 8px; }
+
+  .shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 0;
+    max-width: 220px;
+  }
+  .shelves span {
+    height: 3px;
+    background: var(--rust);
+    border-radius: 2px;
+  }
+  .shelves span:nth-child(1) { width: 100%; opacity: 1; }
+  .shelves span:nth-child(2) { width: 72%; opacity: 0.7; }
+  .shelves span:nth-child(3) { width: 45%; opacity: 0.45; }
+
+  .article-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+  .article-index a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    transition: border-color 0.15s ease;
+  }
+  .article-index a:hover { border-color: var(--rust); color: var(--ink); }
+  .article-index .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--rust);
+    margin-bottom: 4px;
+  }
+
+  section.phase {
+    margin-bottom: 56px;
+    scroll-margin-top: 90px;
+  }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rust);
+    padding-left: 16px;
+  }
+  .phase-head h2 { margin: 0; }
+  .phase-sub {
+    padding-left: 19px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 58ch;
+    margin: 0 0 26px;
+  }
+
+  .article-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .article-item h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .article-item p { margin: 0; }
+
+  /* Numbered steps */
+  .steps-list {
+    counter-reset: step-counter;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .steps-list li {
+    counter-increment: step-counter;
+    position: relative;
+    padding: 16px 0 16px 44px;
+    border-bottom: 1px solid var(--line);
+  }
+  .steps-list li:last-child { border-bottom: none; }
+  .steps-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 28px;
+    height: 28px;
+    background: var(--rust);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .steps-list h3 {
+    font-size: 16.5px;
+    margin: 0 0 6px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--ink);
+  }
+  .steps-list p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+
+  /* Maintenance bullet list */
+  .maintain-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .maintain-list li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .maintain-list li:last-child { border-bottom: none; }
+  .maintain-list li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+
+  /* FAQ blocks */
+  .faq-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 12px;
+  }
+  .faq-item h3 {
+    font-size: 16.5px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .faq-item p { margin: 0; color: var(--ink); font-size: 15.5px; }
+
+  .checklist {
+    background: var(--tan);
+    border-radius: 8px;
+    padding: 32px 28px;
+    margin-top: 44px;
+  }
+  .checklist h2 { font-size: 22px; margin: 0 0 18px; }
+  .checklist ul { list-style: none; margin: 0; padding: 0; }
+  .checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+  .checklist strong { color: var(--sage-deep); }
+
+  .closing {
+    margin-top: 44px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+  }
+
+  /* ---- Diagram blocks ---- */
+  .diagram-block {
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 24px 20px;
+    margin: 24px 0 32px;
+  }
+  .diagram-block svg { display: block; width: 100%; height: auto; }
+  .diagram-caption {
+    text-align: center;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    margin: 12px 0 0;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  .zones-diagram { max-width: 460px; margin-left: auto; margin-right: auto; }
+  .vertical-diagram { max-width: 340px; margin-left: auto; margin-right: auto; }
+  .cycle-diagram { max-width: 480px; margin-left: auto; margin-right: auto; }
+
+  @media (max-width: 760px) {
+    .article-index { grid-template-columns: repeat(2, 1fr); }
+    .phase-head { flex-direction: column; gap: 2px; }
+    .diagram-block { padding: 18px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Wed<span>gli</span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+  <div class="article-hero">
+    <p class="hero-tag">No-Drill Coat Closet Organization</p>
+    <h1>Coat closet organization<br>that actually works.</h1>
+    <p class="lede">You open the door, arms full of groceries, and there it is: a jumble of winter jackets, one lonely mitten, three umbrellas you forgot you owned, and a pile of shoes you have to step around just to hang up your keys.</p>
+    <div class="shelves"><span></span><span></span><span></span></div>
+  </div>
+
+  <p style="max-width: 62ch; color: var(--ink-soft); margin-bottom: 48px;">If this sounds familiar, you're not alone — the coat closet is one of the hardest-working, most neglected spaces in any apartment. With a little organization and zero drilling, you can turn that chaotic corner into a functional entryway storage system.</p>
+
+  <div class="article-index">
+    <a href="#phase1"><span class="num">01</span>Why it becomes a dumping ground</a>
+    <a href="#phase2"><span class="num">02</span>Organize by category</a>
+    <a href="#phase3"><span class="num">03</span>Maximizing a small closet</a>
+    <a href="#phase4"><span class="num">04</span>Renter-friendly solutions</a>
+  </div>
+
+  <section class="phase" id="phase1">
+    <div class="phase-head"><h2>Why the coat closet becomes a dumping ground</h2></div>
+    <p class="phase-sub">Coat closets fail for a simple reason: they're asked to do too much with too little structure.</p>
+
+    <div class="article-item">
+      <h3>Too many jobs, no zones</h3>
+      <p>One rod and a shelf are expected to hold coats, shoes, bags, sports gear, umbrellas, and whatever else doesn't have a home. Without zones or systems, everything just gets shoved in, and the closet turns into the place where clutter goes to hide.</p>
+    </div>
+    <div class="article-item">
+      <h3>The fix is structure, not size</h3>
+      <p>Even a small coat closet can handle a lot if you organize by category, use vertical space, and choose tools that don't require permanent changes to the walls — a must for renters.</p>
+    </div>
+
+    <div class="diagram-block">
+      <svg class="zones-diagram" viewBox="0 0 460 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="zonesTitle">
+        <title id="zonesTitle">A coat closet divided into labeled zones for coats, shoes, bags, seasonal gear, and umbrellas</title>
+
+        <!-- Outer closet frame -->
+        <rect x="20" y="20" width="420" height="200" rx="4" fill="none" stroke="var(--ink)" stroke-width="2"/>
+
+        <!-- Rod -->
+        <line x1="30" y1="55" x2="290" y2="55" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+
+        <!-- Coats zone (hanging) -->
+        <rect x="30" y="55" width="150" height="90" fill="var(--tan)" opacity="0.8"/>
+        <text x="105" y="45" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" font-weight="600" fill="var(--ink)">COATS</text>
+
+        <!-- Bags zone (door hooks) -->
+        <rect x="185" y="55" width="105" height="90" fill="var(--paper-soft)" stroke="var(--line)" stroke-width="1.5"/>
+        <text x="237" y="45" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" font-weight="600" fill="var(--ink)">BAGS</text>
+
+        <!-- Seasonal gear zone (shelf, top) -->
+        <rect x="300" y="30" width="150" height="45" fill="var(--sage)" opacity="0.18"/>
+        <text x="375" y="56" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" font-weight="600" fill="var(--ink)">SEASONAL</text>
+
+        <!-- Umbrellas zone (corner) -->
+        <rect x="300" y="80" width="60" height="65" fill="var(--rust)" opacity="0.15"/>
+        <text x="330" y="118" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="600" fill="var(--ink)">UMBR-</text>
+        <text x="330" y="131" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" font-weight="600" fill="var(--ink)">ELLAS</text>
+
+        <!-- Shoes zone (floor) -->
+        <rect x="30" y="150" width="410" height="60" fill="var(--paper-soft)" stroke="var(--line)" stroke-width="1.5"/>
+        <text x="235" y="184" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" font-weight="600" fill="var(--ink)">SHOES</text>
+      </svg>
+      <p class="diagram-caption">Give every category its own defined zone so nothing ends up on the floor.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase-clearout">
+    <div class="phase-head"><h2>Start with a full clear-out</h2></div>
+    <p class="phase-sub">Before you organize anything, empty the closet completely. You can't design a system around clutter you can't see.</p>
+
+    <ul class="steps-list">
+      <li>
+        <h3>Pull everything out and sort</h3>
+        <p>Sort into three piles: keep, donate, and toss.</p>
+      </li>
+      <li>
+        <h3>Be honest about what you wear</h3>
+        <p>If a coat hasn't been touched in two seasons, it's probably not earning its spot.</p>
+      </li>
+      <li>
+        <h3>Wipe down while it's empty</h3>
+        <p>Clean the shelf, rod, and floor while everything's out — dust and debris build up fast in a closet that gets opened multiple times a day.</p>
+      </li>
+      <li>
+        <h3>Group by category first</h3>
+        <p>Group the "keep" pile by category before you put anything back in — this makes the next steps much faster.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="phase" id="phase2">
+    <div class="phase-head"><h2>Organize by category</h2></div>
+    <p class="phase-sub">Once you know what's staying, give each category its own defined space — everything has a home, so nothing ends up in a pile on the floor.</p>
+
+    <div class="article-item">
+      <h3>Coats and jackets</h3>
+      <p>Hang heavier coats toward one side and lighter jackets toward the other so you can grab what you need without digging. Slimline, non-slip hangers save significant rod space compared to bulky wooden or wire ones. If you're short on rod space, a second rod installed below the first with a no-drill tension rod adds real capacity.</p>
+    </div>
+    <div class="article-item">
+      <h3>Shoes</h3>
+      <p>Shoes are usually the biggest source of floor clutter. An over-the-door shoe organizer or a stackable shoe rack keeps pairs corralled and off the ground. If floor space is tight, store only the shoes you wear weekly here and keep the rest in a bedroom closet or under-bed storage.</p>
+    </div>
+    <div class="article-item">
+      <h3>Bags and backpacks</h3>
+      <p>Bags tend to get tossed on the floor or draped over anything nearby. A row of hooks — on the inside of the door or along a wall — gives each bag its own spot and keeps them visible, so you're not rummaging at 8 a.m.</p>
+    </div>
+    <div class="article-item">
+      <h3>Seasonal gear</h3>
+      <p>Hats, gloves, scarves, and other small accessories are notorious for disappearing into corners. A hanging fabric organizer with cubbies, or small bins on a shelf, keeps these sorted by person or type. Out-of-season gear can move to a bin on the top shelf to free up prime space.</p>
+    </div>
+    <div class="article-item">
+      <h3>Umbrellas</h3>
+      <p>Umbrellas are awkward — too tall to shelve, too thin to hang, and always dripping when you need them most. A slim bin or a designated corner spot keeps them upright and out of the way.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase3">
+    <div class="phase-head"><h2>Step-by-step tips for maximizing a small coat closet</h2></div>
+    <p class="phase-sub">A small coat closet can still function like a much bigger one if you use the space strategically.</p>
+
+    <div class="diagram-block">
+      <svg class="vertical-diagram" viewBox="0 0 340 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="verticalTitle">
+        <title id="verticalTitle">Most closets only use the middle third of their height, leaving space above and below the main rod unused</title>
+
+        <!-- Outer frame -->
+        <rect x="60" y="14" width="220" height="232" rx="4" fill="none" stroke="var(--ink)" stroke-width="2"/>
+
+        <!-- Unused top zone -->
+        <rect x="64" y="18" width="212" height="55" fill="var(--paper-soft)" stroke="var(--line)" stroke-width="1" stroke-dasharray="4 3"/>
+        <text x="170" y="42" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" font-weight="600" fill="var(--ink-soft)">UNUSED SPACE</text>
+        <text x="170" y="58" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink-soft)">add a shelf organizer</text>
+
+        <!-- Main rod zone (in use) -->
+        <line x1="64" y1="85" x2="276" y2="85" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+        <rect x="64" y="85" width="212" height="100" fill="var(--tan)" opacity="0.85"/>
+        <text x="170" y="140" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">MAIN ROD</text>
+        <text x="170" y="158" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink)">already in use</text>
+
+        <!-- Unused bottom zone -->
+        <rect x="64" y="185" width="212" height="57" fill="var(--paper-soft)" stroke="var(--line)" stroke-width="1" stroke-dasharray="4 3"/>
+        <text x="170" y="210" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" font-weight="600" fill="var(--ink-soft)">UNUSED SPACE</text>
+        <text x="170" y="226" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink-soft)">add a tension rod</text>
+      </svg>
+      <p class="diagram-caption">Most closets only use the middle third of their height effectively.</p>
+    </div>
+
+    <ul class="steps-list">
+      <li>
+        <h3>Go vertical</h3>
+        <p>Add a second rod, a hanging shelf organizer, or over-the-door pockets to use the space above and below the main rod.</p>
+      </li>
+      <li>
+        <h3>Use the door</h3>
+        <p>The back of the closet door is prime real estate for hooks, shoe organizers, or a slim shelf unit — all without touching the walls.</p>
+      </li>
+      <li>
+        <h3>Corral small items in bins</h3>
+        <p>Loose gloves, dog leashes, and sunscreen bottles look like chaos on a shelf. Grouped into labeled bins, they look intentional and are far easier to find.</p>
+      </li>
+      <li>
+        <h3>Match hangers</h3>
+        <p>Uniform, slimline hangers aren't just neater to look at — they create consistent spacing that maximizes how many coats fit on the rod.</p>
+      </li>
+      <li>
+        <h3>Assign zones by person</h3>
+        <p>In a shared apartment, giving each household member a hook, shelf section, or bin cuts down on mixed-up gear and daily "where's my jacket" frustration.</p>
+      </li>
+      <li>
+        <h3>Rotate seasonally</h3>
+        <p>Twice a year, swap heavy coats for light jackets and vice versa. This alone can free up 30–40% of your closet space at any given time.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="phase" id="phase4">
+    <div class="phase-head"><h2>Renter-friendly solutions — no drilling required</h2></div>
+    <p class="phase-sub">Permanent installations are usually off the table for renters — and honestly, they're not necessary. You can build a fully functional system without a single hole in the wall.</p>
+
+    <div class="article-item">
+      <h3>No-drill hooks</h3>
+      <p>Command-style adhesive hooks are the MVP of renter-friendly closet storage. They hold surprisingly well — check the weight rating before hanging heavier bags or coats — remove cleanly, and let you customize placement based on how you actually use the space.</p>
+    </div>
+    <div class="article-item">
+      <h3>Tension rods</h3>
+      <p>A tension rod wedged between the side walls of the closet is one of the easiest ways to add a second hanging level, without tools or damage. Use it for shorter items like shirts, kids' coats, or scarves, while the main rod handles longer, heavier coats.</p>
+    </div>
+    <div class="article-item">
+      <h3>Freestanding and over-the-door organizers</h3>
+      <p>Look for storage that leans, hangs, or stands on its own rather than mounting to a wall or shelf. Over-the-door shoe organizers, freestanding shelf units, and hanging organizers with cubbies all add structure without installation — and move with you when you do.</p>
+    </div>
+    <div class="article-item">
+      <h3>Removable shelf liners and bins</h3>
+      <p>A shelf liner protects the existing shelf — and your security deposit — from scuffs, while stackable bins let you subdivide shelf space without adding hardware. Both pack up easily at move-out.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase-longterm">
+    <div class="phase-head"><h2>Keeping it organized long-term</h2></div>
+    <p class="phase-sub">The real test of any system isn't how it looks on day one — it's whether it still works a month later.</p>
+
+    <div class="diagram-block">
+      <svg class="cycle-diagram" viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="cycleTitle">
+        <title id="cycleTitle">A repeating cycle of weekly reset, seasonal reassessment, and ongoing donation to keep the closet organized</title>
+
+        <!-- Connecting arc path -->
+        <path d="M 100 150 A 140 140 0 1 1 380 150" fill="none" stroke="var(--line)" stroke-width="2" stroke-dasharray="5 5"/>
+
+        <!-- Node 1: Weekly reset -->
+        <circle cx="100" cy="150" r="34" fill="var(--tan)" stroke="var(--rust)" stroke-width="2"/>
+        <text x="100" y="146" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" font-weight="600" fill="var(--ink)">WEEKLY</text>
+        <text x="100" y="160" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" font-weight="600" fill="var(--ink)">RESET</text>
+
+        <!-- Node 2: Seasonal reassess -->
+        <circle cx="240" cy="40" r="34" fill="var(--tan)" stroke="var(--sage-deep)" stroke-width="2"/>
+        <text x="240" y="36" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" font-weight="600" fill="var(--ink)">SEASONAL</text>
+        <text x="240" y="50" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" font-weight="600" fill="var(--ink)">SWAP</text>
+
+        <!-- Node 3: Ongoing donation -->
+        <circle cx="380" cy="150" r="34" fill="var(--tan)" stroke="var(--ink)" stroke-width="2"/>
+        <text x="380" y="146" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" font-weight="600" fill="var(--ink)">ONGOING</text>
+        <text x="380" y="160" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" font-weight="600" fill="var(--ink)">DONATE</text>
+
+        <!-- Arrowheads along the arc -->
+        <path d="M 165 65 l 10 -4 l -2 11 z" fill="var(--ink-soft)"/>
+        <path d="M 315 65 l 2 11 l -10 -4 z" fill="var(--ink-soft)"/>
+      </svg>
+      <p class="diagram-caption">A short weekly reset, a seasonal swap, and steady donating keep the system working.</p>
+    </div>
+
+    <ul class="maintain-list">
+      <li>Do a quick 5-minute reset weekly, putting stray shoes and bags back in their zones.</li>
+      <li>Reassess seasonally when you swap coats, since this is the natural moment to declutter what you no longer need.</li>
+      <li>Keep a small donation bag inside or near the closet so "maybe I'll wear this again" items don't linger for years.</li>
+    </ul>
+  </section>
+
+  <section class="phase" id="faq">
+    <div class="phase-head"><h2>FAQ: Coat closet organization</h2></div>
+
+    <div class="faq-item">
+      <h3>How do I organize a small coat closet with limited shelf space?</h3>
+      <p>Focus on vertical storage — add a second rod with a tension rod, use door-mounted organizers, and store off-season items elsewhere to free up prime space for what you use daily.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What's the best way to store shoes in an entryway closet?</h3>
+      <p>An over-the-door shoe organizer or a stackable rack keeps shoes off the floor and contained. If space is tight, limit closet storage to your most-worn pairs and store the rest elsewhere.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I organize a coat closet without drilling holes?</h3>
+      <p>Yes. Adhesive no-drill hooks, tension rods, freestanding shelving, and over-the-door organizers all add storage and structure without any permanent installation — ideal for renters.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How often should I declutter my coat closet?</h3>
+      <p>Twice a year works well for most people, timed around seasonal coat swaps. It's a natural checkpoint to reassess what's actually being worn and what's just taking up space.</p>
+    </div>
+  </section>
+
+  <div class="checklist">
+    <h2>Quick action plan</h2>
+    <ul>
+      <li><strong>Empty it completely first.</strong> You can't design zones around clutter you can't see.</li>
+      <li><strong>Give every category its own spot.</strong> Coats, shoes, bags, seasonal gear, and umbrellas each need a defined zone.</li>
+      <li><strong>Go vertical before buying furniture.</strong> Most closets waste the space above and below the main rod.</li>
+    </ul>
+  </div>
+
+  <p class="closing">A well-organized coat closet doesn't require a big closet, a drill, or a full weekend — just a system that matches how you actually live. Sort by category, use vertical space, and lean on renter-friendly tools like hooks, tension rods, and freestanding organizers to make the most of what you've got. Once everything has a home, that front-door scramble becomes a thing of the past.</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copy">© 2026 Wedgli. All rights reserved.</p>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

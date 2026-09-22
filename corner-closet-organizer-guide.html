@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corner Closet Organizer Ideas for Small Rentals — Wedgli</title>
+<meta name="description" content="Make the most of dead space with these corner closet organizer ideas — renter-friendly, no-drill solutions for small apartments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- Article-specific additions on top of the shared site stylesheet ---- */
+
+  .article-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .article-hero .hero-tag {
+    color: var(--sage);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .article-hero h1 { max-width: 780px; }
+  .article-hero p.lede { max-width: 62ch; margin-top: 8px; }
+
+  .shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 0;
+    max-width: 220px;
+  }
+  .shelves span {
+    height: 3px;
+    background: var(--rust);
+    border-radius: 2px;
+  }
+  .shelves span:nth-child(1) { width: 100%; opacity: 1; }
+  .shelves span:nth-child(2) { width: 72%; opacity: 0.7; }
+  .shelves span:nth-child(3) { width: 45%; opacity: 0.45; }
+
+  .article-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+  .article-index a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    transition: border-color 0.15s ease;
+  }
+  .article-index a:hover { border-color: var(--rust); color: var(--ink); }
+  .article-index .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--rust);
+    margin-bottom: 4px;
+  }
+
+  section.phase {
+    margin-bottom: 56px;
+    scroll-margin-top: 90px;
+  }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rust);
+    padding-left: 16px;
+  }
+  .phase-head h2 { margin: 0; }
+  .phase-sub {
+    padding-left: 19px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 58ch;
+    margin: 0 0 26px;
+  }
+
+  .article-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .article-item h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .article-item p { margin: 0; }
+
+  /* Numbered steps */
+  .steps-list {
+    counter-reset: step-counter;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .steps-list li {
+    counter-increment: step-counter;
+    position: relative;
+    padding: 16px 0 16px 44px;
+    border-bottom: 1px solid var(--line);
+  }
+  .steps-list li:last-child { border-bottom: none; }
+  .steps-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 28px;
+    height: 28px;
+    background: var(--rust);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .steps-list h3 {
+    font-size: 16.5px;
+    margin: 0 0 6px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--ink);
+  }
+  .steps-list p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+
+  /* Maintenance bullet list */
+  .maintain-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .maintain-list li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .maintain-list li:last-child { border-bottom: none; }
+  .maintain-list li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+
+  /* FAQ blocks */
+  .faq-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 12px;
+  }
+  .faq-item h3 {
+    font-size: 16.5px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .faq-item p { margin: 0; color: var(--ink); font-size: 15.5px; }
+
+  .checklist {
+    background: var(--tan);
+    border-radius: 8px;
+    padding: 32px 28px;
+    margin-top: 44px;
+  }
+  .checklist h2 { font-size: 22px; margin: 0 0 18px; }
+  .checklist ul { list-style: none; margin: 0; padding: 0; }
+  .checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+  .checklist strong { color: var(--sage-deep); }
+
+  .closing {
+    margin-top: 44px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+  }
+
+  /* ---- Diagram blocks ---- */
+  .diagram-block {
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 24px 20px;
+    margin: 24px 0 32px;
+  }
+  .diagram-block svg { display: block; width: 100%; height: auto; }
+  .diagram-caption {
+    text-align: center;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    margin: 12px 0 0;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  .footprint-diagram { max-width: 420px; margin-left: auto; margin-right: auto; }
+  .tier-diagram { max-width: 340px; margin-left: auto; margin-right: auto; }
+  .waste-diagram { max-width: 380px; margin-left: auto; margin-right: auto; }
+
+  @media (max-width: 760px) {
+    .article-index { grid-template-columns: repeat(2, 1fr); }
+    .phase-head { flex-direction: column; gap: 2px; }
+    .diagram-block { padding: 18px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Wed<span>gli</span></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+  <div class="article-hero">
+    <p class="hero-tag">No-Drill Corner Closet Organizer</p>
+    <h1>Corner closet organizer ideas<br>for that awkward angle.</h1>
+    <p class="lede">Every apartment seems to have one: that awkward corner closet with a weird angle, a single rod, and way more wasted space than usable space. It's not you — corner closets are notoriously hard to organize because standard shelving and hangers just weren't designed for that shape.</p>
+    <div class="shelves"><span></span><span></span><span></span></div>
+  </div>
+
+  <p style="max-width: 62ch; color: var(--ink-soft); margin-bottom: 48px;">The good news is a few smart, renter-friendly tools can turn that oddly shaped corner into one of the most functional storage spots in your apartment.</p>
+
+  <div class="article-index">
+    <a href="#phase1"><span class="num">01</span>Why corners are hard to organize</a>
+    <a href="#phase2"><span class="num">02</span>Organizing by category</a>
+    <a href="#phase3"><span class="num">03</span>Step-by-step maximizing tips</a>
+    <a href="#phase4"><span class="num">04</span>Renter-friendly solutions</a>
+  </div>
+
+  <section class="phase" id="phase1">
+    <div class="phase-head"><h2>Why corner closets are so hard to organize</h2></div>
+    <p class="phase-sub">Corner closets typically have an angled back wall, a shallow depth on one side, and a single center rod that leaves triangular pockets of dead space in the corners themselves.</p>
+
+    <div class="article-item">
+      <h3>Square shelving, angled space</h3>
+      <p>Standard shelving units are built for square or rectangular footprints, so they either don't fit or leave huge gaps. Add in the fact that most renters can't drill custom shelving into an angled wall, and it's easy to see why these closets become a dumping ground instead of a storage asset.</p>
+    </div>
+    <div class="article-item">
+      <h3>Work with the shape, not against it</h3>
+      <p>The fix is to stop trying to force square solutions into an angled space, and instead work with corner-specific and freestanding organizers that flex to fit.</p>
+    </div>
+
+    <div class="diagram-block">
+      <svg class="footprint-diagram" viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="footprintTitle">
+        <title id="footprintTitle">Floor plan of a corner closet showing the angled back wall, the dead zone triangle, and the usable footprint</title>
+
+        <!-- Room outline (corner shape) -->
+        <path d="M 30 30 L 250 30 L 250 130 L 390 130 L 390 230 L 30 230 Z" fill="none" stroke="var(--ink)" stroke-width="2"/>
+
+        <!-- Dead zone triangle in the corner -->
+        <path d="M 250 30 L 390 30 L 390 130 Z" fill="var(--rust)" opacity="0.15"/>
+        <text x="330" y="75" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" font-weight="600" fill="var(--ink)">DEAD</text>
+        <text x="330" y="90" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" font-weight="600" fill="var(--ink)">ZONE</text>
+
+        <!-- Usable footprint -->
+        <rect x="30" y="30" width="220" height="200" fill="var(--tan)" opacity="0.7"/>
+        <text x="140" y="130" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">USABLE</text>
+        <text x="140" y="148" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">FOOTPRINT</text>
+
+        <!-- Angled back wall label -->
+        <line x1="250" y1="130" x2="390" y2="130" stroke="var(--sage-deep)" stroke-width="3" stroke-linecap="round"/>
+        <text x="320" y="150" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink-soft)">angled wall</text>
+      </svg>
+      <p class="diagram-caption">The triangular corner pocket is where most storage capacity quietly disappears.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase-assess">
+    <div class="phase-head"><h2>Assess the space before you buy anything</h2></div>
+    <p class="phase-sub">Before adding any organizer, take five minutes to actually measure and observe the closet.</p>
+
+    <ul class="steps-list">
+      <li>
+        <h3>Measure width and depth</h3>
+        <p>Measure the width at the front opening and the depth at the deepest point of the corner.</p>
+      </li>
+      <li>
+        <h3>Note the angle</h3>
+        <p>Is the back wall a soft diagonal, a sharp point, or an L-shape?</p>
+      </li>
+      <li>
+        <h3>Check rod height</h3>
+        <p>Note whether there's usable space above or below the existing rod.</p>
+      </li>
+      <li>
+        <h3>Identify the dead zones</h3>
+        <p>Usually the tight triangular gaps in the corners — exactly what corner-specific organizers are designed to fill.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="phase" id="phase2">
+    <div class="phase-head"><h2>Organizing by category in a corner closet</h2></div>
+    <p class="phase-sub">Just like any closet, a corner closet works best when every category of item has a defined zone rather than one big jumbled pile.</p>
+
+    <div class="article-item">
+      <h3>Hanging items</h3>
+      <p>Use the center rod for your most-worn coats or clothing, and consider a tension rod mounted lower or to one side to add a second hanging tier. Slimline hangers help enormously here since angled closets often have less usable width than they appear to.</p>
+    </div>
+    <div class="article-item">
+      <h3>Shoes</h3>
+      <p>The angled floor space near the back corner is usually too awkward for shoes to sit neatly on their own. A stackable, tiered shoe rack contains them in a defined footprint and keeps the rest of the floor clear.</p>
+    </div>
+    <div class="article-item">
+      <h3>Bags and accessories</h3>
+      <p>Corner walls near the closet opening are ideal for hooks. Since the depth narrows the further back you go, keep frequently used bags and accessories toward the front, where they're easy to reach without leaning into the angle.</p>
+    </div>
+    <div class="article-item">
+      <h3>Bins and baskets</h3>
+      <p>The tightest corner pockets are perfect for a single tall, narrow bin rather than a wide shelf. Use these for out-of-season items or accessories that don't need daily access.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase3">
+    <div class="phase-head"><h2>Step-by-step tips for maximizing a corner closet</h2></div>
+    <p class="phase-sub">A methodical approach turns the angle from a liability into the most efficient part of the closet.</p>
+
+    <div class="diagram-block">
+      <svg class="tier-diagram" viewBox="0 0 340 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="tierTitle">
+        <title id="tierTitle">A corner closet with a second, lower tension rod added beneath the main hanging rod</title>
+
+        <!-- Outer frame -->
+        <rect x="50" y="14" width="240" height="232" rx="4" fill="none" stroke="var(--ink)" stroke-width="2"/>
+
+        <!-- Main rod zone -->
+        <line x1="54" y1="60" x2="286" y2="60" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+        <rect x="54" y="60" width="232" height="75" fill="var(--tan)" opacity="0.85"/>
+        <text x="170" y="102" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">MAIN ROD</text>
+        <text x="170" y="120" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink)">longer coats</text>
+
+        <!-- Second tension rod tier -->
+        <line x1="54" y1="150" x2="230" y2="150" stroke="var(--sage-deep)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 0"/>
+        <rect x="54" y="150" width="176" height="60" fill="var(--sage)" opacity="0.16"/>
+        <text x="142" y="184" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" font-weight="600" fill="var(--ink)">TENSION ROD</text>
+        <text x="142" y="200" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink)">shorter items</text>
+
+        <!-- Corner bin -->
+        <rect x="240" y="150" width="46" height="90" fill="var(--rust)" opacity="0.16" stroke="var(--rust)" stroke-width="1.5" stroke-dasharray="3 2"/>
+        <text x="263" y="185" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10.5" font-weight="600" fill="var(--ink)">TALL</text>
+        <text x="263" y="198" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10.5" font-weight="600" fill="var(--ink)">BIN</text>
+      </svg>
+      <p class="diagram-caption">A second, offset tension rod roughly doubles hanging capacity without new walking-space loss.</p>
+    </div>
+
+    <ul class="steps-list">
+      <li>
+        <h3>Fill the corner point first</h3>
+        <p>Use a slim, tall bin or a corner shelf unit shaped to match the angle — this is usually the most wasted spot in the whole closet.</p>
+      </li>
+      <li>
+        <h3>Add a second hanging tier</h3>
+        <p>A tension rod positioned lower and offset from the main rod lets you double your hanging capacity without cutting into walking space.</p>
+      </li>
+      <li>
+        <h3>Go vertical near the entrance</h3>
+        <p>The front of a corner closet is usually the most accessible spot — stack shelves or hooks here for daily-use items.</p>
+      </li>
+      <li>
+        <h3>Use adjustable, freestanding shelving</h3>
+        <p>Look for narrow shelf units that can angle into the corner rather than fixed square shelving that leaves gaps.</p>
+      </li>
+      <li>
+        <h3>Keep the angled back wall for flat storage</h3>
+        <p>Flat, thin items like folded blankets or garment bags fit the diagonal space better than boxy bins.</p>
+      </li>
+      <li>
+        <h3>Reassess every season</h3>
+        <p>Corner closets shift in how well they work depending on what's being stored — rotate seasonal gear in and out to keep the layout efficient.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="phase" id="phase4">
+    <div class="phase-head"><h2>Renter-friendly corner closet solutions</h2></div>
+    <p class="phase-sub">Since corner closets almost always have an angled or irregular wall, permanent shelving is rarely an option anyway — which makes renter-friendly closet storage the natural fit here, not just a workaround.</p>
+
+    <div class="article-item">
+      <h3>No-drill hooks</h3>
+      <p>Adhesive hooks work well along the straighter side walls near the closet entrance, giving you flexible hook placement for bags, scarves, or lightweight jackets without damaging the wall.</p>
+    </div>
+    <div class="article-item">
+      <h3>Tension rods</h3>
+      <p>Because corner closets often waste vertical space, a tension rod is one of the highest-impact additions you can make. Wedge it below the main rod for a second hanging tier, or install one across the narrower side for extra shoe or accessory storage.</p>
+    </div>
+    <div class="article-item">
+      <h3>Freestanding corner shelving</h3>
+      <p>Look for narrow, adjustable shelf units designed to sit in a corner rather than mount to it. These conform to the angle without any hardware and can be reconfigured or moved entirely if your next apartment's closet is a different shape.</p>
+    </div>
+    <div class="article-item">
+      <h3>Stackable and modular bins</h3>
+      <p>Modular bins that stack rather than require a fixed shelf are ideal for corner closets since you can build the configuration up or out depending on the exact shape of the space — and take the whole system with you at move-out.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="phase-longterm">
+    <div class="phase-head"><h2>Keeping a corner closet organized long-term</h2></div>
+    <p class="phase-sub">A corner closet organizer only works if the system gets maintained, since the odd shape makes it easy to fall back into "just shove it in the corner" habits.</p>
+
+    <ul class="maintain-list">
+      <li>Do a quick weekly reset, returning shoes and bags to their designated zones.</li>
+      <li>Reassess the layout each season, since what fits well in winter (bulkier coats) may need a different configuration in summer.</li>
+      <li>Avoid overloading the back corner point — it's the hardest spot to access, so reserve it for items you rarely need.</li>
+    </ul>
+  </section>
+
+  <section class="phase" id="faq">
+    <div class="phase-head"><h2>FAQ: Corner closet organizer</h2></div>
+
+    <div class="faq-item">
+      <h3>What's the best way to organize a corner closet?</h3>
+      <p>Start by filling the tightest corner point with a tall, narrow bin or angled shelf, then build outward with a second hanging tier and hooks near the entrance where access is easiest.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I add more storage to a corner closet without drilling?</h3>
+      <p>Tension rods, adhesive no-drill hooks, and freestanding or modular shelving all add significant storage without any wall damage — ideal for rentals.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do corner closet organizers work for irregularly shaped closets?</h3>
+      <p>Yes. Freestanding and modular organizers are especially useful here since they can be adjusted or angled to fit non-standard shapes, unlike fixed square shelving.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How much space does a corner closet waste if left unorganized?</h3>
+      <p>The triangular pockets near the corner point and any unused vertical space above or below the main rod are typically the biggest losses — often 20–30% of the closet's total capacity.</p>
+
+      <div class="diagram-block" style="margin-top:16px; margin-bottom:4px;">
+        <svg class="waste-diagram" viewBox="0 0 380 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="wasteTitle">
+          <title id="wasteTitle">A bar comparing used closet capacity to the typical 20 to 30 percent wasted in the corner and unused vertical space</title>
+
+          <rect x="20" y="30" width="340" height="40" rx="4" fill="var(--tan)" opacity="0.85"/>
+          <rect x="20" y="30" width="255" height="40" rx="4" fill="var(--sage)" opacity="0.55"/>
+          <text x="147" y="55" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">USED — ~70–80%</text>
+          <text x="317" y="55" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" font-weight="600" fill="var(--ink)">WASTED</text>
+          <text x="317" y="70" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink)">20–30%</text>
+        </svg>
+        <p class="diagram-caption">A rough picture of how much capacity the corner and vertical gaps typically cost.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="checklist">
+    <h2>Quick action plan</h2>
+    <ul>
+      <li><strong>Measure the angle first.</strong> The shape of the back wall decides which organizers will actually fit.</li>
+      <li><strong>Fill the corner point.</strong> A tall, narrow bin claims the space that's hardest to use for anything else.</li>
+      <li><strong>Double up on rod tiers.</strong> A second, offset tension rod is the single highest-impact addition.</li>
+    </ul>
+  </div>
+
+  <p class="closing">A corner closet doesn't have to be wasted space just because it's an awkward shape. With a bit of measuring, some category-based organizing, and renter-friendly tools like tension rods, no-drill hooks, and freestanding shelving, that odd angle can become one of the most efficient storage spots in your apartment.</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copy">© 2026 Wedgli. All rights reserved.</p>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
