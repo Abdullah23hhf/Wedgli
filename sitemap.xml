@@ -2,18 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://wedgli.com/</loc>
+    <lastmod>2026-10-19</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://wedgli.com/small-closet-guide.html</loc>
+    <loc>https://wedgli.com/ai-student-discounts-2026.html</loc>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wedgli.com/hanging-closet-organizer-guide.html</loc>
+    <loc>https://wedgli.com/appliance-storage-cabinet-guide.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wedgli.com/corner-closet-organizer-guide.html</loc>
+    <loc>https://wedgli.com/bathroom-decluttering-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wedgli.com/cabinet-free-kitchen-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wedgli.com/christmas-decoration-storage-guide.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -21,11 +31,43 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wedgli.com/command-hooks-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wedgli.com/corner-closet-organizer-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wedgli.com/entryway-organization-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wedgli.com/garage-organization-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wedgli.com/hanging-closet-organizer-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wedgli.com/home-office-organization-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wedgli.com/jewelry-organization-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wedgli.com/kids-room-organization-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wedgli.com/linen-closet-organization-guide.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wedgli.com/cabinet-free-kitchen-guide.html</loc>
+    <loc>https://wedgli.com/magnetic-storage-guide.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -37,43 +79,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wedgli.com/appliance-storage-cabinet-guide.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wedgli.com/under-bed-storage-guide.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wedgli.com/kids-room-organization-guide.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wedgli.com/home-office-organization-guide.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wedgli.com/command-hooks-guide.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wedgli.com/entryway-organization-guide.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wedgli.com/bathroom-decluttering-guide.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://wedgli.com/small-apartment-storage-guide.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wedgli.com/garage-organization-guide.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wedgli.com/studio-furniture-guide.html</loc>
+    <loc>https://wedgli.com/small-closet-guide.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -81,39 +91,40 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wedgli.com/studio-furniture-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wedgli.com/tiny-house-storage-guide.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wedgli.com/christmas-decoration-storage-guide.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wedgli.com/jewelry-organization-guide.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wedgli.com/magnetic-storage-guide.html</loc>
+    <loc>https://wedgli.com/under-bed-storage-guide.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://wedgli.com/about.html</loc>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://wedgli.com/contact.html</loc>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://wedgli.com/privacy-policy.html</loc>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://wedgli.com/terms.html</loc>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://wedgli.com/disclaimer.html</loc>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.3</priority>
   </url>
 </urlset>
