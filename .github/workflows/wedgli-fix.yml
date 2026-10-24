@@ -1,0 +1,24 @@
+name: Wedgli one-time fix
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Backup current site first
+        run: git push origin HEAD:refs/heads/backup-$(date +%Y%m%d-%H%M) || true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run fixer
+        run: python tools/seo_fix.py
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Fix wording consistency (ChatGPT/Google), cabinet-free no-drill, apply missing SEO tags"
+          git push
