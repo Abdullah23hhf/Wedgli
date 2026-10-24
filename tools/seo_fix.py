@@ -53,6 +53,62 @@ SENTENCE_FIXES = [
      "mounted next to the front door (only where your lease allows drilling),"),
 ]
 
+
+# Plain-text fixes. Spaces match any whitespace; an apostrophe matches ' or its HTML forms.
+PLAIN_FIXES = [
+    # --- AI student page: ChatGPT naming + Google clarity (US students) ---
+    ("ai-student-discounts-2026.html",
+     "Google's student offer depends on your country.",
+     "Google gives US college students aged 18+ a free year of Google AI Pro (redeem by Dec 31, 2026, then $19.99/month unless you cancel)."),
+    ("ai-student-discounts-2026.html",
+     "ChatGPT Work is free for 4 months.",
+     "Four months of ChatGPT Plus are free (OpenAI calls the offer ChatGPT Work)."),
+    ("ai-student-discounts-2026.html",
+     "4 free months of ChatGPT Work",
+     "4 free months of ChatGPT Plus (OpenAI calls it ChatGPT Work)"),
+    ("ai-student-discounts-2026.html",
+     "Four free months of ChatGPT Work.",
+     "Four free months of ChatGPT Plus, which OpenAI's offer page calls ChatGPT Work."),
+    ("ai-student-discounts-2026.html",
+     "For four months of ChatGPT Work,",
+     "For four months of ChatGPT Plus (called ChatGPT Work by OpenAI),"),
+    ("ai-student-discounts-2026.html",
+     "ChatGPT Work</strong> (4 free months)",
+     "ChatGPT Plus</strong> (4 free months)"),
+    ("ai-student-discounts-2026.html",
+     "ChatGPT Work before Oct 31",
+     "ChatGPT Plus before Oct 31"),
+    ("ai-student-discounts-2026.html",
+     "A free 12-month Google AI plan. The plan depends on your country. Check the official page for the offer in your region.",
+     "A free 12-month Google AI Pro plan for eligible US college students aged 18+. Students in many other countries get Google AI Plus instead."),
+    ("ai-student-discounts-2026.html",
+     "Check the redeem deadline on the official page for your country.",
+     "Redeem by December 31, 2026."),
+    ("ai-student-discounts-2026.html",
+     "Free 12-month Google AI plan (varies by country)",
+     "Free 12-month Google AI Pro plan (US students; AI Plus elsewhere)"),
+    ("ai-student-discounts-2026.html",
+     "check the deadline for your country",
+     "redeem by Dec 31, 2026"),
+    ("ai-student-discounts-2026.html",
+     "Often yes. Many countries get a free 12-month Google AI plan. The plan and deadline depend on your country, so check one.google.com/ai-student.",
+     "Yes, for eligible US college students aged 18+: Google AI Pro is free for 12 months if you redeem by December 31, 2026. Students in many other countries get Google AI Plus instead."),
+    # --- Black Friday page: same naming note ---
+    ("black-friday-student-deals-2026.html",
+     "4 months free. SheerID check with a school-issued email.",
+     "4 months free (OpenAI's page calls it ChatGPT Work). SheerID check with a school-issued email."),
+    # --- Cabinet-free kitchen: no-drill promise ---
+    ("cabinet-free-kitchen-guide.html",
+     "heavy-duty adhesive strips or renter-safe anchors",
+     "heavy-duty adhesive strips rated for the load (or anchors, only if your lease allows drilling)"),
+]
+
+def plain_to_regex(text):
+    pat = re.escape(text)
+    pat = pat.replace("\\ ", "\\s+").replace("\\'", "'")
+    pat = pat.replace("'", "(?:'|&#39;|&rsquo;|&#x27;|’)")
+    return pat
+
 log = []
 def say(msg):
     log.append(msg)
@@ -142,6 +198,11 @@ def main():
                 html, n = re.subn(pat, lambda m, r=rep: r, html, count=1, flags=re.S)
                 if n: changes.append("sentence fix")
                 elif rep not in html: say(f"  ! {f}: sentence not found -> {pat[:50]}...")
+        for ff, text, rep in PLAIN_FIXES:
+            if ff == f:
+                html, n = re.subn(plain_to_regex(text), lambda m, r=rep: r, html, count=1, flags=re.S)
+                if n: changes.append("text fix")
+                elif rep not in html: say(f"  ! {f}: text not found -> {text[:50]}...")
         if html != original:
             with open(f, "w", encoding="utf-8", newline="") as fh:
                 fh.write(html)
