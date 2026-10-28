@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5D7Y8TNFR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-W5D7Y8TNFR");
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Fix PHP2Shell Vulnerability in WordPress Websites (Easy Guide) | Wedgli</title>
+<meta name="description" content="PHP2Shell (CVE-2026-109618 and CVE-2026-109619) is a critical PHP flaw that updating WordPress cannot fix. Learn how to check your PHP version, what to ask your host, and how to look for signs of a hack.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"></noscript>
+<link rel="stylesheet" href="style.css">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://wedgli.com/php2shell-wordpress-fix.html">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="How to Fix PHP2Shell Vulnerability in WordPress Websites (Easy Guide)">
+<meta property="og:description" content="PHP2Shell (CVE-2026-109618 and CVE-2026-109619) is a critical PHP flaw that updating WordPress cannot fix. Learn how to check your PHP version, what to ask your host, and how to look for signs of a hack.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wedgli.com/php2shell-wordpress-fix.html">
+<meta property="og:site_name" content="Wedgli">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Fix PHP2Shell Vulnerability in WordPress Websites (Easy Guide)">
+<meta name="twitter:description" content="PHP2Shell (CVE-2026-109618 and CVE-2026-109619) is a critical PHP flaw that updating WordPress cannot fix. Learn how to check your PHP version, what to ask your host, and how to look for signs of a hack.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Fix PHP2Shell Vulnerability in WordPress Websites (Easy Guide)",
+  "description": "PHP2Shell (CVE-2026-109618 and CVE-2026-109619) is a critical PHP flaw that updating WordPress cannot fix. Learn how to check your PHP version, what to ask your host, and how to look for signs of a hack.",
+  "author": { "@type": "Person", "name": "Abdullah" },
+  "publisher": { "@type": "Organization", "name": "Wedgli", "url": "https://wedgli.com/" },
+  "datePublished": "2026-10-28",
+  "dateModified": "2026-10-28",
+  "mainEntityOfPage": "https://wedgli.com/php2shell-wordpress-fix.html"
+}
+</script>
+<style>
+  .article table { border-collapse: collapse; width: 100%; margin: 1.2em 0; font-size: .95em; }
+  .article th, .article td { border: 1px solid var(--line); padding: 9px 12px; text-align: left; vertical-align: top; color: var(--ink-soft); }
+  .article th { background: var(--paper-soft); color: var(--ink); }
+  .article blockquote { margin: 1.2em 0; padding: .7em 1.1em; border-left: 4px solid var(--sage); background: var(--paper-soft); }
+  .article blockquote p { margin: 0; }
+  .article h2 { margin-top: 1.9em; }
+  .article h3 { margin-top: 1.5em; }
+  .article .meta { font-size: .92rem; margin-bottom: .6em; }
+  .article ul, .article ol { padding-left: 1.3em; color: var(--ink-soft); }
+  .article li { margin: .4em 0; }
+  .article a { word-break: break-word; }
+  .article { padding-top: 40px; padding-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="logo">Wedgli</a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article class="wrap prose article">
+    <p class="meta"><a href="/#tech">Tech &amp; Security</a></p>
+    <h1>How to Fix PHP2Shell Vulnerability in WordPress Websites (Easy Guide)</h1>
+    <p class="meta">By Abdullah &middot; Published <time datetime="2026-10-28">October 28, 2026</time></p>
+<p>If you run a WordPress website, you have probably seen the name “PHP2Shell” in the news this week. It is one of the most serious website security problems in years, and it cannot be fixed by updating WordPress or installing a security plugin. This guide explains what happened in plain language, how to check if your site is exposed, and exactly what to do about it, step by step.</p>
+<h2 id="the-short-answer">The Short Answer</h2>
+<ul>
+<li>PHP2Shell is the nickname for two critical security flaws in PHP, the programming language WordPress runs on.</li>
+<li>The fix is a PHP update on your server, not a WordPress update.</li>
+<li>The safe PHP versions are 8.5.12, 8.4.27, 8.3.36 and 8.2.35 (or newer), or an older version that your host has specifically patched.</li>
+<li>If you use shared hosting, your host installs the fix. Your job is to ask them, confirm the answer, and then check your site for signs of a break-in.</li>
+</ul>
+<h2 id="what-is-php2shell">What Is PHP2Shell?</h2>
+<p>PHP2Shell is the nickname for two vulnerabilities in the core of PHP, tracked as CVE-2026-109618 and CVE-2026-109619. PHP’s own security team rated both 9.2 out of 10 on the CVSS v4.0 severity scale, which is “critical.”</p>
+<p>In simple terms, an attacker can send a specially crafted request to a website and make the server run the attacker’s own commands, without needing a username or password. The word “shell” in the name refers to that: a hacker getting a command line on your server.</p>
+<p>The researchers who found the flaws, including teams from Wiz, Calif and OpenAI, showed the attack working against a normal WordPress install. They also found that it can leak pieces of the server’s memory, which may contain things like passwords and access keys.</p>
+<p>The PHP team released the fixes on October 21, 2026. Technical details leaked online a day earlier, on October 20, and security companies reported attack attempts starting before the fix was even available. Amazon’s security team reported seeing one attempt as early as October 17. These are reports of attempts, not proof that every attempt succeeded, but they show how quickly attackers moved.</p>
+<h2 id="why-is-everyone-calling-it-black-october">Why Is Everyone Calling It “Black October”?</h2>
+<p>“Black October” is not an official name. It is a nickname that spread on social media after PHP2Shell landed in the same days as several other unrelated security incidents, including a critical flaw in GitLab, a poisoned release of an AI software library, and breaches at some hosting platforms.</p>
+<p>One thing worth knowing: security analysts point out that these incidents are not one single coordinated attack. PHP2Shell is the one that matters most to website owners, because PHP powers a huge share of the web (estimates say nearly 70 percent of websites).</p>
+<h2 id="why-wordpress-sites-are-affected">Why WordPress Sites Are Affected</h2>
+<p>Every time someone visits a WordPress site, PHP runs first, and only then does it load WordPress and your plugins. PHP2Shell sits in that first layer. This has two important consequences:</p>
+<ul>
+<li>Updating WordPress, your theme or your plugins does not fix it. WordPress has said no update on its side is needed, because the problem is not in WordPress.</li>
+<li>Security and firewall plugins cannot block it, because the attack happens before those plugins even start working.</li>
+</ul>
+<p>Only a PHP update on the server fixes the root problem.</p>
+<h2 id="is-your-site-affected-check-your-php-version">Is Your Site Affected? Check Your PHP Version</h2>
+<p>You can see your PHP version from inside WordPress:</p>
+<ol type="1">
+<li>Log in to your WordPress dashboard.</li>
+<li>Go to Tools, then Site Health.</li>
+<li>Open the Info tab and click the Server section.</li>
+<li>Look for the line called PHP version.</li>
+</ol>
+<p>Then compare it with this table:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Your PHP branch</th>
+<th>Safe from version</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>8.5</td>
+<td>8.5.12</td>
+</tr>
+<tr class="even">
+<td>8.4</td>
+<td>8.4.27</td>
+</tr>
+<tr class="odd">
+<td>8.3</td>
+<td>8.3.36</td>
+</tr>
+<tr class="even">
+<td>8.2</td>
+<td>8.2.35</td>
+</tr>
+<tr class="odd">
+<td>8.1 and older</td>
+<td>No official fix from PHP. Only safe if your host or server vendor added the fix. You should upgrade anyway.</td>
+</tr>
+</tbody>
+</table>
+<p>A warning before you panic: a lower-looking number does not always mean you are unprotected. Some hosts and Linux systems add the security fix without changing the version number. For example, Hostinger said its servers were fixed even though sites may still show an older-looking number like 8.5.11, and Ubuntu’s fixed package for version 24.04 still reports 8.3.6. This is why you must ask your host directly rather than trusting the number alone.</p>
+<h2 id="step-by-step-how-to-fix-it">Step-by-Step: How to Fix It</h2>
+<h3 id="step-1-make-a-backup">Step 1: Make a Backup</h3>
+<p>Before changing anything, take a full backup of your files and your database, and store a copy somewhere outside your server (your computer or cloud storage). If something breaks later, you can restore it.</p>
+<h3 id="step-2-ask-your-hosting-company">Step 2: Ask Your Hosting Company</h3>
+<p>On shared hosting and managed WordPress hosting, the host controls PHP at the server level, so they have to install the fix. Send them a short message like this:</p>
+<p>“Hi, my site runs PHP [your version]. Has the fix for PHP2Shell (CVE-2026-109618 and CVE-2026-109619) been installed on my server? If not, when will it be? Thank you!”</p>
+<p>Keep asking until you get a clear answer. A reply like “we added firewall protection” is good, but it is not the same as “PHP has been updated.” You want the second one.</p>
+<p>Several big hosts announced that they had already patched their platforms by October 22 to 24, including Cloudways, DreamHost, Flywheel, Hostinger, Kinsta, Namecheap, OVHcloud, WP Engine and others. SiteGround said it applied server-level protection and turned off the affected PHP features. If you cannot find your host’s announcement, contact their support.</p>
+<h3 id="step-3-switch-to-a-supported-php-version-in-cpanel">Step 3: Switch to a Supported PHP Version in cPanel</h3>
+<p>If you are on cPanel hosting, you can usually choose your PHP version yourself:</p>
+<ol type="1">
+<li>Log in to cPanel.</li>
+<li>Find and open MultiPHP Manager.</li>
+<li>Tick the box next to your domain name.</li>
+<li>Pick a current PHP version from the dropdown. PHP 8.3 or 8.4 is a safe choice for most WordPress sites.</li>
+<li>Click Apply.</li>
+<li>Open your website and click through the important pages (home page, contact form, checkout if you have a shop) to make sure everything still works.</li>
+</ol>
+<p>Important detail many guides skip: the cPanel version menu only switches between versions that are already installed on the server. It does not download the security fix by itself. Switching to a newer branch is still the right move, especially if you are on PHP 8.1 or older, but you must still confirm with your host that their installed build contains the PHP2Shell fix.</p>
+<p>If your site breaks after the switch, the cause is almost always an old plugin or theme that does not support the newer PHP version. Update or replace that plugin, or switch back temporarily and ask your host for a patched build of your old version while you fix the plugin.</p>
+<h3 id="step-4-if-you-manage-your-own-server-vps-dedicated-or-docker">Step 4: If You Manage Your Own Server (VPS, Dedicated or Docker)</h3>
+<p>If you rent a virtual or dedicated server, the update is your responsibility:</p>
+<ul>
+<li>Install the fixed PHP packages from your Linux distribution’s security updates. Ubuntu, Debian and Red Hat-family systems all released fixes.</li>
+<li>Restart PHP-FPM or Apache afterward. This step is easy to forget, and until you restart, the old vulnerable code is still running in memory.</li>
+<li>With Docker, pulling a new image is not enough. Rebuild and recreate your containers using a fixed PHP image.</li>
+<li>Trust your distribution’s security notice rather than the version number alone, for the reason explained above.</li>
+</ul>
+<p>GoDaddy, Namecheap and others have noted that customers with their own VPS or dedicated server need to apply the update themselves.</p>
+<h3 id="step-5-confirm-the-fix">Step 5: Confirm the Fix</h3>
+<p>After your host says it is done, recheck Tools, Site Health, Info, Server in WordPress and write down the PHP version. If you are still unsure, ask your host to confirm in writing that your account runs a patched build.</p>
+<h2 id="what-if-you-cannot-update-php-today">What If You Cannot Update PHP Today?</h2>
+<p>Sometimes your host is slow or your old plugins block an upgrade. These options buy you time, but none of them replaces the real fix:</p>
+<ul>
+<li>Put Cloudflare in front of your site. Cloudflare turned on protection for PHP2Shell for all plans that have its firewall enabled, including the free plan. It only helps if your visitors actually go through Cloudflare, and Cloudflare itself describes such rules as a stopgap.</li>
+<li>Ask your host to apply temporary PHP settings. PHP’s advisories and security vendors mention measures such as turning off the session upload-progress feature. Only the person running the server can do this, and the protection is partial.</li>
+<li>Do not rely on a maintenance mode plugin. The attack can happen before WordPress even loads, so a plugin cannot stop it.</li>
+<li>If you run your own server and cannot patch or protect it at all, taking the site offline for a day is a reasonable choice. US agency CISA and others advised that servers that cannot be updated, or that run PHP 8.1 or older with no fix, should be taken offline until they can be.</li>
+</ul>
+<p>If your host will not give you a date for the fix, it may be a good time to consider moving to a better host.</p>
+<h2 id="how-to-check-if-your-site-was-already-hacked">How to Check If Your Site Was Already Hacked</h2>
+<p>Updating PHP closes the door, but it does not remove someone who already got in. Because attempts started days before the fix, it is smart to look at activity from around mid-October onward. Most hacks are quiet, so do a five-minute check:</p>
+<ul>
+<li>Users: in your WordPress dashboard, go to Users and filter by Administrator. Do you see anyone you do not recognize?</li>
+<li>Plugins: is there any plugin installed that you did not install?</li>
+<li>Google: search for site:yourdomain.com and look for pages you never wrote, such as casino, pharmacy or foreign-language spam pages.</li>
+<li>Google Search Console: open it and check the Security issues report.</li>
+<li>Uploads folder: the wp-content/uploads folder should contain images and documents. Any file ending in .php inside it is a red flag. You can look at it through your host’s File Manager.</li>
+<li>Messages from your host: warning emails about malware, spam or unusual resource use.</li>
+</ul>
+<h2 id="what-to-do-if-you-find-something-suspicious">What to Do If You Find Something Suspicious</h2>
+<ol type="1">
+<li>Do not panic, and do not try to clean everything by yourself if you are not sure what you are looking at.</li>
+<li>Contact your host and ask them to scan the server and restore a backup from before the problem appeared.</li>
+<li>Change all your passwords: WordPress admin, hosting account, FTP, and database.</li>
+<li>Delete unknown admin users and unknown plugins.</li>
+<li>Because PHP2Shell can expose server memory, security experts also recommend rotating any API keys, payment gateway keys and email (SMTP) passwords your site uses, and regenerating the security keys (salts) in your wp-config.php file.</li>
+<li>If you run a shop or collect customer data, consider getting professional help, because you may have legal duties to report a data exposure.</li>
+</ol>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<h3 id="is-php2shell-a-wordpress-bug">Is PHP2Shell a WordPress bug?</h3>
+<p>No. It is a flaw in PHP itself. WordPress is affected only because it runs on PHP. The same flaws also affect other PHP-based systems such as Drupal, Joomla and Magento.</p>
+<h3 id="will-a-wordpress-update-fix-it">Will a WordPress update fix it?</h3>
+<p>No. There is no WordPress update for this. The fix has to be installed on the server by whoever runs it, usually your hosting company.</p>
+<h3 id="will-my-security-plugin-protect-me">Will my security plugin protect me?</h3>
+<p>No. The attack happens before WordPress and its plugins load, so security plugins never see it. A firewall in front of your server, such as Cloudflare, can help, but a plugin cannot.</p>
+<h3 id="do-i-need-to-take-my-website-offline">Do I need to take my website offline?</h3>
+<p>Usually not. If your host confirms the fix or temporary protection is in place, you can keep your site running and monitor it. Taking a site offline makes sense mainly if you run your own server and cannot patch it at all.</p>
+<h3 id="i-am-on-wordpress.com-or-another-fully-managed-service.-do-i-need-to-do-anything">I am on WordPress.com or another fully managed service. Do I need to do anything?</h3>
+<p>The company that runs the platform updates PHP for you. You can still do the five-minute check above for signs of a hack.</p>
+<h3 id="my-site-is-on-php-7.4-or-8.1.-what-now">My site is on PHP 7.4 or 8.1. What now?</h3>
+<p>Ask your host first. Some hosts and control panels, including cPanel, released patched builds for older versions. That only buys you time. Plan an upgrade to PHP 8.3 or 8.4, starting with updating or replacing any plugins that hold you back.</p>
+<h3 id="why-was-it-so-urgent">Why was it so urgent?</h3>
+<p>Because details leaked before the fix was ready and attackers began trying the exploit right away. Many governments and companies even took websites offline temporarily while they installed the patch. The time between a bug being made public and being attacked is now measured in hours, so quick action matters.</p>
+<h2 id="quick-checklist">Quick Checklist</h2>
+<ul>
+<li>Back up your site (files and database).</li>
+<li>Check your PHP version in Tools, Site Health, Info, Server.</li>
+<li>Ask your host to confirm the PHP2Shell fix is installed.</li>
+<li>Switch to PHP 8.3 or 8.4 in cPanel’s MultiPHP Manager if you are on an older version.</li>
+<li>If you cannot update today, use Cloudflare and ask your host for temporary protection.</li>
+<li>Check Users, Plugins, the uploads folder and Google for signs of a hack.</li>
+<li>If anything looks wrong, restore a clean backup and change all passwords.</li>
+</ul>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>PHP2Shell is a good reminder that website security does not stop at WordPress. This time the weak point was the layer underneath it, and the solution came from the server, not from a plugin. The good news is that fixes are already available, and most big hosts have rolled them out. Take ten minutes today to confirm yours has.</p>
+<p>This guide is general information, not professional security advice. Hosting setups differ, so follow your host’s instructions where they differ from the steps above. Hosting status and official guidance change quickly, so check your host’s status page for the latest.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>PHP official security release announcement: https://www.php.net/archive/2026.php</li>
+<li>PHP advisory for CVE-2026-109618: https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w</li>
+<li>PHP advisory for CVE-2026-109619: https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp</li>
+<li>CISA alert, Critical Vulnerabilities in PHP Require Immediate Patching: https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching</li>
+<li>Wiz Research, PHP2Shell technical write-up: https://www.wiz.io/blog/php2shell-php-rce</li>
+<li>Cloudflare, PHP vulnerabilities and WAF protection: https://blog.cloudflare.com/php-vulnerabilities-waf-protection/</li>
+<li>PHP Foundation security release post: https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/</li>
+<li>Meow Apps, PHP2Shell guide for WordPress (host status list): https://meowapps.com/php2shell-wordpress/</li>
+<li>WP Umbrella, PHP2Shell and WordPress: https://wp-umbrella.com/blog/php2shell-what-the-critical-php-vulnerabilities-mean-for-wordpress-sites/</li>
+<li>Black October overview (Wikipedia): https://en.wikipedia.org/wiki/Black_October_(information_security)</li>
+</ul>
+
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="copy">&copy; 2026 Wedgli. All rights reserved.</span>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
