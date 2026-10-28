@@ -62,6 +62,21 @@
     stroke-linecap: round;
     stroke-linejoin: round;
   }
+  .popular { background: rgba(0,0,0,.04); border: 1px solid rgba(0,0,0,.1); border-radius: 12px; padding: 18px 20px; align-self: start; }
+  .popular h2 { font-size: 1.05rem; margin: 0 0 10px; }
+  .popular ul { list-style: none; margin: 0; padding: 0; }
+  .popular li { padding: 9px 0; border-top: 1px solid rgba(0,0,0,.08); }
+  .popular li:first-child { border-top: 0; }
+  .popular a { text-decoration: none; display: block; }
+  .popular .tag { display: block; margin-bottom: 2px; }
+  .finder { margin-top: 28px; }
+  .finder input { width: 100%; box-sizing: border-box; padding: 12px 14px; font: inherit; border: 1px solid rgba(0,0,0,.25); border-radius: 10px; background: transparent; color: inherit; }
+  .finder input:focus { outline: 2px solid var(--sage); outline-offset: 1px; }
+  .finder-note { margin: 10px 0 0; opacity: .75; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .show-more-wrap { text-align: center; margin: 22px auto 0; }
+  .show-more-wrap button { font: inherit; cursor: pointer; padding: 10px 20px; border-radius: 999px; border: 1px solid var(--sage); background: transparent; color: inherit; }
+  .show-more-wrap button:hover { background: var(--sage); color: #fff; }
   .cat-head { margin: 56px auto 0; padding-top: 28px; border-top: 2px solid var(--sage); }
   .cat-head h2 { margin: 0 0 6px; }
   .cat-head p { margin: 0; opacity: .8; }
@@ -89,18 +104,23 @@
       <h1>Practical guides for everyday life.</h1>
       <p class="lede">Clear, honest guides on home and small-space living, saving money, everyday tech, and staying safe online, without the fluff.</p>
       <p>Every guide is written for real people: renters, students, website owners, and anyone who wants a simpler, safer everyday setup.</p>
-      <p><a class="btn" href="https://wedgli.com/black-friday-student-deals-2026.html">Black Friday 2026 student deals &rarr;</a></p>
-      <p><a class="btn" href="php2shell-wordpress-fix.html">Fix PHP2Shell on WordPress &rarr;</a></p>
     </div>
-    <div class="drawer-grid" aria-hidden="true">
-      <div class="drawer c1"><span>Closets</span></div>
-      <div class="drawer c2"><span>Kitchen</span></div>
-      <div class="drawer c3"><span>Deals</span></div>
-      <div class="drawer c4"><span>Tech</span></div>
-      <div class="drawer c5"><span>Security</span></div>
-      <div class="drawer c6"><span>Budget</span></div>
-    </div>
+    <aside class="popular" aria-label="Popular guides">
+      <h2>Popular right now</h2>
+      <ul>
+        <li><a href="php2shell-wordpress-fix.html"><span class="tag">Tech &amp; Security</span>Fix the PHP2Shell flaw on WordPress</a></li>
+        <li><a href="black-friday-student-deals-2026.html"><span class="tag">Student deals</span>Black Friday 2026 student deals</a></li>
+        <li><a href="ai-student-discounts-2026.html"><span class="tag">Student deals</span>AI student discounts that still work</a></li>
+        <li><a href="small-closet-guide.html"><span class="tag">Home</span>A shallow closet, used to its limit</a></li>
+      </ul>
+    </aside>
   </section>
+
+  <div class="wrap finder">
+    <label class="sr-only" for="q">Search guides</label>
+    <input id="q" type="search" placeholder="Search guides (closet, student deals, WordPress...)" autocomplete="off">
+    <p id="no-results" class="finder-note" style="display:none">No guides match that search. Try a shorter word.</p>
+  </div>
 
   <nav class="tabs wrap" id="guides" aria-label="Categories">
     <a class="tab" href="#home">Home &amp; Organizing</a>
@@ -331,13 +351,7 @@
     </div>
   </section>
 
-  <!--
-    ADD A NEW CATEGORY LATER: copy a block like the one above:
-      1) <div class="cat-head wrap" id="new-id"> <h2>Name</h2> <p>One-line description</p> </div>
-      2) <section class="section wrap" id="new-id-cards"> <div class="card-grid"> ...cards... </div> </section>
-      3) add <a class="tab" href="#new-id">Name</a> to the Categories tab bar at the top.
-    Publish a category only after it has several real articles.
-  -->
+  <!-- To add a category: copy a .cat-head + section block, then add a tab above. -->
 </main>
 
 <footer class="site-footer">
@@ -353,5 +367,61 @@
   </div>
 </footer>
 
+
+<script>
+(function () {
+  var LIMIT = 6, expanded = false;
+  var main = document.querySelector('main');
+  var heads = Array.prototype.slice.call(main.querySelectorAll('.cat-head'));
+  var home = document.getElementById('home'), deals = document.getElementById('deals');
+  var cards = Array.prototype.slice.call(main.querySelectorAll('.card'));
+  var homeCards = cards.filter(function (c) {
+    return (home.compareDocumentPosition(c) & 4) && (deals.compareDocumentPosition(c) & 2);
+  });
+  var extra = homeCards.slice(LIMIT);
+  var lastHomeSection = homeCards.length ? homeCards[homeCards.length - 1].closest('section') : null;
+  var btnWrap = null, btn = null;
+  if (extra.length && lastHomeSection) {
+    btnWrap = document.createElement('div');
+    btnWrap.className = 'show-more-wrap wrap';
+    btn = document.createElement('button');
+    btn.type = 'button';
+    btnWrap.appendChild(btn);
+    lastHomeSection.parentNode.insertBefore(btnWrap, lastHomeSection.nextSibling);
+    btn.addEventListener('click', function () { expanded = !expanded; render(); });
+  }
+  var q = document.getElementById('q'), none = document.getElementById('no-results');
+  function render() {
+    var term = (q.value || '').toLowerCase().trim();
+    var shown = 0;
+    cards.forEach(function (c) {
+      var match = !term || c.textContent.toLowerCase().indexOf(term) !== -1;
+      var hideExtra = !term && !expanded && extra.indexOf(c) !== -1;
+      var show = match && !hideExtra;
+      c.style.display = show ? '' : 'none';
+      if (show) shown++;
+    });
+    main.querySelectorAll('section.section').forEach(function (sec) {
+      var any = Array.prototype.some.call(sec.querySelectorAll('.card'), function (c) { return c.style.display !== 'none'; });
+      sec.style.display = any ? '' : 'none';
+    });
+    heads.forEach(function (h) {
+      var el = h.nextElementSibling, any = false;
+      while (el && !el.classList.contains('cat-head')) {
+        if (el.matches('section.section') && el.style.display !== 'none') any = true;
+        el = el.nextElementSibling;
+      }
+      h.style.display = any ? '' : 'none';
+    });
+    if (btn) {
+      btnWrap.style.display = term ? 'none' : '';
+      btn.textContent = expanded ? 'Show fewer home guides' : 'Show all ' + homeCards.length + ' home guides';
+    }
+    none.style.display = shown ? 'none' : '';
+  }
+  q.addEventListener('input', render);
+  render();
+})();
+</script>
 </body>
 </html>
