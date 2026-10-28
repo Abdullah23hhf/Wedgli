@@ -53,6 +53,7 @@
 </script>
 <style>
   .card-icon {
+    display: block;
     width: 30px;
     height: 30px;
     margin-bottom: 12px;
@@ -62,27 +63,33 @@
     stroke-linecap: round;
     stroke-linejoin: round;
   }
-  .popular { background: rgba(0,0,0,.04); border: 1px solid rgba(0,0,0,.1); border-radius: 12px; padding: 18px 20px; align-self: start; }
-  .popular h2 { font-size: 1.05rem; margin: 0 0 10px; }
+  .popular { background: var(--paper-soft); border: 1px solid var(--line); border-radius: 4px; padding: 20px 22px; }
+  .popular h2 { font-size: 1.1rem; margin: 0 0 8px; }
   .popular ul { list-style: none; margin: 0; padding: 0; }
-  .popular li { padding: 9px 0; border-top: 1px solid rgba(0,0,0,.08); }
-  .popular li:first-child { border-top: 0; }
-  .popular a { text-decoration: none; display: block; }
-  .popular .tag { display: block; margin-bottom: 2px; }
-  .finder { margin-top: 28px; }
-  .finder input { width: 100%; box-sizing: border-box; padding: 12px 14px; font: inherit; border: 1px solid rgba(0,0,0,.25); border-radius: 10px; background: transparent; color: inherit; }
+  .popular li { padding: 11px 0; border-top: 1px solid var(--line); }
+  .popular li:first-child { border-top: 0; padding-top: 4px; }
+  .popular a { display: block; text-decoration: none; color: var(--ink); font-weight: 500; line-height: 1.35; }
+  .popular a:hover { color: var(--rust); }
+  .popular .tag { display: block; font-size: 0.74rem; font-weight: 400; color: var(--sage-deep); margin-bottom: 2px; }
+  .finder { margin-top: 8px; margin-bottom: 28px; }
+  .finder input { width: 100%; padding: 13px 16px; font: inherit; border: 1px solid var(--line); border-radius: 4px; background: #fff; color: var(--ink); }
   .finder input:focus { outline: 2px solid var(--sage); outline-offset: 1px; }
-  .finder-note { margin: 10px 0 0; opacity: .75; }
+  .finder-note { margin: 10px 0 0; }
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-  .show-more-wrap { text-align: center; margin: 22px auto 0; }
-  .show-more-wrap button { font: inherit; cursor: pointer; padding: 10px 20px; border-radius: 999px; border: 1px solid var(--sage); background: transparent; color: inherit; }
+  .show-more-wrap { text-align: center; margin: -24px auto 40px; }
+  .show-more-wrap button { font: inherit; font-size: 0.95rem; cursor: pointer; padding: 11px 22px; border-radius: 4px; border: 1px solid var(--sage); background: transparent; color: var(--sage-deep); }
   .show-more-wrap button:hover { background: var(--sage); color: #fff; }
-  .cat-head { margin: 56px auto 0; padding-top: 28px; border-top: 2px solid var(--sage); }
+  /* align homepage blocks with the header and keep them off the screen edge on phones */
+  .home .hero, .home .tabs, .home section.section { padding-left: 24px; padding-right: 24px; }
+  .home .finder, .home .cat-head, .home .show-more-wrap { padding-left: 24px; padding-right: 24px; }
+  .home .hero { padding-top: 48px; }
+  .home #home { border-top: 0; padding-top: 0; margin-top: 0; }
+  .cat-head { margin-top: 24px; padding-top: 28px; border-top: 2px solid var(--sage); }
   .cat-head h2 { margin: 0 0 6px; }
-  .cat-head p { margin: 0; opacity: .8; }
+  .cat-head p { margin: 0 0 28px; }
 </style>
 </head>
-<body>
+<body class="home">
 
 <header class="site-header">
   <div class="wrap">
