@@ -12,7 +12,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wedgli — Practical Guides for Everyday Life</title>
-<meta name="description" content="Practical guides for home organization, small-space living, money-saving offers, and everyday tech, written for real life.">
+<meta name="description" content="Practical guides for home organization, small-space living, money-saving offers, everyday tech, and online security, written for real life.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -32,7 +32,7 @@
 
 <!-- Open Graph -->
 <meta property="og:title" content="Wedgli — Practical Guides for Everyday Life">
-<meta property="og:description" content="Practical guides for home organization, small-space living, money-saving offers, and everyday tech, written for real life.">
+<meta property="og:description" content="Practical guides for home organization, small-space living, money-saving offers, everyday tech, and online security, written for real life.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://wedgli.com/">
 <meta property="og:site_name" content="Wedgli">
@@ -40,7 +40,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Wedgli — Practical Guides for Everyday Life">
-<meta name="twitter:description" content="Practical guides for home organization, small-space living, money-saving offers, and everyday tech, written for real life.">
+<meta name="twitter:description" content="Practical guides for home organization, small-space living, money-saving offers, everyday tech, and online security, written for real life.">
 
 <!-- WebSite schema -->
 <script type="application/ld+json">
@@ -62,6 +62,9 @@
     stroke-linecap: round;
     stroke-linejoin: round;
   }
+  .cat-head { margin: 56px auto 0; padding-top: 28px; border-top: 2px solid var(--sage); }
+  .cat-head h2 { margin: 0 0 6px; }
+  .cat-head p { margin: 0; opacity: .8; }
 </style>
 </head>
 <body>
@@ -84,30 +87,31 @@
   <section class="hero wrap">
     <div class="prose">
       <h1>Practical guides for everyday life.</h1>
-      <p class="lede">Clear, honest guides on organizing small spaces, saving money, and choosing everyday tools, without the fluff.</p>
-      <p>Every guide is written for real people: renters, small-space dwellers, students, and anyone who wants a simpler setup.</p>
+      <p class="lede">Clear, honest guides on home and small-space living, saving money, everyday tech, and staying safe online, without the fluff.</p>
+      <p>Every guide is written for real people: renters, students, website owners, and anyone who wants a simpler, safer everyday setup.</p>
       <p><a class="btn" href="https://wedgli.com/black-friday-student-deals-2026.html">Black Friday 2026 student deals &rarr;</a></p>
+      <p><a class="btn" href="php2shell-wordpress-fix.html">Fix PHP2Shell on WordPress &rarr;</a></p>
     </div>
     <div class="drawer-grid" aria-hidden="true">
       <div class="drawer c1"><span>Closets</span></div>
       <div class="drawer c2"><span>Kitchen</span></div>
-      <div class="drawer c3"><span>Bedroom</span></div>
-      <div class="drawer c4"><span>Entryway</span></div>
-      <div class="drawer c5"><span>Bathroom</span></div>
+      <div class="drawer c3"><span>Deals</span></div>
+      <div class="drawer c4"><span>Tech</span></div>
+      <div class="drawer c5"><span>Security</span></div>
       <div class="drawer c6"><span>Budget</span></div>
     </div>
   </section>
 
   <nav class="tabs wrap" id="guides" aria-label="Categories">
-    <a class="tab" href="#closets">Closets</a>
-    <a class="tab" href="#kitchen">Kitchen</a>
-    <a class="tab" href="#bedroom">Bedroom</a>
-    <a class="tab" href="#entryway">Entryway</a>
-    <a class="tab" href="#bathroom">Bathroom</a>
-    <a class="tab" href="#budget">Budget picks</a>
-    <a class="tab" href="#seasonal">Seasonal</a>
-    <a class="tab" href="#student-ai-deals">Student AI deals</a>
+    <a class="tab" href="#home">Home &amp; Organizing</a>
+    <a class="tab" href="#deals">Money &amp; Student Deals</a>
+    <a class="tab" href="#tech">Tech &amp; Security</a>
   </nav>
+
+  <div class="cat-head wrap" id="home">
+    <h2>Home &amp; Organizing</h2>
+    <p>Closets, kitchens, bedrooms and every small-space fix, built for renters.</p>
+  </div>
 
   <section class="section wrap" id="closets">
     <h2>Closet organization</h2>
@@ -288,6 +292,11 @@
       </div>
     </div>
   </section>
+  <div class="cat-head wrap" id="deals">
+    <h2>Money &amp; Student Deals</h2>
+    <p>Verified student offers, discounts and what to wait for.</p>
+  </div>
+
   <section class="section wrap" id="student-ai-deals">
     <h2>Student AI deals</h2>
     <div class="card-grid">
@@ -305,6 +314,30 @@
       </div>
     </div>
   </section>
+
+  <div class="cat-head wrap" id="tech">
+    <h2>Tech &amp; Security</h2>
+    <p>Plain-language guides for website owners and everyday internet users.</p>
+  </div>
+
+  <section class="section wrap" id="tech-security">
+    <div class="card-grid">
+      <div class="card">
+        <svg class="card-icon" viewBox="0 0 40 40"><path d="M20 5 8 10v9c0 8 5 14 12 17 7-3 12-9 12-17v-9L20 5Z"/><path d="M14 20l4 4 8-9"/></svg>
+        <span class="tag">Security</span>
+        <h3><a href="php2shell-wordpress-fix.html">How to Fix PHP2Shell Vulnerability in WordPress Websites (Easy Guide)</a></h3>
+        <p>What the critical PHP2Shell flaws are, how to check your PHP version, what to ask your host, and how to look for signs of a hack.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--
+    ADD A NEW CATEGORY LATER: copy a block like the one above:
+      1) <div class="cat-head wrap" id="new-id"> <h2>Name</h2> <p>One-line description</p> </div>
+      2) <section class="section wrap" id="new-id-cards"> <div class="card-grid"> ...cards... </div> </section>
+      3) add <a class="tab" href="#new-id">Name</a> to the Categories tab bar at the top.
+    Publish a category only after it has several real articles.
+  -->
 </main>
 
 <footer class="site-footer">
