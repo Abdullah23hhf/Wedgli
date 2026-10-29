@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5D7Y8TNFR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-W5D7Y8TNFR");
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Small Pantry Organization: 12 No-Drill Ideas for Rentals</title>
+<meta name="description" content="No walk-in pantry? Try these 12 small pantry organization ideas: risers, lazy susans, door racks and a simple zone plan. No drilling needed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- Article-specific additions on top of the shared site stylesheet ---- */
+
+  .article-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .article-hero .hero-tag {
+    color: var(--sage);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .article-hero h1 { max-width: 780px; }
+  .article-hero p.lede { max-width: 62ch; margin-top: 8px; }
+
+  .shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 0;
+    max-width: 220px;
+  }
+  .shelves span {
+    height: 3px;
+    background: var(--rust);
+    border-radius: 2px;
+  }
+  .shelves span:nth-child(1) { width: 100%; opacity: 1; }
+  .shelves span:nth-child(2) { width: 72%; opacity: 0.7; }
+  .shelves span:nth-child(3) { width: 45%; opacity: 0.45; }
+
+  .article-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+  .article-index a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    transition: border-color 0.15s ease;
+  }
+  .article-index a:hover { border-color: var(--rust); color: var(--ink); }
+  .article-index .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--rust);
+    margin-bottom: 4px;
+  }
+
+  section.phase {
+    margin-bottom: 56px;
+    scroll-margin-top: 90px;
+  }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rust);
+    padding-left: 16px;
+  }
+  .phase-head h2 { margin: 0; }
+  .phase-sub {
+    padding-left: 19px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 58ch;
+    margin: 0 0 26px;
+  }
+
+  .article-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .article-item h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .article-item p { margin: 0; }
+
+  /* Numbered steps */
+  .steps-list {
+    counter-reset: step-counter;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .steps-list li {
+    counter-increment: step-counter;
+    position: relative;
+    padding: 16px 0 16px 44px;
+    border-bottom: 1px solid var(--line);
+  }
+  .steps-list li:last-child { border-bottom: none; }
+  .steps-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 28px;
+    height: 28px;
+    background: var(--rust);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .steps-list h3 {
+    font-size: 16.5px;
+    margin: 0 0 6px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--ink);
+  }
+  .steps-list p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+
+  /* Maintenance bullet list */
+  .maintain-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .maintain-list li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .maintain-list li:last-child { border-bottom: none; }
+  .maintain-list li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+
+  /* FAQ blocks */
+  .faq-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 12px;
+  }
+  .faq-item h3 {
+    font-size: 16.5px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .faq-item p { margin: 0; color: var(--ink); font-size: 15.5px; }
+
+  .checklist {
+    background: var(--tan);
+    border-radius: 8px;
+    padding: 32px 28px;
+    margin-top: 44px;
+  }
+  .checklist h2 { font-size: 22px; margin: 0 0 18px; }
+  .checklist ul { list-style: none; margin: 0; padding: 0; }
+  .checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+  .checklist strong { color: var(--sage-deep); }
+
+  .closing {
+    margin-top: 44px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+  }
+
+  /* ---- Diagram blocks ---- */
+  .diagram-block {
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 24px 20px;
+    margin: 24px 0 32px;
+  }
+  .diagram-block svg { display: block; width: 100%; height: auto; }
+  .diagram-caption {
+    text-align: center;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    margin: 12px 0 0;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  .zone-diagram { max-width: 460px; margin-left: auto; margin-right: auto; }
+  .riser-diagram { max-width: 380px; margin-left: auto; margin-right: auto; }
+  .frequency-diagram { max-width: 340px; margin-left: auto; margin-right: auto; }
+
+  @media (max-width: 760px) {
+    .article-index { grid-template-columns: repeat(2, 1fr); }
+    .phase-head { flex-direction: column; gap: 2px; }
+    .diagram-block { padding: 18px 12px; }
+  }
+</style>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://wedgli.com/pantry-organization-guide.html">
+<meta property="og:title" content="Small Pantry Organization: 12 No-Drill Ideas for Rentals">
+<meta property="og:description" content="No walk-in pantry? Try these 12 small pantry organization ideas: risers, lazy susans, door racks and a simple zone plan. No drilling needed.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wedgli.com/pantry-organization-guide.html">
+<meta property="og:site_name" content="Wedgli">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Small Pantry Organization: 12 No-Drill Ideas for Rentals">
+<meta name="twitter:description" content="No walk-in pantry? Try these 12 small pantry organization ideas: risers, lazy susans, door racks and a simple zone plan. No drilling needed.">
+<style id="wedgli-added-css">
+  section.phase.added .added-body p { margin: 0 0 14px; }
+  section.phase.added .added-body p:last-child { margin-bottom: 0; }
+  section.phase.added .added-body ul, section.phase.added .added-body ol { margin: 0 0 14px; padding-left: 22px; }
+  section.phase.added .added-body li { margin-bottom: 8px; }
+  section.phase.added .added-body li:last-child { margin-bottom: 0; }
+  section.phase.added .added-body strong { color: var(--sage-deep); }
+  section.phase.added .added-body table { width: 100%; border-collapse: collapse; font-size: 15.5px; margin: 0 0 14px; }
+  section.phase.added .added-body th, section.phase.added .added-body td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+  section.phase.added .added-body th { background: var(--paper-soft); }
+  section.phase.added .added-body .table-wrap { overflow-x: auto; }
+</style>
+<style id="wedgli-merge-css">
+  .quick-answer { background: var(--paper-soft); border: 1px solid var(--line); border-left: 3px solid var(--rust); border-radius: 6px; padding: 22px 24px; margin: 0 0 48px; }
+  .quick-answer h2 { font-size: 20px; margin: 0 0 12px; }
+  .quick-answer ol { margin: 0; padding-left: 22px; columns: 2; column-gap: 32px; }
+  .quick-answer li { margin-bottom: 6px; font-size: 15.5px; break-inside: avoid; }
+  .related-list { list-style: none; margin: 0; padding: 0; }
+  .related-list li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .related-list li:last-child { border-bottom: none; }
+  @media (max-width: 760px) { .quick-answer ol { columns: 1; } }
+</style>
+<!-- wedgli-schema:start -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Small pantry organization ideas for kitchens with no walk-in pantry",
+  "description": "No walk-in pantry? Try these 12 small pantry organization ideas: risers, lazy susans, door racks and a simple zone plan. No drilling needed.",
+  "author": {
+    "@type": "Person",
+    "name": "Abdullah"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Wedgli"
+  },
+  "datePublished": "2026-09-18",
+  "dateModified": "2026-10-29",
+  "mainEntityOfPage": "https://wedgli.com/pantry-organization-guide.html"
+}
+</script>
+<!-- wedgli-schema:end -->
+<style id="wedgli-byline-css">
+  .byline-meta { font-size: 0.92rem; color: var(--ink-soft); margin: 14px 0 0; }
+  .byline-meta strong { color: var(--ink); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="logo">Wedgli</a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+  <div class="article-hero">
+    <p class="hero-tag">Small Pantry Organization</p>
+    <h1>Small pantry organization ideas<br>for kitchens with no walk-in pantry.</h1>
+    <p class="lede">Living in a compact apartment or a home with a small kitchen often means working with a narrow floor-to-ceiling cabinet, a single deep shelf, or a few bare cupboards. When space is limited, food gets pushed to the back, forgotten, and left to expire.</p>
+    <!-- wedgli-byline:start --><p class="byline-meta">By <strong>Abdullah</strong> &middot; Published <time datetime="2026-09-18">September 18, 2026</time> &middot; Updated <time datetime="2026-10-29">October 29, 2026</time></p><!-- wedgli-byline:end -->
+    <div class="shelves"><span></span><span></span><span></span></div>
+  </div>
+
+  <p style="max-width: 62ch; color: var(--ink-soft); margin-bottom: 36px;">One cabinet can work like a real pantry if you zone it by how you cook, use the height and depth you already have, and add only things that sit inside without drilling. This guide pulls together the 12 changes that make the biggest difference, in the order we would do them.</p>
+
+  <div class="quick-answer">
+    <h2>The 12 ideas at a glance</h2>
+    <ol>
+      <li>Zone the cabinet by how you cook</li>
+      <li>Add multi-tier shelf risers</li>
+      <li>Use a lazy susan with a lip</li>
+      <li>Slide in pull-out baskets or shallow bins</li>
+      <li>Give cans, snacks and spices their own turntable or bin</li>
+      <li>Decant dry goods into square airtight containers</li>
+      <li>Put a date label on every container</li>
+      <li>Hang a spice rack on the door</li>
+      <li>Use adhesive hooks inside the cabinet</li>
+      <li>Divide wide shelves with a tension rod</li>
+      <li>Add a freestanding stackable shelf</li>
+      <li>Keep a "use soon" bin and follow first in, first out</li>
+    </ol>
+  </div>
+
+  <div class="article-index">
+    <a href="#audit"><span class="num">01</span>Audit &amp; zones</a>
+    <a href="#shelves"><span class="num">02</span>Shelves, risers &amp; bins</a>
+    <a href="#decant"><span class="num">03</span>Decanting &amp; labels</a>
+    <a href="#doors"><span class="num">04</span>Doors, no-drill &amp; upkeep</a>
+  </div>
+
+  <section class="phase" id="audit">
+    <div class="phase-head"><h2>Start with an audit, then zone by how you actually cook</h2></div>
+    <p class="phase-sub">Pantry cabinets are notorious for hiding forgotten items in the back, so empty everything before you buy anything.</p>
+
+    <ul class="steps-list">
+      <li>
+        <h3>Empty the cabinet onto a counter</h3>
+        <p>Sort into keep, donate (unopened, unexpired items) and toss (anything expired or stale).</p>
+      </li>
+      <li>
+        <h3>Check every date</h3>
+        <p>Toss what is stale, then group what is left by category: cans, dry goods, snacks, spices and baking supplies.</p>
+      </li>
+      <li>
+        <h3>Wipe the shelves</h3>
+        <p>Spills and crumbs build up over time, and everything is out anyway.</p>
+      </li>
+    </ul>
+
+    <div class="article-item" style="margin-top: 20px;">
+      <h3>1. Zone the cabinet by how you cook</h3>
+      <p>Soup with soup and pasta with pasta looks tidy but ignores how you move through a kitchen. Zone by use instead.</p>
+    </div>
+    <div class="article-item added-body">
+<ul><li><strong>Eye level:</strong> daily grabs like coffee, cereal, oil and whatever snack you reach for at 3 p.m.</li><li><strong>Waist level:</strong> weeknight cooking, meaning pasta, rice, canned tomatoes and spices.</li><li><strong>Low shelf:</strong> heavy cans, bulk bags and anything a child needs to reach.</li><li><strong>Top shelf:</strong> backup stock and the things that come out a few times a year, such as baking powder, sugar and mixes.</li></ul>
+<p>Bake every week? Give flour, sugar and extracts a zone of their own. Bake twice a year? They belong up top.</p>
+    </div>
+
+    <div class="diagram-block">
+      <svg class="zone-diagram" viewBox="0 0 460 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="zoneTitle">
+        <title id="zoneTitle">A pantry cabinet divided into zones for canned goods, dry goods, snacks, spices, and baking supplies</title>
+
+        <!-- Outer cabinet frame -->
+        <rect x="20" y="20" width="420" height="200" rx="4" fill="none" stroke="var(--ink)" stroke-width="2"/>
+
+        <!-- Top shelf: baking supplies (rare use) -->
+        <line x1="20" y1="75" x2="440" y2="75" stroke="var(--ink)" stroke-width="2"/>
+        <rect x="24" y="24" width="412" height="47" fill="var(--sage)" opacity="0.16"/>
+        <text x="230" y="52" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" font-weight="600" fill="var(--ink)">TOP — baking supplies</text>
+
+        <!-- Middle shelf: dry goods + snacks + spices, divided -->
+        <line x1="20" y1="145" x2="440" y2="145" stroke="var(--ink)" stroke-width="2"/>
+        <rect x="24" y="79" width="138" height="62" fill="var(--tan)" opacity="0.85"/>
+        <line x1="162" y1="79" x2="162" y2="141" stroke="var(--rust)" stroke-width="2" stroke-dasharray="4 3"/>
+        <rect x="166" y="79" width="132" height="62" fill="var(--tan)" opacity="0.6"/>
+        <line x1="298" y1="79" x2="298" y2="141" stroke="var(--rust)" stroke-width="2" stroke-dasharray="4 3"/>
+        <rect x="302" y="79" width="134" height="62" fill="var(--tan)" opacity="0.45"/>
+        <text x="93" y="114" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" font-weight="600" fill="var(--ink)">DRY GOODS</text>
+        <text x="232" y="114" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" font-weight="600" fill="var(--ink)">SNACKS</text>
+        <text x="369" y="114" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" font-weight="600" fill="var(--ink)">SPICES</text>
+
+        <!-- Bottom shelf: canned goods (heavy) -->
+        <rect x="24" y="149" width="412" height="67" fill="var(--paper-soft)" stroke="var(--line)" stroke-width="1.5"/>
+        <text x="230" y="186" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" font-weight="600" fill="var(--ink)">BOTTOM — canned &amp; jarred goods</text>
+      </svg>
+      <p class="diagram-caption">Heavy cans sit low, everyday dry goods and snacks stay at eye level, rare-use items go up top.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="shelves">
+    <div class="phase-head"><h2>Use deep shelves and cabinet height: risers, lazy susans and bins</h2></div>
+    <p class="phase-sub">If your cabinets or pantry shelves run deep, items get lost in the dark at the back. Traditional stacking leads to knocked-over jars and expired cans.</p>
+
+    <div class="article-item">
+      <h3>2. Multi-tier shelf risers</h3>
+      <p>Step-shelf risers let you place cans, spice jars, and small condiment bottles on ascending levels, so every item stays visible and within arm's reach, with no more accidental double-buying. Measure headroom first, because a riser on a low shelf can stop tall boxes from fitting.</p>
+    </div>
+
+    <div class="diagram-block">
+      <svg class="riser-diagram" viewBox="0 0 380 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="riserTitle">
+        <title id="riserTitle">A comparison of items stacked flat versus arranged on a stepped riser so every row stays visible</title>
+
+        <!-- Without riser: flat, hidden back row -->
+        <rect x="20" y="30" width="160" height="90" rx="4" fill="none" stroke="var(--ink)" stroke-width="2"/>
+        <rect x="30" y="80" width="50" height="30" fill="var(--tan)" opacity="0.85"/>
+        <rect x="85" y="80" width="50" height="30" fill="var(--tan)" opacity="0.55"/>
+        <rect x="140" y="80" width="30" height="30" fill="var(--tan)" opacity="0.3"/>
+        <text x="100" y="140" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" font-weight="600" fill="var(--ink)">flat shelf</text>
+        <text x="100" y="156" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink-soft)">back row hidden</text>
+
+        <!-- With riser: stepped, all visible -->
+        <rect x="220" y="30" width="160" height="90" rx="4" fill="none" stroke="var(--ink)" stroke-width="2"/>
+        <rect x="230" y="95" width="50" height="15" fill="var(--tan)" opacity="0.85"/>
+        <rect x="288" y="80" width="50" height="30" fill="var(--sage)" opacity="0.4"/>
+        <rect x="288" y="80" width="50" height="15" fill="var(--tan)" opacity="0.85"/>
+        <rect x="288" y="55" width="50" height="45" fill="var(--sage)" opacity="0.2"/>
+        <rect x="288" y="55" width="50" height="15" fill="var(--tan)" opacity="0.85"/>
+        <text x="300" y="140" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" font-weight="600" fill="var(--ink)">with riser</text>
+        <text x="300" y="156" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink-soft)">every row visible</text>
+      </svg>
+      <p class="diagram-caption">A stepped riser stops cans and jars from disappearing behind the front row.</p>
+    </div>
+
+    <div class="article-item">
+      <h3>3. A clear lazy susan with a lip</h3>
+      <p>A 360-degree clear lazy susan in a deep corner cabinet or upper shelf lets you spin to grab oils, vinegars, sauces, or baking extracts without unpacking half the shelf. Choose one with a raised edge, since tall, top-heavy bottles tip and flat boxes slide off.</p>
+    </div>
+    <div class="article-item">
+      <h3>4. Pull-out baskets and shallow bins</h3>
+      <p>Wire pull-out drawers slid underneath existing shelves capture the dead air hanging beneath each level and can roughly double usable capacity. Shallow bins do the same job for loose items: you pull the whole bin forward instead of reaching to the back.</p>
+    </div>
+    <div class="article-item">
+      <h3>5. A turntable or bin for cans, snacks and spices</h3>
+      <p>Canned and jarred goods are heavy and stack well, so keep them on a low shelf with a simple turntable or bin so cans do not roll around. Snack bags and small boxes get lost in a big cabinet, so give them one open-top bin. For spices, a tiered spice rack or a shallow bin lets you read labels at a glance instead of pulling out jar after jar.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="mistakes">
+    <div class="phase-head"><h2>Five ways a pantry quietly goes wrong</h2></div>
+    <div class="article-item added-body">
+<p><strong>Zoning by looks.</strong> A shelf that is pretty but sends you to three places for one meal will be abandoned in a month. Arrange by what you cook together.</p>
+<p><strong>Risers on every shelf.</strong> Tiered risers help on deep shelves, but stacked on a shelf with little height they leave you unable to fit tall boxes. Measure headroom first.</p>
+<p><strong>Lazy susans for everything.</strong> They are great for oils and sauces. Tall, top-heavy bottles tip, and flat boxes slide off. Choose one with a lip.</p>
+<p><strong>Buying containers before the audit.</strong> You cannot size jars for food you have not counted.</p>
+<p><strong>Back-of-shelf black holes.</strong> Anything out of sight gets forgotten and expires. Keep the back for shelf-stable backups, and use shallow bins that pull forward.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="decant">
+    <div class="phase-head"><h2>Decanting for maximum spatial efficiency</h2></div>
+    <p class="phase-sub">Round containers, bulky cereal boxes, and irregular chip bags waste valuable gaps on narrow shelves.</p>
+
+    <div class="article-item">
+      <h3>6. Square, airtight containers</h3>
+      <p>Flour, sugar, pasta, rice, and oats stored in uniform, clear square containers fit flush against one another with zero wasted gaps, which is noticeably more efficient than round packaging. They also keep bags of rice and pasta upright, show when you are running low, and protect against pests. Slim airtight dispensers do the same for cereal and snacks, since flimsy cardboard boxes attract pests and take up awkward widths.</p>
+    </div>
+    <div class="article-item">
+      <h3>7. A date label on every container</h3>
+      <p>Label every decanted container in clear, bold letters with what it holds and the date you filled it. Knowing what is inside, and when it was opened, stops second-guessing mid meal-prep.</p>
+    </div>
+
+    <div class="article-item added-body">
+<p><strong>Decant safely.</strong> Decanting works for dry goods you use often, like rice, oats, sugar, flour and cereal. Pick containers with a gasket or a tight locking lid. A loose lid just moves stale food into a nicer box.</p>
+<p>Wash and dry each container completely before filling, since moisture invites mold. Keep the package's expiration date by cutting it out or photographing it, and do the same for cooking directions. Allergen information lives on the original package, so save it if anyone in your home has allergies.</p>
+<p>Do not pour new food on top of old. Empty, wash and dry between refills, or the old flour at the bottom never leaves.</p>
+<p><strong>Leave these in the original packaging:</strong> baby formula, anything with directions you actually follow, rarely used items, and products with lot numbers you may need if there is a recall. Crackers and chips are better kept in their sealed bags and clipped shut.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="doors">
+    <div class="phase-head"><h2>Door backs, vertical gaps and no-drill add-ons</h2></div>
+    <p class="phase-sub">When cabinet depth is maxed out, the cabinet door and the vertical gaps are the greatest untapped storage left. Rental kitchens rarely allow permanent shelving, and none of these need a drill.</p>
+
+    <div class="article-item">
+      <h3>8. An over-the-door spice rack</h3>
+      <p>A heavy-duty wire spice rack on the inside of the pantry or cabinet door frees up shelf depth for larger boxes and bags, while keeping dozens of spices organized. Check the door can carry the weight and that it still closes.</p>
+    </div>
+    <div class="article-item">
+      <h3>9. Adhesive hooks inside the cabinet</h3>
+      <p>Mesh produce bags, aprons, measuring cup sets, measuring spoons and oven mitts hang neatly on small adhesive hooks on the inside of the door or cabinet wall, which frees up shelf space for larger items. Stay under the hook's weight limit.</p>
+    </div>
+    <div class="article-item">
+      <h3>10. A tension rod divider</h3>
+      <p>Mounted vertically, a tension rod splits a wide shelf into two narrower sections so tall stacks stop leaning. Mounted horizontally under a shelf, it gives you a hanging spot for cleaning cloths or small bags.</p>
+    </div>
+    <div class="article-item">
+      <h3>11. A freestanding stackable shelf</h3>
+      <p>Small stackable shelf units sit freely inside the cabinet instead of mounting to it. They add an instant second tier, can be rearranged, and come out entirely when you move. A small unit can double usable space without needing extra height in the kitchen.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="upkeep">
+    <div class="phase-head"><h2>Keep it organized: first in, first out, pests and habits</h2></div>
+    <p class="phase-sub">An organized pantry falls apart without a simple restocking routine.</p>
+
+    <div class="article-item">
+      <h3>12. First in, first out, with a "use soon" bin</h3>
+      <p>New groceries go behind the old ones. That is the whole method, and it drastically cuts food waste. Add a small "use soon" bin at eye level for things nearing their dates, and check dates once a month.</p>
+    </div>
+
+    <div class="article-item added-body">
+<p><strong>Keep pests away.</strong> Pantry moths and grain weevils show up in flour, rice, cereal, pet food and birdseed. Look for webbing, tiny larvae or clumped flour. Airtight containers are the best defense. Wipe shelves of crumbs regularly. If you find an infestation, discard the affected items and clean the shelf. Some people freeze new flour or grain for several days before storing. If pests keep returning, tell your landlord.</p>
+    </div>
+
+    <div class="diagram-block">
+      <svg class="frequency-diagram" viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="freqTitle">
+        <title id="freqTitle">Frequently used items placed at the front of a zone, rarely used items pushed toward the back</title>
+
+        <rect x="20" y="40" width="280" height="80" rx="4" fill="none" stroke="var(--ink)" stroke-width="2"/>
+        <rect x="24" y="44" width="130" height="72" fill="var(--tan)" opacity="0.85"/>
+        <rect x="154" y="44" width="142" height="72" fill="var(--paper-soft)"/>
+        <line x1="154" y1="44" x2="154" y2="116" stroke="var(--rust)" stroke-width="2" stroke-dasharray="4 3"/>
+        <text x="89" y="85" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" font-weight="600" fill="var(--ink)">FRONT</text>
+        <text x="89" y="102" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink)">used often</text>
+        <text x="225" y="85" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" font-weight="600" fill="var(--ink-soft)">BACK</text>
+        <text x="225" y="102" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink-soft)">used rarely</text>
+      </svg>
+      <p class="diagram-caption">Keeping frequent items at the front means less rearranging every time you cook.</p>
+    </div>
+
+    <ul class="maintain-list">
+      <li>Reset after every grocery run, returning new items to their zone or bin rather than wherever there is space.</li>
+      <li>Check expiration dates on canned goods and spices every three months, pulling everything out to wipe the shelves.</li>
+      <li>Keep frequently used items at the front of each zone so you are not rearranging every time you cook.</li>
+    </ul>
+  </section>
+
+  <section class="phase added" id="cost">
+    <div class="phase-head"><h2>What pantry gear costs, and what is worth paying for</h2></div>
+    <div class="article-item added-body">
+<p>Prices vary by store, so treat these as rough ranges. Reused glass jars and clear plastic bins from a discount store can cost almost nothing. Mid-range sets of matching containers often run from about $20 to $60. Premium airtight sets cost more.</p>
+<p>Spend where air matters: flour, sugar, coffee and cereal gain the most from a gasket seal. Spend nothing extra on canned goods and boxes, which only need shelf space.</p>
+    </div>
+  </section>
+
+  <section class="phase added" id="example">
+    <div class="phase-head"><h2>One four-shelf cabinet, in order</h2></div>
+    <div class="article-item added-body">
+<p>Imagine a cabinet about 30 inches wide and 12 inches deep with four shelves. A realistic afternoon:</p>
+<ol><li>Empty it and toss expired items. About 45 minutes.</li><li>Group what remains into daily, weeknight, heavy and backup. About 20 minutes.</li><li>Assign shelves: daily on shelf two, weeknight on shelf three, heavy on shelf four, backup and rare items on shelf one.</li><li>Measure each shelf and buy four to six airtight containers, one shallow bin and a small lazy susan. Roughly $30 to $70.</li><li>Decant, label with dates, and put the "use soon" bin on shelf two.</li></ol>
+<p>Check it again in a month and adjust whatever you keep reaching past.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="faq">
+    <div class="phase-head"><h2>Frequently asked questions</h2></div>
+
+    <div class="faq-item">
+      <h3>How do I organize a small pantry cabinet with limited shelves?</h3>
+      <p>Zone by use, put daily items at eye level and heavy items low, and add shallow bins, a tiered riser and a lip-edged lazy susan to use the depth and height. Store rarely used items on the top shelf or toward the back. Door-back racks add space without changing the cabinet.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I add more storage to a rental kitchen cabinet without drilling?</h3>
+      <p>Yes. A riser, a turntable, stackable bins, a tension rod and a freestanding shelf unit all slot into the cabinet on their own and lift back out whenever you rearrange or move.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What is the best way to store spices in a small cabinet?</h3>
+      <p>A tiered spice rack, a shallow bin or a rack on the inside of the door keeps labels visible at a glance, which is much easier than digging through jars stacked flat on a shelf.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is it safe to transfer food into containers?</h3>
+      <p>Yes, if the containers are clean, dry and airtight. Label them with the date, and keep the original expiration date and allergen details somewhere you can find them.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How often should you clean out a pantry?</h3>
+      <p>A quick date check once a month and a full audit twice a year works for most homes. Time it with a grocery restock, and move older items forward each time you shop.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do you keep pantry moths out?</h3>
+      <p>Store grains, flour and pet food in airtight containers, wipe up crumbs, and check new bags when you bring them home. If you see webbing or larvae, discard the food and clean the shelves.</p>
+    </div>
+  </section>
+
+  <div class="checklist">
+    <h2>Quick action plan</h2>
+    <ul>
+      <li><strong>Audit before you buy.</strong> Empty the cabinet, toss the stale items and count what is left.</li>
+      <li><strong>Zone by frequency.</strong> Daily essentials at eye level, rare items up top, bulk items down low.</li>
+      <li><strong>Raise the back row.</strong> A simple riser stops jars from disappearing behind the front line.</li>
+      <li><strong>Decant and date.</strong> Uniform containers with labels make every later step easier.</li>
+      <li><strong>Purge on a schedule.</strong> A quarterly check keeps expired items from quietly piling up.</li>
+    </ul>
+  </div>
+
+  <section class="phase" style="margin-top: 44px;">
+    <div class="phase-head"><h2>Related guides</h2></div>
+    <ul class="related-list">
+      <li><a href="storage-bins-guide.html">The Best Storage Bins for Small Apartments</a></li>
+      <li><a href="cabinet-free-kitchen-guide.html">No Upper Cabinets? Make It a Feature</a></li>
+      <li><a href="appliance-storage-cabinet-guide.html">Kitchen Appliance Storage Cabinet Ideas for Small Rentals</a></li>
+      <li><a href="magnetic-storage-guide.html">Magnetic Storage Ideas for Small Apartments</a></li>
+    </ul>
+  </section>
+
+  <p class="closing">A small kitchen does not need a dedicated pantry room to work well, only a cabinet with the right structure. Audit first, zone by how you cook, use risers, bins and stackable shelving to add vertical layers, and lean on renter-friendly tools like tension rods and no-drill hooks so nothing about your kitchen has to change permanently.</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copy">© 2026 Wedgli. All rights reserved.</p>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
