@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5D7Y8TNFR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-W5D7Y8TNFR");
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Small Closet Organization: 14 No-Drill Ideas for Renters</title>
+<meta name="description" content="Shallow, awkward or corner closet? 14 no-drill small closet organization ideas for renters: hangers, second rods, shelf dividers and corner fixes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- Article-specific additions on top of the shared site stylesheet ---- */
+
+  .article-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+  .article-hero .hero-tag {
+    color: var(--sage);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .article-hero h1 { max-width: 780px; }
+  .article-hero p.lede { max-width: 62ch; margin-top: 8px; }
+
+  .shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 0;
+    max-width: 220px;
+  }
+  .shelves span {
+    height: 3px;
+    background: var(--rust);
+    border-radius: 2px;
+  }
+  .shelves span:nth-child(1) { width: 100%; opacity: 1; }
+  .shelves span:nth-child(2) { width: 72%; opacity: 0.7; }
+  .shelves span:nth-child(3) { width: 45%; opacity: 0.45; }
+
+  .article-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+  .article-index a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    transition: border-color 0.15s ease;
+  }
+  .article-index a:hover { border-color: var(--rust); color: var(--ink); }
+  .article-index .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--rust);
+    margin-bottom: 4px;
+  }
+
+  section.phase {
+    margin-bottom: 56px;
+    scroll-margin-top: 90px;
+  }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rust);
+    padding-left: 16px;
+  }
+  .phase-head h2 { margin: 0; }
+  .phase-sub {
+    padding-left: 19px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 58ch;
+    margin: 0 0 26px;
+  }
+
+  .article-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .article-item h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .article-item p { margin: 0; }
+
+  /* Numbered steps */
+  .steps-list {
+    counter-reset: step-counter;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .steps-list li {
+    counter-increment: step-counter;
+    position: relative;
+    padding: 16px 0 16px 44px;
+    border-bottom: 1px solid var(--line);
+  }
+  .steps-list li:last-child { border-bottom: none; }
+  .steps-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 28px;
+    height: 28px;
+    background: var(--rust);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .steps-list h3 {
+    font-size: 16.5px;
+    margin: 0 0 6px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--ink);
+  }
+  .steps-list p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+
+  /* Maintenance bullet list */
+  .maintain-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .maintain-list li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .maintain-list li:last-child { border-bottom: none; }
+  .maintain-list li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+
+  /* FAQ blocks */
+  .faq-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 12px;
+  }
+  .faq-item h3 {
+    font-size: 16.5px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .faq-item p { margin: 0; color: var(--ink); font-size: 15.5px; }
+
+  .checklist {
+    background: var(--tan);
+    border-radius: 8px;
+    padding: 32px 28px;
+    margin-top: 44px;
+  }
+  .checklist h2 { font-size: 22px; margin: 0 0 18px; }
+  .checklist ul { list-style: none; margin: 0; padding: 0; }
+  .checklist li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+  .checklist strong { color: var(--sage-deep); }
+
+  .closing {
+    margin-top: 44px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+  }
+
+  /* ---- Diagram blocks ---- */
+  .diagram-block {
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 24px 20px;
+    margin: 24px 0 32px;
+  }
+  .diagram-block svg { display: block; width: 100%; height: auto; }
+  .diagram-caption {
+    text-align: center;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    margin: 12px 0 0;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  .footprint-diagram { max-width: 420px; margin-left: auto; margin-right: auto; }
+  .tier-diagram { max-width: 340px; margin-left: auto; margin-right: auto; }
+  .waste-diagram { max-width: 380px; margin-left: auto; margin-right: auto; }
+
+  @media (max-width: 760px) {
+    .article-index { grid-template-columns: repeat(2, 1fr); }
+    .phase-head { flex-direction: column; gap: 2px; }
+    .diagram-block { padding: 18px 12px; }
+  }
+</style>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://wedgli.com/small-closet-guide.html">
+<meta property="og:title" content="Small Closet Organization: 14 No-Drill Ideas for Renters">
+<meta property="og:description" content="Shallow, awkward or corner closet? 14 no-drill small closet organization ideas for renters: hangers, second rods, shelf dividers and corner fixes.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wedgli.com/small-closet-guide.html">
+<meta property="og:site_name" content="Wedgli">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Small Closet Organization: 14 No-Drill Ideas for Renters">
+<meta name="twitter:description" content="Shallow, awkward or corner closet? 14 no-drill small closet organization ideas for renters: hangers, second rods, shelf dividers and corner fixes.">
+<style id="wedgli-added-css">
+  section.phase.added .added-body p { margin: 0 0 14px; }
+  section.phase.added .added-body p:last-child { margin-bottom: 0; }
+  section.phase.added .added-body ul, section.phase.added .added-body ol { margin: 0 0 14px; padding-left: 22px; }
+  section.phase.added .added-body li { margin-bottom: 8px; }
+  section.phase.added .added-body li:last-child { margin-bottom: 0; }
+  section.phase.added .added-body strong { color: var(--sage-deep); }
+  section.phase.added .added-body table { width: 100%; border-collapse: collapse; font-size: 15.5px; margin: 0 0 14px; }
+  section.phase.added .added-body th, section.phase.added .added-body td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+  section.phase.added .added-body th { background: var(--paper-soft); }
+  section.phase.added .added-body .table-wrap { overflow-x: auto; }
+</style>
+<style id="wedgli-merge-css">
+  .quick-answer { background: var(--paper-soft); border: 1px solid var(--line); border-left: 3px solid var(--rust); border-radius: 6px; padding: 22px 24px; margin: 0 0 48px; }
+  .quick-answer h2 { font-size: 20px; margin: 0 0 12px; }
+  .quick-answer ol { margin: 0; padding-left: 22px; columns: 2; column-gap: 32px; }
+  .quick-answer li { margin-bottom: 6px; font-size: 15.5px; break-inside: avoid; }
+  .related-list { list-style: none; margin: 0; padding: 0; }
+  .related-list li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .related-list li:last-child { border-bottom: none; }
+  @media (max-width: 760px) { .quick-answer ol { columns: 1; } }
+</style>
+<!-- wedgli-schema:start -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Small closet organization ideas for shallow, awkward and corner closets",
+  "description": "Shallow, awkward or corner closet? 14 no-drill small closet organization ideas for renters: hangers, second rods, shelf dividers and corner fixes.",
+  "author": {
+    "@type": "Person",
+    "name": "Abdullah"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Wedgli"
+  },
+  "datePublished": "2026-09-17",
+  "dateModified": "2026-10-29",
+  "mainEntityOfPage": "https://wedgli.com/small-closet-guide.html"
+}
+</script>
+<!-- wedgli-schema:end -->
+<style id="wedgli-byline-css">
+  .byline-meta { font-size: 0.92rem; color: var(--ink-soft); margin: 14px 0 0; }
+  .byline-meta strong { color: var(--ink); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="logo">Wedgli</a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+  <div class="article-hero">
+    <p class="hero-tag">Small Closet Organization</p>
+    <h1>Small closet organization ideas<br>for shallow, awkward and corner closets.</h1>
+    <p class="lede">A cramped reach-in closet doesn't need drywall anchors or built-ins to work harder. With the right hanging systems and a bit of vertical thinking, it can hold far more than the one rod and one shelf it came with, and none of it costs you your deposit.</p>
+    <!-- wedgli-byline:start --><p class="byline-meta">By <strong>Abdullah</strong> &middot; Published <time datetime="2026-09-17">September 17, 2026</time> &middot; Updated <time datetime="2026-10-29">October 29, 2026</time></p><!-- wedgli-byline:end -->
+    <div class="shelves"><span></span><span></span><span></span></div>
+  </div>
+
+  <p style="max-width: 62ch; color: var(--ink-soft); margin-bottom: 36px;">This guide covers standard shallow closets and awkward corner closets in one place. Every idea below needs a tape measure and a few cheap tools, never a drill. Start with the measuring section, because most wrong purchases come from skipping it.</p>
+
+  <div class="quick-answer">
+    <h2>The 14 ideas at a glance</h2>
+    <ol>
+      <li>Switch to slim, non-slip hangers</li>
+      <li>Add a second rod lower down</li>
+      <li>Hang an over-the-door pocket grid</li>
+      <li>Keep cascading hangers for off-season pieces</li>
+      <li>Slide in freestanding cubes or stackers</li>
+      <li>Clip acrylic dividers onto shelves</li>
+      <li>Hang a canvas shelf organizer from the rod</li>
+      <li>Use double-decker shoe stackers</li>
+      <li>Hang bags and belts from S-hooks</li>
+      <li>Add pull-out trays for small accessories</li>
+      <li>Fill the corner point with a tall, narrow bin</li>
+      <li>Angle a freestanding shelf into the corner</li>
+      <li>Use the diagonal wall for flat storage</li>
+      <li>Rotate off-season clothes out twice a year</li>
+    </ol>
+  </div>
+
+  <div class="article-index">
+    <a href="#measure"><span class="num">01</span>Measure first</a>
+    <a href="#hanging"><span class="num">02</span>Hangers &amp; rods</a>
+    <a href="#shelves"><span class="num">03</span>Shelves, shoes &amp; accessories</a>
+    <a href="#corner"><span class="num">04</span>Corner closets &amp; upkeep</a>
+  </div>
+
+  <section class="phase" id="measure">
+    <div class="phase-head"><h2>Measure before you buy a hanger</h2></div>
+    <p class="phase-sub">A standard hanger is roughly 17 to 18 inches wide, and clothes on it need a closet about 24 inches deep to hang straight. Shallower than that, and garments press against the door or have to turn sideways.</p>
+
+    <div class="article-item added-body">
+<p>So measure first:</p>
+<ul><li>Depth at the rod, from the back wall to the inside of the closed door.</li><li>Width, wall to wall, at shelf height and at floor level (walls are not always parallel).</li><li>Height from the floor to the rod and to the shelf above it.</li><li>The door opening. Sliding and bi-fold doors only open part of the closet at a time, often about half the width, so the other half is hard to reach.</li><li>Door thickness, if you plan to use over-door hooks.</li><li>For a corner closet, the shape of the back wall: a soft diagonal, a sharp point or an L-shape, and where the tight triangular gaps are.</li></ul>
+<p>With sliding or bi-fold doors, put the things you wear daily in the half you can always reach. Off-season items go in the awkward corners.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="hanging">
+    <div class="phase-head"><h2>Hanging space: hangers, second rods and the back of the door</h2></div>
+    <p class="phase-sub">When square footage is fixed, the only thing you can change is how much air goes to waste. A few swaps let the same rod and shelf hold noticeably more.</p>
+
+    <div class="article-item">
+      <h3>1. Slim, non-slip hangers, one style everywhere</h3>
+      <p>A mix of wire, plastic, and thick wooden hangers reads as clutter even when the clothes are neat. Switching entirely to slim velvet hangers gives the closet a single visual baseline, saves width and stops silk or satin from sliding off. They are the best upgrade for the money, though they struggle with heavy coats.</p>
+    </div>
+    <div class="article-item">
+      <h3>2. A second rod, lower down</h3>
+      <p>Most rental closets have a single rod set halfway up the wall, leaving dead space below short garments. An adjustable tension or strap-on rod hung underneath creates a second tier, with shirts and jackets up top and skirts or folded pants below. In a corner closet, offset the lower rod so it does not block the main one.</p>
+    </div>
+    <div class="article-item">
+      <h3>3. Over-the-door pocket grids</h3>
+      <p>The back of the closet door is unused real estate. A heavy-duty fabric or wire pocket organizer, hung with padded, scratch-free brackets, holds rolled belts, ties, clutches, and socks without touching a wall.</p>
+    </div>
+    <div class="article-item">
+      <h3>4. Cascading hangers for off-season pieces</h3>
+      <p>Cascading hangers, the kind with hooks in a vertical stack, save width but make it annoying to pull one garment without moving three. Use them for off-season or rarely worn pieces, and do not stack heavy items on the hook chain.</p>
+    </div>
+
+    <div class="article-item added-body">
+<p><strong>Other hanger types.</strong> Wooden hangers are sturdy and good for coats and suits, but bulky, so a whole closet of them eats width. Plastic hangers are cheap and fine for t-shirts and kids' clothes, but they add up in thickness. Rotating rods or wall-mounted swivel rods turn clothes sideways and solve the depth problem, yet they usually need drilling. If you rent, skip them. A freestanding garment rack outside the closet does the same job with no holes.</p>
+<p><strong>Fold or hang? Let the fabric decide.</strong> Knits and sweaters get folded, because hangers stretch the shoulders and leave bumps. Dress shirts, blazers and structured jackets hang. Silk and delicate blouses hang too. Jeans can go either way, but folding saves rod space. T-shirts file best folded and standing upright in a drawer or bin so you can see every one.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="shelves">
+    <div class="phase-head"><h2>Shelves, shoes and accessories, no drilling</h2></div>
+    <p class="phase-sub">A closet with just one wire shelf and a rod is leaving most of its height unused, and loose shoes on the floor eat up walking room fast.</p>
+
+    <div class="article-item">
+      <h3>5. Freestanding cubes and stackers</h3>
+      <p>A modular fabric or wooden cube unit sits on the closet floor or slides beneath hanging clothes, giving folded sweaters, jeans, and bags a designated slot with zero screws involved. Modular bins that stack rather than need a fixed shelf also suit corner closets, since you can build up or out to fit the shape.</p>
+    </div>
+    <div class="article-item">
+      <h3>6. Acrylic shelf dividers</h3>
+      <p>Loose stacks of sweaters or t-shirts tend to lean and slide into each other. Spring-loaded acrylic dividers clipped onto an existing shelf keep each stack separate and upright. Fold on shelves with dividers, or use shelf boxes so one pull does not topple the pile.</p>
+    </div>
+    <div class="article-item">
+      <h3>7. A hanging canvas organizer</h3>
+      <p>A collapsible tiered canvas shelf hung from the main rod works like a dresser insert, giving instant shelving for shoes, accessories, or folded clothes where there was only rod before.</p>
+    </div>
+    <div class="article-item">
+      <h3>8. Double-decker shoe stackers</h3>
+      <p>A dual-deck shoe stacker layers one shoe on top of the other, roughly doubling how many pairs fit in the same floor footprint. In a corner closet, a stackable, tiered rack also contains shoes in a defined footprint instead of letting them spread across the awkward angled floor.</p>
+    </div>
+    <div class="article-item">
+      <h3>9. S-hooks for bags and belts</h3>
+      <p>Hanging handbags from S-hooks on the rod or a side wire panel keeps their shape, instead of letting them slump on a high shelf where they lose it. Adhesive hooks on the straighter side walls near the entrance work for bags, scarves, or lightweight jackets.</p>
+    </div>
+    <div class="article-item">
+      <h3>10. Pull-out trays for small accessories</h3>
+      <p>Shallow felt or velvet trays slid into a cubby or onto a shelf keep watches, sunglasses, and small accessories from rolling around loose.</p>
+    </div>
+
+    <div class="article-item added-body">
+<p><strong>Tension rods and over-door hangers: know the weight limits.</strong> Tension rods hold their stated weight and no more, and clothing that sways or gets yanked creates extra force. Check the number on the package, stay well under it, and test with a light load first. Re-tighten every few weeks, since a slipping rod can drop everything at once.</p>
+<p>Over-door hangers work only if the door closes with the hooks in place, so check the clearance between door and frame. Heavy coats on a hollow door can strain the hinges, so keep the load light and follow the manufacturer's limit. Always check your lease before drilling or using adhesive in the closet.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="corner">
+    <div class="phase-head"><h2>Corner closets: working with an awkward angle</h2></div>
+    <p class="phase-sub">Corner closets typically have an angled back wall, a shallow depth on one side, and a single center rod that leaves triangular pockets of dead space. Square shelving either doesn't fit or leaves huge gaps, so work with freestanding organizers that flex to fit.</p>
+
+    <div class="diagram-block">
+      <svg class="footprint-diagram" viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="footprintTitle">
+        <title id="footprintTitle">Floor plan of a corner closet showing the angled back wall, the dead zone triangle, and the usable footprint</title>
+
+        <!-- Room outline (corner shape) -->
+        <path d="M 30 30 L 250 30 L 250 130 L 390 130 L 390 230 L 30 230 Z" fill="none" stroke="var(--ink)" stroke-width="2"/>
+
+        <!-- Dead zone triangle in the corner -->
+        <path d="M 250 30 L 390 30 L 390 130 Z" fill="var(--rust)" opacity="0.15"/>
+        <text x="330" y="75" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" font-weight="600" fill="var(--ink)">DEAD</text>
+        <text x="330" y="90" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" font-weight="600" fill="var(--ink)">ZONE</text>
+
+        <!-- Usable footprint -->
+        <rect x="30" y="30" width="220" height="200" fill="var(--tan)" opacity="0.7"/>
+        <text x="140" y="130" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">USABLE</text>
+        <text x="140" y="148" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">FOOTPRINT</text>
+
+        <!-- Angled back wall label -->
+        <line x1="250" y1="130" x2="390" y2="130" stroke="var(--sage-deep)" stroke-width="3" stroke-linecap="round"/>
+        <text x="320" y="150" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink-soft)">angled wall</text>
+      </svg>
+      <p class="diagram-caption">The triangular corner pocket is where most storage capacity quietly disappears.</p>
+    </div>
+
+    <div class="article-item">
+      <h3>11. Fill the corner point with a tall, narrow bin</h3>
+      <p>Use a slim, tall bin or a corner shelf unit shaped to match the angle. This is usually the most wasted spot in the whole closet, and it is the hardest to reach, so reserve it for out-of-season items or things you rarely need.</p>
+    </div>
+
+    <div class="diagram-block">
+      <svg class="tier-diagram" viewBox="0 0 340 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="tierTitle">
+        <title id="tierTitle">A corner closet with a second, lower tension rod added beneath the main hanging rod</title>
+
+        <!-- Outer frame -->
+        <rect x="50" y="14" width="240" height="232" rx="4" fill="none" stroke="var(--ink)" stroke-width="2"/>
+
+        <!-- Main rod zone -->
+        <line x1="54" y1="60" x2="286" y2="60" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+        <rect x="54" y="60" width="232" height="75" fill="var(--tan)" opacity="0.85"/>
+        <text x="170" y="102" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">MAIN ROD</text>
+        <text x="170" y="120" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink)">longer coats</text>
+
+        <!-- Second tension rod tier -->
+        <line x1="54" y1="150" x2="230" y2="150" stroke="var(--sage-deep)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 0"/>
+        <rect x="54" y="150" width="176" height="60" fill="var(--sage)" opacity="0.16"/>
+        <text x="142" y="184" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12.5" font-weight="600" fill="var(--ink)">TENSION ROD</text>
+        <text x="142" y="200" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink)">shorter items</text>
+
+        <!-- Corner bin -->
+        <rect x="240" y="150" width="46" height="90" fill="var(--rust)" opacity="0.16" stroke="var(--rust)" stroke-width="1.5" stroke-dasharray="3 2"/>
+        <text x="263" y="185" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10.5" font-weight="600" fill="var(--ink)">TALL</text>
+        <text x="263" y="198" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="10.5" font-weight="600" fill="var(--ink)">BIN</text>
+      </svg>
+      <p class="diagram-caption">A second, offset tension rod roughly doubles hanging capacity without new walking-space loss.</p>
+    </div>
+
+    <div class="article-item">
+      <h3>12. Angle a freestanding shelf into the corner</h3>
+      <p>Look for narrow, adjustable shelf units designed to sit in a corner rather than mount to it. They conform to the angle without any hardware and can be reconfigured or moved entirely if your next closet is a different shape.</p>
+    </div>
+    <div class="article-item">
+      <h3>13. Use the diagonal wall for flat storage</h3>
+      <p>Flat, thin items like folded blankets or garment bags fit the diagonal space better than boxy bins. Keep frequently used bags and accessories toward the front, where they are easy to reach without leaning into the angle.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="calm">
+    <div class="phase-head"><h2>Keep it calm: categories, rotation and upkeep</h2></div>
+    <p class="phase-sub">An organized closet stops working the moment it starts looking cluttered again. A few habits keep it that way.</p>
+
+    <div class="article-item">
+      <h3>14. Rotate off-season clothes out, twice a year</h3>
+      <p>Keep only the current season on the main rod. In spring, move heavy knits, coats and boots out, and in fall bring them back. Everything else goes into zippered under-bed bags, a suitcase or a labeled bin on the top shelf. Wash or dry-clean before storing, since stains set and attract moths over time. Compressing soft items in vacuum bags saves space, but leaving down or wool compressed for long periods can damage the fill and fibers.</p>
+    </div>
+    <div class="article-item">
+      <h3>Group by category, then by color</h3>
+      <p>Sort dresses, shirts, and pants into their own sections first, then arrange each from dark to light. It makes the closet easier to scan and noticeably faster to get dressed from. Use the seasonal swap to remove anything you did not wear all season, because a shallow closet has no room for guilt pieces.</p>
+    </div>
+
+    <ul class="maintain-list">
+      <li>Do a quick weekly reset, returning shoes and bags to their designated zones.</li>
+      <li>Reassess the layout each season, since what fits well in winter (bulkier coats) may need a different configuration in summer.</li>
+      <li>Avoid overloading the back corner point. It is the hardest spot to access, so keep it for items you rarely need.</li>
+    </ul>
+  </section>
+
+  <section class="phase added" id="example">
+    <div class="phase-head"><h2>A 24-inch-wide reach-in, worked through</h2></div>
+    <div class="article-item added-body">
+<p>Take a closet 24 inches wide and about 22 inches deep with one rod and one shelf. A morning's plan:</p>
+<ol><li>Take everything out and sort into wear weekly, wear seasonally and donate. About an hour.</li><li>Replace bulky hangers with slim velvet ones for the daily rack. About $15 to $30 for a pack.</li><li>Fold knits and jeans into two shelf boxes on the top shelf and a stackable bin on the floor.</li><li>Hang a single over-door organizer for belts and scarves, staying under its weight limit.</li><li>Move off-season to a bin under the bed.</li></ol>
+<p>Total: roughly $40 to $100.</p>
+<p><strong>Cost tiers.</strong> Budget: slim hangers and plastic bins. Mid-range: a freestanding rack or adjustable shelf unit. Worth paying more: sturdy hangers and shelf dividers you will use daily.</p>
+<p><strong>Mistakes to skip.</strong> Buying full-width hangers for a shallow closet. Overloading a tension rod. Hanging knits. Storing damp clothes. Keeping everything in view.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="faq">
+    <div class="phase-head"><h2>Frequently asked questions</h2></div>
+
+    <div class="faq-item">
+      <h3>How deep does a closet need to be for hangers?</h3>
+      <p>Usually around 24 inches for clothes to hang straight on standard hangers. Shallower closets need slim hangers, angled rods or a different approach.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I add more storage to a small or corner closet without drilling?</h3>
+      <p>A second tension rod, a freestanding cube or corner shelf, shelf dividers, an over-door organizer and adhesive hooks on the straighter walls all fit without touching the drywall.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What is the best way to organize a corner closet?</h3>
+      <p>Start by filling the tightest corner point with a tall, narrow bin or angled shelf, then build outward with a second hanging tier and hooks near the entrance where access is easiest.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Are velvet hangers worth it?</h3>
+      <p>For a small closet, usually yes. They are thin and keep clothes from slipping. They are less suited to very heavy coats.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Should you fold or hang sweaters?</h3>
+      <p>Fold them. Hangers can stretch shoulders and leave marks.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How much weight can a tension rod hold?</h3>
+      <p>It depends on the product, so check the package. Stay below the stated limit and re-tighten the rod periodically.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How much space does a corner closet waste if left unorganized?</h3>
+      <p>The triangular pockets near the corner point and any unused vertical space above or below the main rod are typically the biggest losses, which can be roughly 20 to 30 percent of the closet's total capacity.</p>
+      <div class="diagram-block" >
+        <svg class="waste-diagram" viewBox="0 0 380 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="wasteTitle">
+          <title id="wasteTitle">A bar comparing used closet capacity to the typical 20 to 30 percent wasted in the corner and unused vertical space</title>
+
+          <rect x="20" y="30" width="340" height="40" rx="4" fill="var(--tan)" opacity="0.85"/>
+          <rect x="20" y="30" width="255" height="40" rx="4" fill="var(--sage)" opacity="0.55"/>
+          <text x="147" y="55" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" font-weight="600" fill="var(--ink)">USED — ~70–80%</text>
+          <text x="317" y="55" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11.5" font-weight="600" fill="var(--ink)">WASTED</text>
+          <text x="317" y="70" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink)">20–30%</text>
+        </svg>
+        <p class="diagram-caption">A rough picture of how much capacity the corner and vertical gaps typically cost.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="checklist">
+    <h2>Quick action plan</h2>
+    <ul>
+      <li><strong>Audit and purge first.</strong> Donate anything unworn in the last 12 months before buying a single organizer.</li>
+      <li><strong>Measure before you buy.</strong> Check depth, door clearance, shelf depth and, in a corner closet, the angle of the back wall.</li>
+      <li><strong>Fill the dead zones.</strong> A second rod and a tall bin in the corner claim the space that is hardest to use otherwise.</li>
+      <li><strong>Protect the deposit.</strong> Tension rods, over-the-bracket hooks, and freestanding units only, with nothing that touches the wall.</li>
+    </ul>
+  </div>
+
+  <section class="phase" style="margin-top: 44px;">
+    <div class="phase-head"><h2>Related guides</h2></div>
+    <ul class="related-list">
+      <li><a href="hanging-closet-organizer-guide.html">Hanging Closet Organizer: The No-Drill Small Space Fix</a></li>
+      <li><a href="under-bed-storage-guide.html">The Space Under Your Bed Is Prime Real Estate</a></li>
+      <li><a href="linen-closet-organization-guide.html">Linen Closet Organization Ideas for Small Rentals</a></li>
+      <li><a href="storage-bins-guide.html">The Best Storage Bins for Small Apartments</a></li>
+    </ul>
+  </section>
+
+  <p class="closing">A small closet has a fixed footprint, but very little of that space is actually being used well on day one. Fix the rod height, the hanger type, the floor gaps and, in a corner closet, the dead point, and the same closet holds a lot more than it looks like it should.</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copy">© 2026 Wedgli. All rights reserved.</p>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
