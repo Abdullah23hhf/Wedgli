@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://wedgli.com/</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
@@ -27,6 +27,7 @@
   </url>
   <url>
     <loc>https://wedgli.com/appliance-storage-cabinet-guide.html</loc>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -39,10 +40,7 @@
   </url>
   <url>
     <loc>https://wedgli.com/christmas-decoration-storage-guide.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wedgli.com/coat-closet-organization-guide.html</loc>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -50,11 +48,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wedgli.com/corner-closet-organizer-guide.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://wedgli.com/entryway-organization-guide.html</loc>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -79,6 +74,7 @@
   </url>
   <url>
     <loc>https://wedgli.com/linen-closet-organization-guide.html</loc>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -87,6 +83,7 @@
   </url>
   <url>
     <loc>https://wedgli.com/pantry-organization-guide.html</loc>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -95,6 +92,7 @@
   </url>
   <url>
     <loc>https://wedgli.com/small-closet-guide.html</loc>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -103,6 +101,7 @@
   </url>
   <url>
     <loc>https://wedgli.com/studio-furniture-guide.html</loc>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -125,7 +124,7 @@
   </url>
   <url>
     <loc>https://wedgli.com/privacy-policy.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
@@ -135,7 +134,7 @@
   </url>
   <url>
     <loc>https://wedgli.com/disclaimer.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.3</priority>
   </url>
 </urlset>
