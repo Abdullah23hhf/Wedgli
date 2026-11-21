@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5D7Y8TNFR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-W5D7Y8TNFR");
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Year Declutter Checklist for Small Apartments</title>
+<meta name="description" content="Room-by-room New Year declutter checklist for small apartments and rentals, with time estimates and keep, donate or toss tests. No drilling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* ---- Article-specific additions on top of the shared site stylesheet ---- */
+
+  .article-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 40px;
+  }
+  .article-hero .hero-tag {
+    color: var(--sage);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  .article-hero h1 { max-width: 780px; }
+  .article-hero p.lede { max-width: 62ch; margin-top: 8px; }
+  .byline-meta { font-size: 0.92rem; color: var(--ink-soft); margin: 14px 0 0; }
+  .byline-meta strong { color: var(--ink); font-weight: 600; }
+
+  .shelves {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 28px 0 0;
+    max-width: 220px;
+  }
+  .shelves span { height: 3px; background: var(--rust); border-radius: 2px; }
+  .shelves span:nth-child(1) { width: 100%; opacity: 1; }
+  .shelves span:nth-child(2) { width: 72%; opacity: 0.7; }
+  .shelves span:nth-child(3) { width: 45%; opacity: 0.45; }
+
+  /* Photos */
+  figure.photo { margin: 0 0 40px; }
+  figure.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: var(--paper-soft);
+  }
+  figure.photo figcaption {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    text-align: center;
+  }
+  figure.photo.hero-photo { margin-top: 0; }
+
+  .quick-answer {
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--rust);
+    border-radius: 6px;
+    padding: 22px 24px;
+    margin: 0 0 48px;
+  }
+  .quick-answer h2 { font-size: 20px; margin: 0 0 12px; }
+  .quick-answer ol { margin: 0; padding-left: 22px; }
+  .quick-answer li { margin-bottom: 6px; font-size: 15.5px; color: var(--ink); }
+  .quick-answer li span { color: var(--ink-soft); }
+
+  .article-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 56px;
+  }
+  .article-index a {
+    display: block;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    transition: border-color 0.15s ease;
+  }
+  .article-index a:hover { border-color: var(--rust); color: var(--ink); }
+  .article-index .num {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+    color: var(--rust);
+    margin-bottom: 4px;
+  }
+
+  section.phase { margin-bottom: 56px; scroll-margin-top: 90px; }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+    border-left: 3px solid var(--rust);
+    padding-left: 16px;
+  }
+  .phase-head h2 { margin: 0; }
+  .phase-time {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--sage-deep);
+    background: var(--tan);
+    padding: 3px 10px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .phase-sub {
+    padding-left: 19px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 58ch;
+    margin: 0 0 26px;
+  }
+
+  .article-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 14px;
+  }
+  .article-item h3 {
+    font-size: 17px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .article-item p { margin: 0 0 10px; }
+  .article-item p:last-child { margin-bottom: 0; }
+  .article-item ul { margin: 0; padding-left: 20px; color: var(--ink-soft); font-size: 15.5px; }
+  .article-item li { margin-bottom: 8px; }
+  .article-item li:last-child { margin-bottom: 0; }
+
+  .tip-box {
+    background: var(--paper-soft);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--sage);
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin: 22px 0 0;
+  }
+  .tip-box p { margin: 0; color: var(--ink); font-size: 15.5px; }
+  .tip-box strong { color: var(--sage-deep); }
+
+  /* Checkbox-style task lists */
+  .maintain-list { list-style: none; margin: 0 0 8px; padding: 0; }
+  .maintain-list li {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 15.5px;
+    color: var(--ink);
+  }
+  .maintain-list li:last-child { border-bottom: none; }
+  .maintain-list li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+    border: 2px solid var(--sage);
+    border-radius: 3px;
+  }
+
+  .mistake-list { list-style: none; margin: 0; padding: 0; counter-reset: m; }
+  .mistake-list li {
+    counter-increment: m;
+    position: relative;
+    padding: 16px 0 16px 44px;
+    border-bottom: 1px solid var(--line);
+  }
+  .mistake-list li:last-child { border-bottom: none; }
+  .mistake-list li::before {
+    content: counter(m);
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 28px;
+    height: 28px;
+    background: var(--rust);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .mistake-list h3 {
+    font-size: 16.5px;
+    margin: 0 0 6px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--ink);
+  }
+  .mistake-list p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+
+  .faq-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 12px;
+  }
+  .faq-item h3 {
+    font-size: 16.5px;
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--rust);
+  }
+  .faq-item p { margin: 0; color: var(--ink); font-size: 15.5px; }
+
+  .checklist {
+    background: var(--tan);
+    border-radius: 8px;
+    padding: 32px 28px;
+    margin-top: 44px;
+  }
+  .checklist h2 { font-size: 22px; margin: 0 0 12px; }
+  .checklist p { color: var(--ink); margin: 0; }
+
+  .related-list { list-style: none; margin: 0; padding: 0; }
+  .related-list li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .related-list li:last-child { border-bottom: none; }
+
+  .closing {
+    margin-top: 44px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 760px) {
+    .article-index { grid-template-columns: repeat(2, 1fr); }
+    .phase-head { flex-direction: column; gap: 6px; }
+  }
+</style>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://wedgli.com/new-year-declutter-checklist.html">
+<meta property="og:title" content="New Year Declutter Checklist for Small Apartments">
+<meta property="og:description" content="Room-by-room New Year declutter checklist for small apartments and rentals, with time estimates and keep, donate or toss tests. No drilling.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wedgli.com/new-year-declutter-checklist.html">
+<meta property="og:image" content="https://wedgli.com/new-year-declutter-hero.jpg">
+<meta property="og:site_name" content="Wedgli">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="New Year Declutter Checklist for Small Apartments">
+<meta name="twitter:description" content="Room-by-room New Year declutter checklist for small apartments and rentals, with time estimates and keep, donate or toss tests. No drilling.">
+<meta name="twitter:image" content="https://wedgli.com/new-year-declutter-hero.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "New Year Declutter Checklist for Small Apartments",
+  "description": "Room-by-room New Year declutter checklist for small apartments and rentals, with time estimates and keep, donate or toss tests. No drilling.",
+  "image": "https://wedgli.com/new-year-declutter-hero.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Abdullah"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Wedgli"
+  },
+  "datePublished": "2026-11-21",
+  "dateModified": "2026-11-21",
+  "mainEntityOfPage": "https://wedgli.com/new-year-declutter-checklist.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long will this take in a studio or one-bedroom?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Expect six to eight hours total. Studios usually land near the lower end because there's less space, but the closet and kitchen take longer than people expect." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I don't have a car to donate things?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Many charities, like Goodwill and Savers, take drop-offs, and some local groups offer free pickup. Buy Nothing groups also work well for items you want to pass on directly to neighbors." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I sell stuff instead of donating?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Only if it's worth more than about $30 and you'll list it this week. Otherwise it sits in a corner for months. For small items, donating saves you time you'd rather spend on something else." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I handle a partner or roommate who keeps everything?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Do your own things first and leave theirs alone. Then offer a shared \"maybe\" box with a date on it. If they haven't touched anything in it in 60 days, it goes." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I just don't have enough storage even after decluttering?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Then add vertical storage that doesn't need tools: over-door hooks, tension rods, and risers. Skip anything that needs drilling, and check your lease before using adhesives on painted walls." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="logo">Wedgli</a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#guides">Guides</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+
+  <div class="article-hero">
+    <p class="hero-tag">Declutter Checklist</p>
+    <h1>New Year declutter checklist for small apartments.</h1>
+    <p class="lede">By the second week of January, most small apartments look the same. The holiday boxes are still by the door, the new gifts have no home, and the closet door won’t quite close.</p>
+    <p class="byline-meta">By <strong>Abdullah</strong> &middot; Published <time datetime="2026-11-21">November 21, 2026</time></p>
+    <div class="shelves"><span></span><span></span><span></span></div>
+  </div>
+
+  <figure class="photo hero-photo">
+    <img src="new-year-declutter-hero.jpg" width="1200" height="805" alt="Small studio apartment with three open cardboard boxes labeled Keep, Donate and Recycle on a rug, ready for a New Year declutter">
+  </figure>
+
+  <p>You want a fresh start, but you don’t want to spend $200 on bins or put a single hole in a wall your landlord will inspect. Good news: you can reset the whole place with what you already own and a few weekends. (Still have the holiday decor out? Our <a href="christmas-decoration-storage-guide.html">Christmas decoration storage guide</a> shows where it can go once the season is over.)</p>
+
+  <div class="quick-answer">
+    <h2>The checklist at a glance</h2>
+    <ol>
+      <li>Entryway <span>(about 20 minutes)</span></li>
+      <li>Kitchen <span>(about 90 minutes)</span></li>
+      <li>Bathroom <span>(about 30 minutes)</span></li>
+      <li>Bedroom <span>(about 45 minutes)</span></li>
+      <li>Closet <span>(about 90 minutes)</span></li>
+      <li>Living area <span>(about 60 minutes)</span></li>
+    </ol>
+  </div>
+
+  <div class="article-index">
+    <a href="#how-to"><span class="num">01</span>How to use this checklist</a>
+    <a href="#rooms"><span class="num">02</span>Room-by-room checklist</a>
+    <a href="#rules"><span class="num">03</span>Keep, donate, toss</a>
+    <a href="#mistakes"><span class="num">04</span>Common mistakes &amp; FAQ</a>
+  </div>
+
+  <section class="phase" id="how-to">
+    <div class="phase-head"><h2>How to use this checklist</h2></div>
+    <p class="phase-sub">Plan on about six to eight hours total, split across three or four sessions.</p>
+
+    <div class="article-item">
+      <p>Don’t try to do it all in one day. Decision fatigue is real, and by hour four you’ll start keeping things just to make it stop.</p>
+    </div>
+    <div class="article-item">
+      <h3>What you need</h3>
+      <p>You need very little: three large bags or boxes (label them Donate, Toss, and Relocate), a trash bag, a marker, a damp cloth, and a timer on your phone. The Relocate box is for things that belong in another room, which is the most underrated category in small-space decluttering. Half of your “clutter” is just stuff living in the wrong place.</p>
+    </div>
+    <div class="article-item">
+      <h3>The order to work in</h3>
+      <p>Work in the order below. Entryway first, because it’s small and gives you a quick win. Closet comes after the bedroom because you’ll need the bedroom space to sort clothes.</p>
+    </div>
+
+    <div class="tip-box">
+      <p><strong>One rule for every section:</strong> take everything out of the space before you put anything back. Sorting items while they’re still tucked in drawers is how you end up keeping all of them.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="rooms" style="margin-bottom: 0;">
+    <div class="phase-head"><h2>The room-by-room checklist</h2></div>
+    <p class="phase-sub">Every item is a specific action. Tick them off as you go.</p>
+  </section>
+
+  <section class="phase" id="entryway">
+    <div class="phase-head"><h2>Entryway</h2><span class="phase-time">About 20 minutes</span></div>
+    <p class="phase-sub">Most entryways in small apartments are just a strip of floor and a few hooks. That means every item here competes for very little space.</p>
+
+    <figure class="photo">
+      <img src="declutter-entryway.jpg" width="1200" height="805" loading="lazy" alt="Narrow apartment entryway with an over-door hook rack, one coat, a boot tray with two pairs of shoes and a small shelf with a mail tray and keys">
+      <figcaption>One coat per hook, one shallow tray for mail, shoes off the floor.</figcaption>
+    </figure>
+
+    <ul class="maintain-list">
+      <li>Pull every shoe off the floor and rack. Keep the pairs you’ve worn in the last month plus one pair for each season. Everything else goes to the closet, donate bag, or trash.</li>
+      <li>Empty your coat hooks. Keep one coat per hook, maximum. Extra coats go in the closet or get donated.</li>
+      <li>Throw out or recycle every piece of mail you’ve been “meaning to deal with.” Keep only what needs action, and put it in one spot, like a single shallow tray.</li>
+      <li>Check the bag pile. If you own more than two tote bags you actually use, donate the rest. Reusable grocery bags multiply like rabbits.</li>
+      <li>Wipe down the floor and the wall behind where the shoes lived.</li>
+    </ul>
+
+    <div class="tip-box">
+      <p><strong>A quick opinion:</strong> skip the fancy entryway benches with built-in storage. In a narrow entry they eat the walking space you need. A slim over-door hook rack and a boot tray (about 28 inches wide) do more for less. For a fuller setup, see our <a href="entryway-organization-guide.html">small entryway organization guide</a>.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="kitchen">
+    <div class="phase-head"><h2>Kitchen</h2><span class="phase-time">About 90 minutes</span></div>
+    <p class="phase-sub">Kitchens are where small apartments go wrong fastest, because the stuff is heavy, bulky, and feels useful. Take it in three passes: counters, cabinets, then fridge and pantry.</p>
+
+    <ul class="maintain-list">
+      <li>Clear every counter completely. Put back only what you use daily. For most people that’s a coffee maker, a dish rack, and maybe a toaster. Everything else needs a cabinet home or the exit.</li>
+      <li>Pull out all your mugs and glasses. Keep four to six of each if you live alone, eight if you live with a partner. Duplicates and promotional mugs go in the donate bag.</li>
+      <li>Gather every food container and match each with a lid. Any container without a lid goes in recycling, and any lid without a container goes in the trash. This usually clears out a full shelf.</li>
+      <li>Go through your small appliances. If you haven’t used the air fryer, blender, or waffle maker in 12 months, it’s a donate candidate. Be honest here, because these things take a lot of cabinet space.</li>
+      <li>Check every spice jar for a date or a smell test. If it has no smell, it has no flavor. Toss it.</li>
+      <li>Empty the freezer door and fridge shelves. Throw out anything expired, then wipe each shelf with the damp cloth.</li>
+      <li>Clear the space under the sink. Toss dried-up sponges, half-empty cleaning bottles you don’t use, and plastic bags older than your last move.</li>
+    </ul>
+
+    <div class="tip-box">
+      <p>If your cabinets are tight, a basic wire shelf riser (usually $10 to $15) doubles your usable shelf height for plates and bowls. It’s one of the few kitchen organizers that’s actually worth buying. A tension rod under the sink is also useful for hanging spray bottles, as long as your cabinet is under about 36 inches wide and doesn’t have a pipe in the way. More ideas in our <a href="appliance-storage-cabinet-guide.html">small kitchen appliance storage guide</a> and <a href="pantry-organization-guide.html">pantry organization guide</a>.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="bathroom">
+    <div class="phase-head"><h2>Bathroom</h2><span class="phase-time">About 30 minutes</span></div>
+    <p class="phase-sub">Bathrooms are small, so the clutter is usually products, not furniture. This is the fastest room to finish.</p>
+
+    <figure class="photo">
+      <img src="declutter-bathroom.jpg" width="1200" height="805" loading="lazy" alt="Tiny rental bathroom with a shower caddy hanging from the showerhead, two towels on an over-door hook and a clear sink counter">
+      <figcaption>A hanging shower caddy and an over-door hook keep the floor and counter clear.</figcaption>
+    </figure>
+
+    <ul class="maintain-list">
+      <li>Empty every drawer, shelf, and the shower caddy onto the counter.</li>
+      <li>Toss anything expired, separated, dried out, or that you tried once and disliked. Old sunscreen and mascara go first.</li>
+      <li>Group what’s left by use: daily, weekly, rarely. Only the daily group should live within arm’s reach.</li>
+      <li>Keep no more than two backup bottles of anything. A stockpile of six shampoos is not a deal, it’s a storage problem.</li>
+      <li>Check your towels. Two per person plus one spare set is plenty. Worn-out towels can go to an animal shelter, which usually takes them.</li>
+      <li>Wipe the shelves and inside of the medicine cabinet before putting things back.</li>
+    </ul>
+
+    <div class="tip-box">
+      <p><strong>A caution:</strong> over-the-toilet shelves look neat in photos, but many are wobbly and take up more visual space than they save. If you have a tiny bathroom, a slim over-door hook for towels and a shower caddy that hangs from the showerhead will do the job without taking up floor. Our <a href="bathroom-decluttering-guide.html">tiny bathroom decluttering guide</a> goes further.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="bedroom">
+    <div class="phase-head"><h2>Bedroom</h2><span class="phase-time">About 45 minutes</span></div>
+    <p class="phase-sub">Your bedroom should feel like a place to rest, not a second storage unit. In a studio, that matters even more because the bed sits in the same space you live in.</p>
+
+    <ul class="maintain-list">
+      <li>Look under the bed. If you can see a dust bunny the size of a cat, pull everything out. Under-bed storage is great, but only for things you use seasonally, like extra bedding or off-season shoes. (See <a href="under-bed-storage-guide.html">how to use the space under your bed</a>.)</li>
+      <li>Clear your nightstand to the basics: a lamp, a phone charger, and one book. Everything else gets a home or leaves.</li>
+      <li>Strip the bed and check your sheets. Keep two sets per bed. Three sets is already too many for most small apartments.</li>
+      <li>Gather every cup, plate, and water glass that migrated to the bedroom. They go back to the kitchen right now.</li>
+      <li>Check your pillows. Keep what you use. Throw out any that have gone flat, yellow, or lumpy.</li>
+      <li>If you have a dresser top, clear it. A tray for jewelry and keys is fine. A pile of mystery items is not.</li>
+    </ul>
+  </section>
+
+  <section class="phase" id="closet">
+    <div class="phase-head"><h2>Closet</h2><span class="phase-time">About 90 minutes</span></div>
+    <p class="phase-sub">This is the big one. Do it when you have energy, not at 10 p.m.</p>
+
+    <figure class="photo">
+      <img src="declutter-closet-hangers.jpg" width="1200" height="805" loading="lazy" alt="Small reach-in closet with matching slim hangers, clothes sorted by color and type, folded sweaters on the top shelf and an over-door organizer">
+      <figcaption>One hanger style, clothes grouped by category, and an over-door organizer for small items.</figcaption>
+    </figure>
+
+    <ul class="maintain-list">
+      <li>Take every item of clothing out and lay it on the bed. Yes, all of it. Seeing the full pile is the point.</li>
+      <li>Pick up each piece and ask the questions in the <a href="#rules">Keep, Donate, Toss section</a> below. Don’t skip ahead. Don’t “come back to it later.”</li>
+      <li>Sort what you’re keeping by category: tops, bottoms, dresses, outerwear. Put like things together.</li>
+      <li>Swap out all your mismatched hangers for one type. Slim velvet hangers (about $20 for 50) save roughly a third of the rod space compared to thick plastic ones.</li>
+      <li>Move off-season clothes to a flat under-bed bin or the top shelf. Fold bulky sweaters instead of hanging them, because hanging stretches the shoulders.</li>
+      <li>Check the floor. Anything on it that isn’t shoes or a bag goes elsewhere.</li>
+      <li>Add an over-door organizer on the inside of the door for scarves, belts, or small bags. It’s a renter-friendly way to get extra storage with zero tools.</li>
+    </ul>
+
+    <div class="tip-box">
+      <p><strong>One honest limit:</strong> if you have a very deep closet, say more than 30 inches, a tension rod or a second rod won’t solve much because the back stays unreachable. In that case, use clear bins at the back for things you rarely need and keep daily clothes in front. For more closet fixes, see our <a href="small-closet-guide.html">small closet guide</a> and <a href="hanging-closet-organizer-guide.html">hanging closet organizer guide</a>.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="living">
+    <div class="phase-head"><h2>Living area</h2><span class="phase-time">About 60 minutes</span></div>
+    <p class="phase-sub">The living area is where all the leftover decisions pile up. Do this room last so you know what’s leftover from the others.</p>
+
+    <figure class="photo">
+      <img src="declutter-living-area.jpg" width="1200" height="805" loading="lazy" alt="Small living area with a clear round coffee table holding only a remote and a coaster, a wall shelf with a few books and cables bundled in a basket">
+      <figcaption>A clear coffee table, one small shelf and cables gathered in a single basket.</figcaption>
+    </figure>
+
+    <ul class="maintain-list">
+      <li>Clear the coffee table completely and put back only what you use every day, like a remote and a coaster. Papers, chargers, and random mugs go elsewhere.</li>
+      <li>Go through your bookshelf. Donate anything you’ve read and won’t read again. Keep favorites and books you’ll actually reference.</li>
+      <li>Gather every cable, charger, and remote. Test each one. If it doesn’t have a device you still own, toss it. Wrap the rest with a reusable cable tie and group them in one small box.</li>
+      <li>Check every blanket and throw pillow. Keep two blankets and two to four pillows. More than that just gets moved around.</li>
+      <li>Look at your decor. Remove anything that’s only there because it was a gift or you “should” display it. Fewer, bigger items look better in a small space than lots of small ones.</li>
+      <li>Take out your recycling and any boxes you’ve been saving. Flatten them or let them go.</li>
+    </ul>
+
+    <div class="tip-box">
+      <p>If wall space is limited and you can’t drill, use adhesive strips rated for the weight you’re hanging. Check the label on the pack, because the weight limit is printed there. Skip the cheap no-name versions, since a falling frame is worse than an empty wall. Our guide to <a href="command-hooks-guide.html">adhesive hooks done right</a> covers weight limits and wall prep.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="rules">
+    <div class="phase-head"><h2>Keep, donate, toss: the rules of thumb</h2></div>
+    <p class="phase-sub">Most decluttering advice gets vague at this point, so here are tests you can actually use.</p>
+
+    <figure class="photo">
+      <img src="keep-donate-toss-boxes.jpg" width="1200" height="805" loading="lazy" alt="Three cardboard boxes labeled Keep, Donate and Toss on a bedroom floor, filled with folded clothes, books and household items">
+      <figcaption>Three boxes, three decisions. No “maybe” pile.</figcaption>
+    </figure>
+
+    <div class="article-item">
+      <h3>Keep it if:</h3>
+      <ul>
+        <li>You’ve used it in the last 12 months and can name the next time you’ll use it.</li>
+        <li>It fits your body or your life right now, not the version you’re hoping for.</li>
+        <li>It’s something you’d buy again today at the full price.</li>
+      </ul>
+    </div>
+    <div class="article-item">
+      <h3>Donate it if:</h3>
+      <ul>
+        <li>It’s in good condition but you haven’t used it in a year.</li>
+        <li>You own a duplicate and the second one doesn’t do something the first can’t.</li>
+        <li>It was a gift you’ve never liked, and you feel guilty, not happy, when you see it.</li>
+      </ul>
+    </div>
+    <div class="article-item">
+      <h3>Toss it if:</h3>
+      <ul>
+        <li>It’s broken and you haven’t fixed it in six months. You’re not going to.</li>
+        <li>It’s stained, torn, expired, or missing a part you can’t replace.</li>
+        <li>It’s a charger or cable for a device you no longer own.</li>
+      </ul>
+    </div>
+
+    <div class="tip-box">
+      <p><strong>Sentimental items are the exception.</strong> Put them in one small box, about the size of a shoebox, and set that as your limit. If it doesn’t fit, you pick the best ones. Do those last, once you’re warmed up.</p>
+    </div>
+  </section>
+
+  <section class="phase" id="mistakes">
+    <div class="phase-head"><h2>Common mistakes in small spaces</h2></div>
+    <p class="phase-sub">Five habits that undo a good declutter.</p>
+
+    <ol class="mistake-list">
+      <li>
+        <h3>Buying storage before you declutter</h3>
+        <p>It feels productive, but you end up with nice bins full of stuff you didn’t need. Declutter first, then measure the space you have left, then buy only what’s missing. When you do buy, our <a href="storage-bins-guide.html">guide to storage bins for small apartments</a> helps you pick the right size.</p>
+      </li>
+      <li>
+        <h3>Moving clutter instead of removing it</h3>
+        <p>If your donate bag stays by the door for three weeks, you haven’t decluttered, you’ve relocated. Put it in your car or drop it off within 48 hours.</p>
+      </li>
+      <li>
+        <h3>Working on too many areas at once</h3>
+        <p>Pulling out the whole closet, the kitchen, and the bathroom on the same day leaves you with piles in every room and no place to walk. One zone at a time, finish before you start the next.</p>
+      </li>
+      <li>
+        <h3>Keeping things “just in case”</h3>
+        <p>A fair test: could you borrow it, rent it, or buy it again for under $20 within a day? If yes, let it go.</p>
+      </li>
+      <li>
+        <h3>Organizing things you shouldn’t own</h3>
+        <p>A perfectly labeled drawer of dead batteries and takeout menus is still a drawer of junk.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="phase" id="faq">
+    <div class="phase-head"><h2>FAQ</h2></div>
+    <p class="phase-sub">Quick answers to the questions that come up most.</p>
+
+    <div class="faq-item">
+      <h3>How long will this take in a studio or one-bedroom?</h3>
+      <p>Expect six to eight hours total. Studios usually land near the lower end because there’s less space, but the closet and kitchen take longer than people expect.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What if I don’t have a car to donate things?</h3>
+      <p>Many charities, like Goodwill and Savers, take drop-offs, and some local groups offer free pickup. Buy Nothing groups also work well for items you want to pass on directly to neighbors.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Should I sell stuff instead of donating?</h3>
+      <p>Only if it’s worth more than about $30 and you’ll list it this week. Otherwise it sits in a corner for months. For small items, donating saves you time you’d rather spend on something else.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I handle a partner or roommate who keeps everything?</h3>
+      <p>Do your own things first and leave theirs alone. Then offer a shared “maybe” box with a date on it. If they haven’t touched anything in it in 60 days, it goes.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What if I just don’t have enough storage even after decluttering?</h3>
+      <p>Then add vertical storage that doesn’t need tools: over-door hooks, tension rods, and risers. Skip anything that needs drilling, and check your lease before using adhesives on painted walls. Our <a href="small-apartment-storage-guide.html">small apartment storage guide</a> has a room-by-room plan.</p>
+    </div>
+  </section>
+
+  <div class="checklist">
+    <h2>Start here today</h2>
+    <p>Grab one bag, walk to your entryway, and take every shoe off the floor.</p>
+  </div>
+
+  <section class="phase" style="margin-top: 44px;">
+    <div class="phase-head"><h2>Related guides</h2></div>
+    <ul class="related-list">
+      <li><a href="small-closet-guide.html">Small Closet Organization: 14 No-Drill Ideas for Renters</a></li>
+      <li><a href="entryway-organization-guide.html">Small Entryway &amp; Coat Closet Organization: 15 Ideas</a></li>
+      <li><a href="under-bed-storage-guide.html">The Space Under Your Bed Is Prime Real Estate</a></li>
+      <li><a href="christmas-decoration-storage-guide.html">Christmas Decoration Storage: 12 Ideas, No Attic Needed</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copy">© 2026 Wedgli. All rights reserved.</p>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
